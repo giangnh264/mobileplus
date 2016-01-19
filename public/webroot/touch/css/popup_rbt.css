@@ -1,0 +1,72 @@
+/*Popup nhac cho*/
+.popup-box #rbt-list li{
+	padding: 10px;
+	margin: 0 30px;
+	border-bottom: 1px solid #CCC;
+	overflow: hidden;
+}
+#rbt-list .rbt-name{
+	font-weight: bold;
+	color: #444444;
+}
+.zone-1{
+	float: left;
+}
+.zone-2{
+	float: right;
+}
+.rbt-price{
+	color: #777777;
+	font-weight: normal;
+}
+.rbt-download, .rbt-gift{
+	float: left;
+	margin: 0 5px;
+}
+.rbt-download a, .rbt-gift a{
+	display: block;
+}
+.rbt-download{
+	background-image: url("../images/rbt-download.png");
+    display: block;
+    height: 14px;
+    margin-right: 5px;
+    width: 17px;
+	font-size: 0;
+}
+.rbt-gift {
+    background-image: url("../images/rbt-gift.png");
+    display: block;
+    height: 16px;
+    margin-right: 5px;
+	margin-left:15px;
+    width: 15px;
+	font-size: 0;
+}
+#rbt-download{
+	padding: 10px 15px;
+	overflow: hidden;
+}
+.down_rbt_name{
+	color: #0061af;
+	font-family: Tahoma;
+}
+#rbt-download .row{
+	color: #505050;
+}
+#rbt-download .row span{
+	color: #000000;
+}
+.i-button{
+	float: left;
+	border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+	width: 220px;
+}
+#popup-message{
+	text-align: center;
+}

@@ -1,0 +1,11 @@
+<i18n>
+    <repeat_all>Lặp tất cả</repeat_all>
+    <repeat_one>Lặp 1 bài</repeat_one>
+    <turn_shuffle_on>Chơi ngẫu nhiên</turn_shuffle_on>
+    <turn_shuffle_off>Chơi tuần tự</turn_shuffle_off>
+    <quality>Chất lượng</quality>
+    <quality_setting>Thay đổi chất lượng</quality_setting>
+    <volumn>Âm lượng</volumn>
+    <mute>Tắt tiếng</mute>
+    <only_one_profile>Bài hát chỉ có duy nhất chất lượng này</only_one_profile>
+</i18n>

@@ -1,0 +1,126 @@
+
+
+    a ,h1 a, h2 a, h3 a,h4 a {
+        color:#008BEF;
+    }
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        background-color: #219fcd;
+    }
+
+    .wen_corporate_social_widget li a:hover{
+        border:1px solid #219fcd;
+    }
+     .main-navigation ul ul {
+        background-color: #ffffff;
+    }
+    .main-navigation ul li ul li a:hover {
+        background-color: #219fcd;
+        color: #ffffff;
+    }
+    .main-navigation ul ul a{
+        color:#219fcd;
+    }
+    .cycle-next:hover:before, .cycle-prev:hover:before {
+        color: #219fcd;
+    }
+    a.read-more:after {
+        color:#219fcd;
+    }
+    .wen_corporate_welcome_widget {
+    }
+    .service-block-inner:after {
+        background-color: #219fcd;
+    }
+    a:hover, a:focus, a:active {
+        color: #219fcd;
+    }
+    a:visited {
+        color:#54397E);
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        color:#219fcd;
+    }
+    a {
+        color:#219fcd;
+    }
+    .cta-right a.btn-cta {
+        background-color: #219fcd;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #219fcd;
+    }
+ .main-navigation li a:hover, .main-navigation li.current-menu-item a, .main-navigation li.current_page_item a {
+    color: #1098f8;
+  }
+  .fa-search:before {
+    background: none repeat scroll 0 0 #219fcd;
+    }
+    .wen_corporate_recent_posts_block_widget .owl-theme .owl-controls .owl-buttons div {
+        background: none repeat scroll 0 0 #219fcd !important;
+    }
+    #secondary .widget > h3 {
+        background-color: #219fcd;
+        }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    textarea:focus {
+        border: 1px solid #219fcd;
+    }
+.widget .service-item-title a{
+    color:#219fcd;
+}
+    .wen_corporate_social_widget li a:hover:before{
+        color: #219fcd;
+    }
+    .wen_corporate_social_widget li a:hover{
+        border-color:#219fcd;
+    }
+    .footer-widget-area li a:hover {
+        color: #219fcd;
+    }
+    caption {
+         color:#219fcd;
+    }
+    #primary .nav-previous a ,#primary .nav-next a{
+        background: none repeat scroll 0 0 #219fcd;
+    }
+
+
+    blockquote:before {
+       color: #219fcd;
+    }
+
+
+    body .mm-menu .mm-listview > li > a.mm-subopen:after,body .mm-menu .mm-listview > li > a.mm-subclose:before{
+        border-color:#219fcd;
+    }
+
+   body .mm-listview > li > a, body .mm-listview > li > span,
+   body .mm-menu .mm-listview > li > a.mm-subclose{
+        color:#219fcd;
+
+    }
+
+    .sticky {
+        background-color: #e9eeff;
+    }
+
+    #main-slider .pager-box {
+        border: 1px solid  #219fcd;
+    }
+    #main-slider .pager-box.cycle-pager-active{
+      background-color:#219fcd;
+    }
+
+    #masthead .search-form .search-submit {
+        color: #219fcd;
+    }

@@ -1,0 +1,2448 @@
+/*
+Theme Name: WEN Corporate
+Theme URI: http://wenthemes.com/item/wordpress-themes/wen-corporate/
+Author: WEN Themes
+Author URI: http://wenthemes.com
+Description: WEN Themes proudly present WEN Corporate : a simple and clean business-based responsive WordPress theme. With standard sections that work for any Company, convenient Theme Options for easy management and standard features of an elegant blog and homepage, WEN Corporate is a fine solution for a fine presentation. Salient feature have offering of : Standard Theme Options on top of WordPress' Customizer, cross-browser compatibility, featured slider, two theme skins, different page layout options ( right, left, full width ), multiple header layout, translation-ready, featured image, custom menus, social icons, custom CSS field and other standard WordPress elements . The code / setup is easy to customize and extend by various hooks offered in the build. With generous spacing toward a clean presentation, standard coding practices, latest feature the theme could be a next for your awesome start-up site. Official Support Forum: http://themepalace.com/support-forum/ Full Demo: http://demo.wenthemes.com/wen-corporate/
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wen-corporate
+Tags: light, white, brown, blue, one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, full-width-template, post-formats, sticky-post, translation-ready, responsive-layout, theme-options, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ WEN Corporate is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+
+3.0 Elements
+4.0 Forms
+5.0 Navigation
+  5.1 Links
+  2.2 Typography
+  5.3 Menus
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Content
+  10.1 Posts and pages
+  10.2 Asides
+  10.3 Comments
+11.0 Infinite scroll
+12.0 Media
+  12.1 Captions
+  12.2 Galleries
+
+13.0 Miscellaneous
+  13.1 Basic Styles
+  13.2 Header
+  13.3 Featured Slider
+  13.4 Welcome section
+  13.5 Service
+  13.6 CTA widget
+  13.7 Recent post
+  13.8 Footer
+  13.9 Inner pages
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    box-sizing: border-box; /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+}
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+}
+
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+    font-family: "Roboto";
+    src: url( "font/roboto/Roboto-Regular.ttf" ) /* EOT file for IE */;
+}@font-face
+{
+    font-family: "Roboto-Light";
+    src: url( "font/roboto/Roboto-Light.ttf" ) /* EOT file for IE */;
+}
+@font-face
+{
+    font-family: "Roboto-Bold";
+    src: url( "font/roboto/Roboto-Bold.ttf" ) /* EOT file for IE */;
+}
+body {
+    font-family: "Roboto" !important;
+    font-size: 12px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table { /* tables still need 'cellspacing="0"' in the markup */
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote:before {
+
+    content: "";
+    font-size: 23px;
+    left: -28px;
+    position: absolute;
+    top: -6px;
+}
+blockquote,
+q {
+    quotes: "" "";
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin: 0 0 5px 15px;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 15px 15px;
+}
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+    margin: 0;
+}
+
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* Corrects font size not being inherited in all browsers */
+    margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+    vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+    border-radius: 2px;
+    border: none;
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+    font-size: 12px;
+    font-size:18px;
+    line-height: 1;
+    padding:10px 20px;
+    color: #fff;
+
+}
+
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    border-color: #aaa #bbb #bbb;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    padding: 3px;
+}
+
+textarea {
+    overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+    padding-left: 3px;
+    vertical-align: top; /* Improves readability and alignment in all browsers */
+    width: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"],select {
+    border:1px solid #ddd;
+    border-radius: 0 0 0 0;
+    color: #414042;
+    line-height: 20px;
+    margin: 0 0 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+::-moz-placeholder {
+
+    color:#8f8989;
+
+    opacity: 1;
+
+    font-weight: 400;
+
+}
+
+::-webkit-input-placeholder {
+
+    color: #8f8989;
+
+    font-weight: 400;
+
+}
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+a:focus{
+    outline: 0;
+}
+a {
+    color:#414042;
+    text-decoration: none;
+
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+/* Links
+--------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+5.2 Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom:20px;
+    line-height: 1.5;
+    font-weight: 600;
+    clear: both;
+
+
+}
+
+p{
+    color: #8c8b8b;
+    /*    font-family: "Arial",sans-serif;*/
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+
+}
+h1{
+    font-size: 30px;}
+h2 {
+    font-size: 24px;
+}
+h3{
+    font-size: 21px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 16px;
+
+}
+h6{
+    font-size: 14px;
+}
+ul, ol{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+
+blockquote, blockquote p {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+blockquote {
+    margin: 0 0 15px 25px;
+    position: relative;
+}
+address {
+    margin: 0 0 15px;
+}
+
+pre {
+    background: #eee;
+    font-size: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom:15px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+    font-size: 15px;
+    margin-bottom:15px;
+
+
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+    margin-bottom:15px;
+}
+
+mark,
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+    margin-bottom:15px;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+caption, th, td {
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+    border-left: 1px solid hsl(0, 0%, 87%);
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+}
+table{
+    border: 1px solid #ddd;
+    border-left: none;
+    border-bottom: none;
+    margin-bottom:15px;
+}
+caption {
+    border: 1px solid hsl(0, 0%, 87%);
+    margin-bottom:15px;
+}
+
+
+/*--------------------------------------------------------------
+5.3 Menus
+--------------------------------------------------------------*/
+
+
+.main-navigation {
+    margin-top: 11px;
+}
+.main-navigation {
+    border-top: 3px double #ddd;
+    border-bottom: 3px double #ddd;
+}
+.main-navigation:before, .main-navigation:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.main-navigation ul {}
+.main-navigation ul ul {
+    border: 1px solid #dddddd;
+    display: none;
+    left:10px;
+    margin: 0;
+    min-width: 200px;
+    position: absolute;
+    top: 32px;
+    z-index: 9999;
+}
+.main-navigation ul ul ul {
+    left:100%;
+    top: -1px;
+}
+
+
+.main-navigation li {
+    position: relative;
+    display: inline-block;
+}
+.main-navigation li li {
+    float: none;
+    display: block;
+}
+.main-navigation li li li {}
+.main-navigation li li li li {}
+.main-navigation li:hover ul{
+    display: block;
+}
+.main-navigation li:hover li ul{
+    display: none;
+}
+.main-navigation li li:hover ul{
+    display: block;
+}
+.main-navigation li li:hover li ul{
+    display: none;
+}
+.main-navigation li li li:hover ul{
+    display: block;
+}
+.main-navigation li li li:hover li ul{
+    display: none;
+}
+.main-navigation li li li li:hover > ul{
+    display: block;
+}
+.main-navigation ul li a {
+    color: #6f6f6f;
+    display: block;
+    font-size: 16px;
+    margin-right: 3px;
+    padding: 5px 25px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 99;
+}
+.main-navigation li li li a {}
+.main-navigation li li li li a {}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+    color: #1098f8;
+}
+
+.main-navigation ul li li:after{
+    display: none;
+}
+.main-navigation li.current-menu-item:after,
+.main-navigation ul li.current_page_item:after {
+    width:100%;
+}
+
+.main-navigation li li.current_page_item a:after, .main-navigation ul li li a:hover:after {
+    display: none;
+}
+
+.main-navigation li li a:hover, .main-navigation li li.current-menu-item > a {
+
+}
+.main-navigation li li li a:hover {}
+.main-navigation li li li li a:hover {}
+.main-navigation li.current-menu-item > a {
+
+}
+.main-navigation li li.current-menu-item > a {}
+.main-navigation li li li.current-menu-item > a {}
+.main-navigation li li li li.current-menu-item > a {}
+.main-navigation li.current-menu-item li a:hover {}
+.main-navigation li li.current-menu-item li a:hover {}
+.main-navigation li li li.current-menu-item li a:hover {
+    color:#1098f8;
+}
+
+
+.main-navigation ul ul a {
+    border-bottom: 1px solid #dddddd;
+    font-size: 15px;
+    height: auto;
+    padding: 7px 15px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+}
+.main-navigation ul li ul li a:hover {
+    background-color: hsla(0, 0%, 0%, 0.15);
+    color: hsl(0, 0%, 100%);
+}
+.main-navigation > ul li.menu-item-has-children > a,
+.main-navigation > ul li.page_item_has_children > a {
+    padding-right: 35px;
+}
+.main-navigation > ul > li:first-child > ul,
+.main-navigation > .menu > ul > li:first-child > ul {
+    left: 0;
+}
+a {
+    color: #38547d;
+}
+a, h1 a, h2 a, h3 a, h4 a {
+    color: #38547d;
+}
+.main-navigation > ul > li:first-child > a,
+.main-navigation > ul.menu > li:first-child > a,
+.main-navigation > .menu > ul > li:first-child > a{
+    padding-left: 0;
+}
+.main-navigation ul li.menu-item-has-children > ul > li.menu-item-has-children > a:before,
+.main-navigation ul li.page_item_has_children > ul > li.page_item_has_children > a:before  {
+    content: "";
+    display: block;
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.main-navigation ul li.menu-item-has-children > a:before,
+.main-navigation ul li.page_item_has_children > a:before
+{
+    color: #c2c2c2;
+    content: "";
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    right: 2px;
+    top: -1px;
+}
+.main-navigation ul li.menu-item-has-children > ul > li.menu-item-has-children > a:hover:before,
+.main-navigation ul li.page_item_has_children > ul > li.page_item_has_children > a:hover:before {
+    color: #ffffff;
+}
+#page > a#mobile-trigger {
+    display: none;
+}
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: "";
+    display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+    margin: 0 0 1.5em;
+    clear: both;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+    max-width: 100%;
+}
+.widget.wen_corporate_social_widget{
+    clear: both;
+}
+
+
+
+/* Search widget */
+
+#header-search-form{
+    display: none;
+}
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+    display: block;
+}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+
+
+/*--------------------------------------------------------------
+13 Miscellaneous
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------
+13.1 Basic Styles
+----------------------------------------*/
+
+body {
+    color: #fff;
+    line-height: 1.5;
+}
+
+.container{
+    background-color: #fff;
+}
+
+#page {
+    margin-top: 20px;
+    padding-bottom: 0px;
+
+}
+
+
+/*--------------------------------------
+13.2 Header
+----------------------------------------*/
+
+
+
+.site-header {
+    padding: 30px 0 20px;
+}
+
+.site-title {
+    font-size:30px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 0px;
+
+}
+.site-description {
+    color: #b0b0b0;
+    font-size: 19px;
+    font-weight:inherit;
+    margin-bottom: 0;
+
+    font-style: italic;
+}
+.page-header {
+    margin: 0 0 25px;
+    padding-bottom: 0;
+}
+
+.site-branding {
+    margin-bottom: 20px;
+}
+/*layout second */
+.header-layout-2 .site-description{
+    padding-left: 0;
+}
+.row.header-layout-2 .col-sm-12.site-branding {
+    float: none;
+    margin: 0 auto 30px;
+    max-width: 420px;
+    text-align: center;
+}
+.row.header-layout-2 {
+    position: relative;
+}
+
+.row.header-layout-2 .header-area-right {
+    position: absolute;
+    right: 17px;
+    top: 0;
+    width: 350px;
+}
+.widget_search {
+    float: right;
+    margin: 0;
+    width: 100%;
+}
+
+.search-form label {
+    display: block;
+    float: left;
+    width: 68%;
+}
+.search-form .search-submit {
+    border: medium none;
+    border-radius: 0;
+    box-shadow: inherit;
+    float: right;
+    font-weight: normal;
+    height: 35px;
+    padding: 7.1px 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#footer-widgets .widget.widget_search {
+    float: left;
+}
+
+.fa-search:before {
+
+    border-radius: 17px;
+    color: #fff;
+    content: "";
+    display: table-cell;
+    height: 30px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+}
+.header-area-right > a {
+    display: block;
+    float: right;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+#btn-search-icon{
+    color: #ffffff;
+}
+#masthead .header-layout-2 .search-form {
+    right: 0;
+    width: 79%;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    border-color: hsl(0, 0%, 0%);
+    box-shadow: inherit;
+}
+aside#search {
+    clear: both;
+    float: right;
+}
+.header-area-right {
+    padding-top: 25px;
+    position: relative;
+}
+#masthead .search-form {
+    float: right;
+    margin-left: 20px;
+    position: absolute;
+    right: 16px;
+    top: 65px;
+    width: 83%;
+    z-index: 99;
+}
+
+.search-form {
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+}
+#colophon .search-form {
+    position: relative;
+    width: 100%;
+}
+
+#colophon .search-form input.search-field {
+    background-color: #c8c6c6;
+    border-radius: 0;
+    display: block;
+    height: 22px;
+    line-height: 1.5;
+    padding: 5px 0 6px 5%;
+    width: 94%;
+}
+
+#masthead .search-form .search-submit {
+    background: inherit;
+    font-weight: normal;
+}
+
+.wen_corporate_social_widget li a i {
+    color:#6e6e6e;
+    font-size: 18px;
+    font-weight: normal;
+}
+.wen_corporate_social_widget li a {
+    border: 1px solid #8f8989;
+    border-radius: 18px;
+    display: table-cell;
+    float: left;
+    font-weight: normal !important;
+    height: 30px;
+    line-height: 1.7;
+    margin-left: 5px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+}
+.wen_corporate_social_widget li {
+    display: inline-block;
+    padding-top: 2px;
+}
+.wen_corporate_social_widget li .title {
+    display: none;
+}
+
+.col-sm-4.sidebar-header-right {
+    padding-top: 30px;
+}
+
+#masthead .widget.wen_corporate_social_widget {
+    clear: inherit;
+    float: right;
+    margin: 0;
+    text-align: right;
+    width: 90%;
+}
+
+.wen_corporate_social_widget  ul li a:before {
+    color:#8f8989;
+    content: "";
+    font-size: 17px;
+    font-weight: normal;
+    margin: 6px;
+}
+
+.wen_corporate_social_widget ul li a[href*="facebook.com"]:before {
+    content: "\f09a";
+}
+.wen_corporate_social_widget ul li a[href*="twitter.com"]:before {
+    content: "\f099";
+}
+.wen_corporate_social_widget ul li a[href*="linkedin.com"]:before {
+    content: "\f0e1";
+}
+.wen_corporate_social_widget ul li a[href*="plus.google.com"]:before {
+    content: "\f0d5";
+}
+.wen_corporate_social_widget ul li a[href*="youtube.com"]:before {
+    content: "\f167";
+}
+.wen_corporate_social_widget ul li a[href*="dribbble.com"]:before {
+    content: "\f17d";
+}
+.wen_corporate_social_widget ul li a[href*="pinterest.com"]:before {
+    content: "\f0d2";
+}
+.wen_corporate_social_widget ul li a[href*="bitbucket.org"]:before {
+    content: "\f171";
+}
+.wen_corporate_social_widget ul li a[href*="github.com"]:before {
+    content: "\f113";
+}
+.wen_corporate_social_widget ul li a[href*="codepen.io"]:before {
+    content: "\f1cb";
+}
+.wen_corporate_social_widget ul li a[href*="flickr.com"]:before {
+    content: "\f16e";
+}
+.wen_corporate_social_widget ul li a[href$="/feed/"]:before {
+    content: "\f09e";
+}
+.wen_corporate_social_widget ul li a[href*="foursquare.com"]:before {
+    content: "\f180";
+}
+.wen_corporate_social_widget ul li a[href*="instagram.com"]:before {
+    content: "\f16d";
+}
+.wen_corporate_social_widget ul li a[href*="tumblr.com"]:before {
+    content: "\f173";
+}
+.wen_corporate_social_widget ul li a[href*="reddit.com"]:before {
+    content: "\f1a1";
+}
+.wen_corporate_social_widget ul li a[href*="vimeo.com"]:before {
+    content: "\f194";
+}
+.wen_corporate_social_widget ul li a[href*="digg.com"]:before {
+    content: "\f1a6";
+}
+.wen_corporate_social_widget ul li a[href*="twitch.tv"]:before {
+    content: "\f1e8";
+}
+.wen_corporate_social_widget ul li a[href*="stumbleupon.com"]:before {
+    content: "\f1a4";
+}
+.wen_corporate_social_widget ul li a[href*="delicious.com"]:before {
+    content: "\f1a5";
+}
+.wen_corporate_social_widget ul li a[href*="mailto:"]:before {
+    content: "\f0e0";
+}
+.wen_corporate_social_widget ul li a[href*="soundcloud.com"]:before {
+    content: "\f1be";
+}
+.wen_corporate_social_widget ul li a[href*="wordpress.org"]:before {
+    content: "\f19a";
+}
+.wen_corporate_social_widget ul li a[href*="wordpress.com"]:before {
+    content: "\f19a";
+}
+.wen_corporate_social_widget ul li a[href*="jsfiddle.net"]:before {
+    content: "\f1cc";
+}
+.wen_corporate_social_widget ul li a[href*="tripadvisor.com"]:before {
+    content: "\f262";
+}
+.wen_corporate_social_widget ul li a[href*="foursquare.com"]:before {
+    content: "\f180";
+}
+.wen_corporate_social_widget ul li a[href*="angel.co"]:before {
+    content: "\f209";
+}
+.wen_corporate_social_widget ul li a[href*="slack.com"]:before {
+    content: "\f198";
+}
+
+#masthead .sidebar-header-right .widget.widget_search {
+    width: 140px;
+}
+
+#masthead .sidebar-header-right .widget:first-child {
+    float: right;
+    text-align: right;
+}
+
+#masthead .sidebar-header-right .widget.widget_search  input.search-field {
+    width: 84%;
+    float: right;
+}
+
+#masthead .sidebar-header-right .widget {
+    display: block;
+    margin-left: 10px;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+.col-sm-1 {
+    width: 8.33333%;
+}
+.col-sm-2 {
+    width: 16.6667%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-4 {
+    width: 33.3333%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-7 {
+    width: 58.3333%;
+}
+.col-sm-8 {
+    width: 66.6667%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-10 {
+    width: 83.3333%;
+}
+.col-sm-11 {
+    width: 91.6667%;
+}
+.col-sm-12 {
+    width: 100%;
+}
+
+
+/*--------------------------------------
+13.3 Featured Slider
+----------------------------------------*/
+
+
+
+.banner {
+    text-align: center;
+}
+#featured-slider {
+    margin-bottom: 15px;
+}
+#featured-slider > img {
+    width: 100%;
+}
+.cycle-slideshow {
+    margin-bottom:30px;
+
+}
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 42%;
+    z-index: 999;
+    cursor: pointer;
+}
+.cycle-prev{
+    left:10px;
+}
+.cycle-prev:before {
+    color:#fff;
+    content: "";
+    display: block;
+    font-size: 42px;
+    height: 15px;
+    width: 15px;
+}
+
+.cycle-next:before {
+    color:#fff;
+    content: "\f138";
+    display: block;
+    font-size: 42px;
+    height: 15px;
+    width: 15px;
+}
+.cycle-next{
+    right:30px;
+}
+.cycle-caption p{
+    color:#000;
+}
+
+.cycle-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: inherit;
+    left: 21%;
+    padding: 35px 50px;
+    position: absolute;
+    top: 25%;
+    width: 58%;
+    z-index: 888;
+}
+.cycle-caption{
+    font-size: 40px;
+}
+#main-slider img {
+    width: 100%;
+    height: auto;
+}
+#main-slider li > a:hover {
+    opacity: 1;
+}
+#main-slider li {
+    width: 100%;
+    display: none;
+    height: auto;
+}
+#main-slider li.first{
+    display: block;
+}
+.attachment-thumbnail.wp-post-image {
+    margin-bottom: 15px;
+}
+
+#main-slider h3{
+    font-size: 30px;
+    color:#fff;
+}
+
+#main-slider h3 a{
+    color: #fff;
+}
+#main-slider p{
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.3;
+}
+#main-slider .cycle-caption{
+    text-align: center;
+    display: none;
+}
+
+#main-slider  .pager-box {
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    height: 12px;
+    margin: 0 7px;
+    width: 51px;
+}
+#main-slider .cycle-pager {
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    cursor: pointer;
+}
+/*--------------------------------------
+13.4 Welcome section
+----------------------------------------*/
+
+.wen_corporate_welcome_widget {
+    border-radius: 2px;
+    color: #ffffff;
+    padding: 20px;
+}
+.wen_corporate_welcome_widget h3,.wen_corporate_welcome_widget p,
+.wen_corporate_welcome_widget .widget-title{
+    color: #000;
+}
+.wen_corporate_welcome_widget .widget-title {
+    border: medium none;
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------
+13.5 Service
+----------------------------------------*/
+
+
+
+h2.widget-title {
+    border-bottom: inherit;
+    color: rgb(37, 37, 37);
+    display:block;
+    margin-bottom: 25px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2.widget-title span {
+    display:inline-block;
+    position: relative;
+}
+
+h2.widget-title span:after  {
+    content: "";
+    height: 1px;
+    right: -163px;
+    position: absolute;
+    top: 17px;
+    width: 150px;
+}
+h2.widget-title span:before {
+    content: "";
+    height: 1px;
+    left: -163px;
+    position: absolute;
+    top: 17px;
+    width: 150px;
+}
+
+
+.recent-posts-block-item .attachment-thumbnail.wp-post-image {
+    border: 10px solid #dddddd;
+    display: block;
+    float: none;
+    margin: 0 auto 15px;
+}
+
+
+.service-block-item {
+
+    margin-bottom: 35px;
+    text-align: center;
+}
+.service-block-item:first-child {
+    border-left: none;
+
+}
+.service-block-item.col-sm-3 {
+    margin-bottom: 20px;
+}
+
+.widget h3 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.widget .service-item-title {
+    text-align: center;
+}
+.widget h3 a{
+    color: #393939;
+
+}
+.service-block-inner i {
+    display: block;
+    float: none;
+    height: 155px;
+    line-height: 1.3;
+    text-align: center;
+    vertical-align: middle;
+    width: 155px;
+    margin: 0 auto 20px;
+}
+.widget .service-item-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.widget .service-item-title a{
+    color: rgb(65, 65, 65);
+}
+/*--------------------------------------
+13.6 CTA widget
+----------------------------------------*/
+
+
+
+.cta-left:before {
+    content: "";
+    display: block;
+    font-size: 32px;
+    height: 30px;
+    position: absolute;
+    width: 15px;
+    left: 15px;
+    top: -14px;
+}
+.cta-left{
+    position:relative;
+    padding-left: 55px;
+}
+.cta-right a.btn-cta {
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    float: none;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    width: auto;
+}
+.cta-left {
+    font-size: 16px;
+    font-style: italic;
+}
+.wen_corporate_cta_widget {
+    background-color: #f9f9f9;
+    border-radius: 0;
+    padding: 30px 45px;
+}
+.cta-description {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.cta-button {
+    text-align: center;
+}
+a.btn-cta {
+    border: 2px solid;
+    border-radius: 7px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    width: auto;
+}
+/*--------------------------------------
+13.7 Recent post
+----------------------------------------*/
+
+
+
+
+
+#main .widget {
+    margin-bottom: 45px;
+}
+
+.wen_corporate_recent_posts_block_widget .recent-posts-block-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.recent-posts-block-item {
+    margin: 0 auto;
+
+}
+.wen_corporate_recent_posts_block_widget .owl-carousel .owl-item {
+    float: left;
+    padding: 0 15px;
+}
+.wen_corporate_recent_posts_block_widget .owl-theme .owl-controls {
+    float: right;
+    margin-bottom: 20px;
+    position: absolute;
+    right: 0;
+    top: -65px;
+    width: auto;
+}
+.wen_corporate_recent_posts_block_widget .owl-theme .owl-controls .owl-buttons div {
+    float: left;
+    opacity: 1;
+    position: relative;
+    width: 30px;
+    background: none;
+}
+.wen_corporate_recent_posts_block_widget .owl-prev:after, .wen_corporate_recent_posts_block_widget .owl-next:after {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.wen_corporate_recent_posts_block_widget .owl-prev:after {
+    content: "\f104";
+    display: block;
+}
+.wen_corporate_recent_posts_block_widget .owl-next:after {
+    content: "\f105";
+    display: block;
+}
+.wen_corporate_recent_posts_block_widget .recent-posts-block-item img {
+
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.wen_corporate_recent_posts_block_widget .owl-theme .owl-controls .owl-buttons div{
+    background:inherit!important;
+    opacity:1!important;
+    line-height: 1;
+}
+.wen_corporate_recent_posts_block_widget .owl-theme .owl-controls .owl-buttons div {
+
+    border-radius: 0;
+    height: 20px;
+    margin: 0 0 0 9px;
+    padding: 0;
+    width: 20px;
+}
+
+
+.wen_corporate_recent_posts_block_widget .owl-carousel .owl-item{
+    text-align: center;
+}
+#main-slider.cycle-slideshow {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+/*--------------------------------------
+13.8 Footer
+----------------------------------------*/
+
+
+.footer-widget-area.col-sm-2 .widget.widget_search {
+    width: 100%;
+}
+#colophon .footer-widget-area.col-sm-2 .search-form input.search-field{
+    width: 84%;
+}
+footer.footer {
+    padding: 20px 0;
+}
+.footer .container {
+    border-top: 1px solid rgb(53, 40, 41);
+    margin-top: 25px;
+    padding-top: 25px;
+}
+.copy-right p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.col-sm-6.footer-right > p {
+    font-size: 18px;
+    margin: 0;
+}
+.site-info a{
+    color: #fff;
+}
+.footer-top  a {
+    color:#414042);
+}
+.footer-top ul li {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 5px 0;
+}
+.footer-thumb.wp-post-image {
+    float: right;
+    width: 48%;
+}
+.footer-content {
+    float: left;
+    width: 50%;
+}
+.col-sm-6.footer-right {
+    text-align: right;
+}
+.footer-top ul li a {
+    color: #c8c6c6;
+}
+.site-footer {
+    background-color: #464646;
+    border: medium none;
+    clear: both;
+    margin: 0 -30px;
+}
+#powered-by {
+    text-align: right;
+    font-size: 15px;
+}
+#powered-by > a:first-child {
+    display: block;
+    margin-bottom: 5px;
+}
+.site-footer-widgets {
+    margin: 0 0 0;
+    padding: 15px 0;
+}
+.sep {
+    display: none;
+}
+
+#footer-navigation ul li {
+    display: inline-block;
+}
+
+.footer-widget-area li a {
+    color: #c8c6c6;
+    display: block;
+}
+
+.menu-primary-menu-container, .copyright {
+    display: block;
+    float: none;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: left;
+}
+.footer-copyright-wrap {
+    background-color: #252525;
+    padding: 20px 15px;
+    text-align: center;
+}
+.footer-left {
+    text-align: left;
+}
+#powered-by > a, .site-info, .copyright {
+    color:#fff;
+}
+#footer-navigation ul li a{
+    border-left: 1px solid;
+    color: #fff;
+    display: block;
+    line-height: 1;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+#footer-navigation ul li:first-child a {
+    border-left:none;
+
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.nav-previous {
+    float: left;
+}
+.nav-next {
+    float: right;
+}
+.single .entry-content img {
+    display: block;
+    margin: 0 auto 20px;
+}
+#powered-by > a, .site-info a, .copyright a, #footer-navigation ul li a {
+    font-size: 14px;
+}
+
+.footer-widget-area .widget.wen_corporate_social_widget {
+    border: medium none;
+    clear: both;
+    float: left;
+}
+.footer-widget-area .wen_corporate_social_widget li {
+    border: medium none !important;
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+}
+#footer-widgets .widget.widget_search{
+    margin-bottom: 15px;
+}
+.footer-widget-area ul ul {
+    margin: 0;
+}
+
+.site-footer-widgets {
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.footer-widget-area ul li {
+    list-style: initial;
+}
+.footer-widget-area ul {
+    padding-left: 17px;
+}
+
+footer#colophon {
+    margin-top: 25px;
+}
+.site-footer-widgets,
+.footer-copyright-wrap .row{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*--------------------------------------
+13.9 Inner pages
+----------------------------------------*/
+#secondary .widget h3 a {
+    color: #ffffff;
+}
+
+.rsswidget > img {
+    margin: 0 0 0 -8px;
+    vertical-align: inherit;
+}
+/* Blog */
+.sticky {
+    padding: 15px;
+}
+
+.blog-info {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.blog-info > p {
+    margin: 5px 0;
+}
+.blog-info > p strong{
+    color: rgb(46, 138, 70);
+}
+.comment {
+    float: right;
+}
+.entry-meta {
+    background-color:rgb(249, 249, 249);
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+.posted-on, .byline, .comment {
+
+    background-repeat:  no-repeat;
+    background-position: 0 3px;
+    color: rgb(61, 61, 61);
+    display: inline-block!important;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-right: 20px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.posted-on:after, .byline:after, .comment:after {
+    color: hsl(0, 2%, 33%);
+    content: "\f073";
+    display: block;
+    font-size: 16px;
+    left: 0px;
+    position: absolute;
+    top: -3px;
+}
+.byline:after{
+    content:"\f007";
+}
+.comment:after{
+    content:"\f075";
+}
+.blog-info > img {
+    margin-bottom: 15px;
+}
+
+.posted-on > a, .byline a {
+    color: rgb(167, 169, 172);
+}
+.blog-info {
+    margin-bottom: 20px;
+}
+footer.entry-meta.inner-meta {
+    background-color:rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 0;
+}
+.entry-footer span {
+    margin-right: 10px;
+}
+
+.entry-meta.inner-meta a {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(209, 211, 212);
+    color: rgb(88, 89, 91);
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 3px 17px;
+}
+
+
+/* BLOG SINGLE */
+
+.comment-list li.comment:after {
+    content: inherit;
+    display: none;
+}
+.comment-list li{padding-left: 0;}
+.comment {
+    background-position: 0 -74px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+ol.comment-list {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.comment-list .children {
+    margin:15px 0 15px 15px;
+    overflow: hidden;
+}
+
+.comment-list {
+    margin-bottom: 40px !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+}
+.comment-list li {
+    list-style: outside none none !important;
+}
+.comment .comment-body {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    margin: 1em 0 0;
+    overflow: hidden;
+    padding: 14px 15px 15px 87px;
+    position: relative;
+}
+.comment-list .children {
+    background-position: left 20px;
+    background-repeat: no-repeat;
+    border-left: 1px solid rgb(238, 238, 238);
+    margin-left: 0 !important;
+    padding-left: 40px;
+}
+.comment-list li.comment > div img.avatar {
+    left: 29px;
+    position: absolute;
+    top: 29px;
+}
+#comment-form-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.vcard .avatar {
+    left: 29px;
+    position: absolute;
+    top: 29px;
+}
+.comment-metadata {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.comment-reply-link {
+    float: right;
+}
+.form-allowed-tags code {
+    white-space: inherit;
+    word-wrap: break-word;
+}
+.comment-respond label {
+    display: block;
+    font-weight: normal;
+}
+
+.wp-pagenavi {
+    clear: both;
+    text-align: center;
+}
+
+#primary #gallery-1 img {
+    border: 1px solid rgb(207, 207, 207);
+    padding: 6px;
+}
+
+.entry-blog img {
+    width: 100%;
+}
+
+.entry-blog a.read {
+    color: rgb(35, 150, 234);
+}
+
+.entry-blog a.read:hover{
+    text-decoration: underline;
+}
+#primary .nav-previous a ,#primary .nav-next a{
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+.comment-form-url > input#url {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 0;
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+.entry-content > table {
+    margin-bottom: 30px;
+}
+
+.page-content .search-form label {
+    display: block;
+    float: left;
+    width: 70%;
+}
+
+.entry-content img{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.entry-content img {
+    margin-bottom: 15px;
+}
+h1.page-title {
+    color: rgb(173, 187, 4);
+}
+
+.entry-header .entry-title {
+    border-bottom:1px solid #ddd;
+    margin-bottom:15px;
+    padding: 0;
+
+}
+
+/* Sidebar starts here */
+#secondary #wen-corporate-social-6 li {
+    margin-bottom: 15px;
+    padding: 0;
+}
+#secondary #wen-corporate-social-6 li:after {
+    display: none;
+    content:"";
+}
+
+#secondary label{
+    display:block;
+}
+#secondary .widget  h1 {
+    border-bottom: 1px solid #ddd;
+    color: rgb(248, 208, 4);
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+#secondary .widget {
+    clear: both;
+    margin-bottom: 20px;
+    padding: 0 0 5px;
+    position: relative;
+}
+#secondary .widget:after {
+    background: none repeat scroll 0 0 hsl(0, 0%, 87%);
+    bottom: -7px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+}
+#secondary .widget:before {
+    background: none repeat scroll 0 0 #dddddd;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+}
+/*#secondary .widget ul li:after {
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-left:7px solid hsl(0, 0%, 62%);
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: 11px;
+}*/
+
+#secondary .widget ul li:before {
+    content: " ";
+    display: block;
+    font-size: 18px;
+    left: 10px;
+    position: absolute;
+    top: 3px;
+}
+#secondary .widget.wen_corporate_social_widget ul li:before {
+    content: "";
+    display: none;
+}
+#secondary .widget.wen_corporate_social_widget ul li {
+    display: inline-block;
+    margin: 0 5px 5px;
+    padding: 0;
+}
+.widget.wen_corporate_social_widget {
+    text-align: center;
+}
+#secondary .widget ul li {
+    font-size: 17px;
+    margin: 0;
+    padding: 5px 7px 4px 24px;
+    position: relative;
+}
+
+#secondary .widget > h3 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 3px 20px;
+    margin-bottom: 10px;
+}
+caption {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 5px;
+    text-align: left;
+}
+#secondary .widget ul li li li li{
+    margin: 0;
+    padding: 0;
+}
+#secondary .widget ul li li li ul{
+    margin: 0;
+    padding: 0;
+}
+
+#secondary .widget ul li li li li:after {
+    border: medium none;
+    content: "-";
+    left: -12px;
+    top: -1px;
+}
+
+/*search*/
+
+#secondary .widget_search {
+    float: right;
+    margin: 0;
+    width: 100%;
+}
+#secondary .search-form label {
+    display: block;
+    float: left;
+    width: 72%;
+}
+
+.search-form input.search-field {
+    border-radius: 0;
+    display: block;
+    height: 32px;
+    padding: 0 3% 0 7%;
+    width: 89.8%;
+}
+
+.search-form input.search-field {
+    border-radius: 0;
+    display: block;
+    height: 32px;
+    padding: 0 8% 0 5%;
+    width: 85.8%;
+}
+
+#secondary .search-form {
+    display: block;
+    float: left;
+    margin: 10px 0;
+    position: relative;
+}
+#secondary .widget.widget_search {
+    display: block;
+    overflow: hidden;
+}
+
+#secondary .search-form {
+    display: block;
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/*sarch*/
+
+/*error404*/
+
+
+#main  .screen-reader-text {
+    display: none;
+}
+
+
+#main  section.error-404 {
+    text-align: center;
+}
+
+.error404 #main  .page-header {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 30px;
+    padding-bottom: 0;
+}
+.error404 #main  .page-content > p {
+    font-size: 17px;
+}
+
+.error404 #main   .search-form {
+    display: block;
+    margin: 30px auto 20px;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+h1.page-title {
+    color: hsl(189, 95%, 40%);
+    font-style: italic;
+    text-shadow: 0 1px 0 hsl(0, 0%, 0%);
+}
+
+a.read-more {
+    position: relative;
+    font-size: 14px;
+}
+a.read-more:after {
+
+    content: "";
+    display: block;
+    font-weight: normal;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: auto;
+}
+a.scrollup,
+a.scrollup:visited{
+    position:fixed;
+    right:30px;
+    bottom:50px;
+    color: #666666;
+    font-size: 34px;
+    display:none;
+    outline: none;
+}
+a.scrollup:hover,
+a.scrollup:active{
+    color: #000000;
+}
+.service-block-inner img {
+    border-radius: 100px;
+}
+.service-block-item-excerpt {
+    margin-bottom: 20px;
+}
+.service-block-item img {
+    background: none repeat scroll 0 0 #dddddd;
+    padding: 30px;
+}
+
+.projects.columns-2 ul.projects li.project {
+    clear: inherit !important;
+    float: left;
+    margin: 0;
+    width: 33.33%;
+}
+
+
+span.wpcf7-form-control-wrap {
+    display: block!important;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.entry-content > ul,.entry-content > ol {
+    padding-left: 33px;
+    margin-bottom: 10px;
+}
+.entry-content  ul li {
+    list-style: disc outside none;
+    padding-left: 0;
+}
+.entry-content a {
+    text-decoration: underline;
+}
+
+.entry-content ol li{
+    list-style: decimal outside none;
+    margin-bottom: 5px;
+
+}
+.entry-content ul li{
+    margin-bottom: 5px;
+}
+.entry-content  caption, .entry-content  th,  .entry-content td {
+    padding: 5px 10px;
+    text-align: left;
+}
+.page-title ,.entry-title{
+    font-size: 27px;
+    margin: 5px 0;
+}
+.page-header,.entry-title{
+    position: relative;
+}
+.page-header:after,.entry-title:after {
+    background: none repeat scroll 0 0 #dddddd;
+    bottom: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+/* Infinite scroll fix */
+#infinite-footer .container{
+    width: 1170px;
+}
+#infinite-footer .blog-info,
+#infinite-footer .blog-credits{
+    margin: 0;
+    padding: 0;
+}
+.logo-main{
+    float: left;
+}
+.slide img {
+    width: 100%;
+}
+.content-area{
+
+}
+
+.wapper{
+    overflow: hidden;
+}

@@ -1,0 +1,291 @@
+.icon-web{
+    background-image: url("../images/web_design.jpg");
+}
+.icon-responsive{
+    background-image: url("../images/responsive.jpg");
+}
+.icon-app-design {
+    background-image: url("../images/mobile_app.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 98px !important;
+}
+#wen-corporate-welcome-3 > hr, #wen-corporate-service-3 hr {
+    background-color: #eb741f;
+    color: red;
+    margin: 3px auto;
+    width: 100px;
+}
+.service-block-list{
+    margin-top: 25px;
+}
+
+.menu li {
+    height: 45px;
+    line-height: 35px;
+}
+.product_promotion{
+    overflow: hidden;
+    float: left;
+}
+.product_promotion > li:first-child {
+    border-radius: 3px 0 0 3px;
+}
+.product_promotion > li:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.product_promotion > li {
+    border: 1px solid #d8d8d8;
+    color: #000;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+}
+
+.product_promotion li.selected{
+    background-color: #008BEF;
+    border: 1px solid #008BEF;
+    color: #FFF;
+}
+.styled-select {
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    height: 36px;
+    overflow: hidden;
+    width: 162px;
+    float: right;
+}
+
+.styled-select select {
+    -moz-appearance: none;
+    background: transparent url("../images/smart_arrows.jpg") no-repeat scroll 95% 14px;
+    border: 0 none;
+    line-height: 36px;
+    text-indent: 4px;
+    text-overflow: "";
+    width: 100%;
+}
+.product_header{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.wrr_items_list_resp .items {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+.col-25 {
+    width: 25%;
+}
+.items_list_resp .items .wrr-item {
+    padding: 0 10px;
+}
+.wrr_items_list_resp .wrr-item-main {
+    border: 1px solid #ccc;
+}
+.thumb-hover {
+    background: #000 none repeat scroll 0 0;
+    position: relative;
+}
+.wrr_items_list_resp .wrr-item-main .thumb a {
+    display: block;
+}
+.thumb-hover .circle-play, .thumb-hover img {
+    transition: all 0.3s ease-in-out 0s;
+}
+.fll{
+    float: left;
+}
+.wrr_items_list_resp {
+    margin: 0 -15px;
+}
+
+.clear{
+    clear: both;
+}
+.item_main {
+    color: #000;
+    font-weight: bold;
+    margin: 0 !important;
+}
+.wrr-item-content {
+    overflow: hidden;
+    padding: 10px;
+}
+footer {
+    background-color: #2c3e50;
+    height: 280px;
+}
+.social {
+    padding: 20px 0;
+    text-align: center;
+}
+.social > a {
+    margin: 0 10px;
+}
+ .about {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 30px;
+}
+.about > p {
+    color: #fff;
+}
+.about > a {
+    color: #fff;
+    margin: 0 5px;
+}
+footer ul {
+    text-align: center;
+}
+footer li {
+    margin-bottom: 5px;
+}
+.pr_mobile_os {
+    border-top: 1px solid #dddddd;
+    height: 60px;
+    line-height: 55px;
+    overflow: hidden;
+    text-align: center;
+}
+.pr_mobile_os > img {
+    margin: 0 3px;
+}
+.product_detail {
+    border-bottom: 1px solid #dddddd;
+    float: left;
+    padding-bottom: 10px;
+    width: 570px;
+}
+.product_slide {
+    float: left;
+    margin-right: 30px;
+}
+
+.product_view {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.product_detail > h2 {
+    margin-bottom: 7px;
+    margin-top: -10px;
+}
+.product_detail > p {
+    color: #000;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.pr_mobile_view {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    float: left;
+    margin-top: 2px;
+    padding: 5px 0;
+    width: 570px;
+}
+.pr_mobile_view > img {
+    margin-right: 15px;
+}
+.pr_mobile_view > span {
+    color: #008bef;
+    font-weight: lighter;
+}
+.pr_same_title {
+    border-bottom: 1px solid #ddd;
+    height: 38px;
+    line-height: 37px;
+    margin-bottom: 20px;
+}
+.pr_same_title > span {
+    border-bottom: 1px solid #80c5f7;
+    color: #737373;
+    float: left;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.icon_pre_active {
+    background-image: url("/web/images/pre.png");
+    display: block;
+    height: 16px;
+    width: 10px;
+}
+.pro_same_load{
+    float: right;
+    overflow: hidden;
+}
+.pro_same_load > a {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    padding: 6px 17px 8px;
+    position: relative;
+}
+.pro_same_load > a.active {
+    background-color: #008bef;
+}
+.pro_same_load > a i {
+    display: block;
+    height: 16px;
+    left: 15px;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.icon_pre_active {
+    background-image: url("/web/images/pre_active.png");
+}
+.icon_next {
+    background-image: url("/web/images/next.png");
+}
+.contact {
+    float: left;
+    margin-right: 54px;
+    width: 640px;
+}
+.googlee_maps {
+    float: left;
+}
+.contact > h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #000;
+}
+.contact > p {
+    color: #000;
+    margin-bottom: 5px;
+}
+.contact_title {
+    font-weight: bold;
+}
+input.w305{
+    float: left;
+    width: 305px;
+}
+.contact_sm{
+    margin-bottom: 30px;
+}
+.contact input {
+    border: 1px solid #ddd;
+    height: 43px;
+}
+.contact input[type="submit"] {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #5d5d5d;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+form.contact_sm button {
+    background-color: #008bef;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}

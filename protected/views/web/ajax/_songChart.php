@@ -1,0 +1,1 @@
+<?php $this->widget('application.widgets.web.chart.SongChartWidget',array('code'=>$collectionCode,'genre'=>$genre)); ?>

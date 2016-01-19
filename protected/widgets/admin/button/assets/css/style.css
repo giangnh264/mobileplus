@@ -1,0 +1,21 @@
+<style>
+span.custom-combobox{
+    position: relative!important;
+    display: inline-block;
+}
+.custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+}
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .ui-autocomplete{
+  	max-height: 500px!important;
+  	overflow-y: auto!important;
+  }
+</style>

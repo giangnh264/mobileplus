@@ -1,0 +1,152 @@
+.promotion_main {
+    overflow: hidden;
+    margin: 10px 0 15px 10px;
+}
+.promotion_main li {
+    float: left;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 25%;
+    border-bottom: 2px solid #EEEEEE;
+}
+.promotion_main .about.active .text_titile{
+    color: #7C73EC;
+}
+.promotion_main .about.active {
+    border-bottom: 2px solid #7C73EC;
+}
+.promotion_main .list.active .text_titile{
+    color: #5C9C00;
+}
+.promotion_main .list.active{
+    border-bottom: 2px solid #5C9C00;
+}
+.promotion_main .hotlist.active .text_titile{
+    color: #F42621;
+}
+.promotion_main .hotlist.active{
+    border-bottom: 2px solid #F42621;
+}
+.promotion_main .check.active .text_titile{
+    color: #3DAFFF;
+}
+.promotion_main .check.active{
+    border-bottom: 2px solid #3DAFFF;
+}
+.text_titile {
+    font-size: 14px;
+    padding-top: 15px;
+}
+.icon_music{
+    display: block;
+    background-image: url("../images/promotion/music.png");
+    height: 44px;
+    width: 39px;
+    float: left;
+}
+.about_title span {
+    color: red;
+    font-size: 13px;
+    height: 44px;
+    line-height: 44px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about_title {
+    overflow: hidden;
+}
+.about_content {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.about_content p{
+    margin-bottom: 5px;
+}
+.list_playlist_promotion li:nth-child(5n), .list_video li:nth-child(5n), .list_video_playlist li:nth-child(5n){
+    margin-right: 0;
+}
+.list_playlist_promotion div.info {
+    height: 80px!important;
+}
+table.promotion_table, .promotion_table th, .promotion_table td {
+    border: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.promotion_table th {
+    width: 25%;
+}
+.promotion_table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.selected {
+    margin: 20px 0;
+    overflow: hidden;
+}
+.selected_title {
+    display: block;
+    line-height: 30px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.chart_time_promotion {
+    border: 1px solid #dadada;
+    height: 40px;
+    width: 100%;
+    margin: 0 0 10px !important;
+}
+.fontB{
+    font-weight: bold;
+}
+.bg_color {
+    background-color: #fafafa;
+}
+.color_333{
+    color: #333333;
+}
+.new td{
+    color: #5d5d5d !important;
+}
+.promotion_hello {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.ovh{
+    overflow: hidden;
+    padding: 5px 0;
+}
+.icon_promotion > img {
+    width: 90%;
+}
+table{
+    margin: 0!important;
+    width: 100%;
+}
+.promotion_content {
+    margin: 0 10px 20px;
+}
+.promotion_table, .promotion_table th, . td {
+    border: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.promotion_table th {
+    width: 25%;
+}
+.promotion_table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.box-info {
+    margin: 0 auto;
+    padding: 15px 0px !important;
+}
+.color-red{
+     color: red;
+ }
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+}
