@@ -1023,3 +1023,4 @@ $(document.body).ready(function(){
 		$(this).find("i").toggleClass("icon-chevron-left");
 	})
 });
+

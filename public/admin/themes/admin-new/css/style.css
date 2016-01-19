@@ -3316,3 +3316,27 @@ fieldset{
 #logo img {
 	padding: 12px 20px;
 }
+.thumb-slider {
+	border: 1px solid #1ab394;
+	cursor: pointer;
+	display: block;
+	height: 150px;
+	width: 300px;
+}
+.thumb-slider-change-text {
+	background-color: #1ab394;
+	border-color: #1ab394;
+	border-radius: 3px;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	line-height: 30px;
+	margin-top: 10px;
+	position: absolute;
+	text-align: center;
+	width: 150px;
+}
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}

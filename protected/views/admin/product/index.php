@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 $this->menu=array(	
 	array('label'=> Yii::t("admin","Thêm mới"), 'url'=>array('create'), 'visible'=>UserAccess::checkAccess('ProductModelCreate')),
 );
-$this->pageLabel = Yii::t("admin","Danh sách Product");
+$this->pageLabel = Yii::t("admin","Danh sách sản phẩm");
 
 
 Yii::app()->clientScript->registerScript('search', "
@@ -82,30 +82,43 @@ $this->widget('zii.widgets.grid.CGridView', array(
                     'class'                 =>  'CCheckBoxColumn',
                     'selectableRows'        =>  2,
                     'checkBoxHtmlOptions'   =>  array('name'=>'cid[]'),
-                    'headerHtmlOptions'   =>  array('width'=>'50px','style'=>'text-align:left'),
+                    'headerHtmlOptions'   	=>  array('width'=>'50px','style'=>'text-align:left'),
                     'id'                    =>  'cid',
                     'checked'               =>  'false'
                 ),
-
 		'id',
 		'name',
 		'description',
 		'url_key',
-		'wp',
-		'ios',
-		/*
-		'android',
-		'created_time',
-		'updated_time',
-		'status',
-		*/
+		array(
+			'class'=>'CLinkColumn',
+			'header'=>'WP',
+			'labelExpression'=>'($data->wp==1)?CHtml::image(Yii::app()->request->baseUrl."/css/img/publish.png"):CHtml::image(Yii::app()->request->baseUrl."/css/img/unpublish.png")',
+			'urlExpression'=>'($data->wp==1)?Yii::app()->createUrl("product/unsetwp",array("cid[]"=>$data->id)):Yii::app()->createUrl("prodcut/setwp",array("cid[]"=>$data->id))',
+			'linkHtmlOptions'=>array(
+			),
+		),
+		array(
+			'class'=>'CLinkColumn',
+			'header'=>'IOS',
+			'labelExpression'=>'($data->ios==1)?CHtml::image(Yii::app()->request->baseUrl."/css/img/publish.png"):CHtml::image(Yii::app()->request->baseUrl."/css/img/unpublish.png")',
+			'urlExpression'=>'($data->ios==1)?Yii::app()->createUrl("product/unsetios",array("cid[]"=>$data->id)):Yii::app()->createUrl("prodcut/setios",array("cid[]"=>$data->id))',
+			'linkHtmlOptions'=>array(
+			),
+		),
+		array(
+			'class'=>'CLinkColumn',
+			'header'=>'Android',
+			'labelExpression'=>'($data->android==1)?CHtml::image(Yii::app()->request->baseUrl."/css/img/publish.png"):CHtml::image(Yii::app()->request->baseUrl."/css/img/unpublish.png")',
+			'urlExpression'=>'($data->android==1)?Yii::app()->createUrl("product/unsetandroid",array("cid[]"=>$data->id)):Yii::app()->createUrl("prodcut/setandroid",array("cid[]"=>$data->id))',
+			'linkHtmlOptions'=>array(
+			),
+		),
 		array(
 			'class'=>'CButtonColumn',
             'header'=>CHtml::dropDownList('pageSize',$pageSize,array(10=>10,30=>30,50=>50,100=>100),array(
-                                                                                  'onchange'=>"$.fn.yiiGridView.update('product-model-grid',{ data:{pageSize: $(this).val() }})",
-                                                                                )),
-
-
+				  'onchange'=>"$.fn.yiiGridView.update('product-model-grid',{ data:{pageSize: $(this).val() }})",
+				)),
 		),
 	),
 ));

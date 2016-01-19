@@ -187,4 +187,11 @@ class ProductController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionLoadmore(){
+		$id = (int) Yii::app()->request->getParam('id', null);
+		$id = $id + 1;
+		$this->renderPartial ( "_loadmore", compact ( "id") );
+		Yii::app ()->end ();
+	}
 }
