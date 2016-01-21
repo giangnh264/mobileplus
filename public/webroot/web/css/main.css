@@ -289,3 +289,37 @@ form.contact_sm button {
     text-transform: uppercase;
     font-size: 15px;
 }
+.no_padding {
+    padding: 0;
+}
+#header_phone .container {
+    height: 30px !important;
+    margin-top: 10px;
+}
+#header_phone .icon_menu_lang {
+    background: rgba(0, 0, 0, 0) url("/web/images/en_us.png") no-repeat scroll center center;
+    height: 35px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 35px;
+    float: right;
+}
+#header_phone .icon_menu_phone {
+    background: rgba(0, 0, 0, 0) url("/web/images/icon_menu_phone.png") no-repeat scroll center center;
+    height: 30px;
+    margin-top: 5px;
+    width: 30px;
+    
+}
+#header_phone .logo_waka_phone {
+    float: left;
+}
+#header_phone .area_search_menu {
+    height: 30px;
+    position: relative;
+}
+#header_phone .icon_h_b img {
+    height: 34px;
+    margin-top: 1px;
+    width: 34px;
+}

@@ -16,11 +16,13 @@
 
 /* Smaller than standard 991 (devices and browsers) */
 @media only screen and (max-width:1023px){
-  .container {
-      width: 97%;
-      margin-top: 10px;
-  }
+    .site-title {
+        font-size:15px;
+        font-weight: bold;
+        line-height: 1.3;
+        margin-bottom: 0px;
 
+    }
   .cta-right a.btn-cta{
     padding: 10px 15px;
   }
@@ -160,324 +162,341 @@
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width:767px){
-
-    .row.header-layout-2 .col-sm-12.site-branding {
-      float: left;
-      margin: 0 auto 15px;
-      max-width: inherit;
-      padding-top: 0;
-      text-align: center;
-      width: 100%;
-  }
-  .row.header-layout-2 .sidebar-header-right {
-      float: none;
-      margin: 0 auto;
-      overflow: hidden;
-      padding: 0 15px;
-      position: inherit;
-      right: inherit;
-      top: inherit;
-      width: 258px;
-  }
-  .cycle-caption {
-      bottom: 24px;
-      left: -34px;
-      padding: 7px 13px;
-      position: absolute;
-      width: 95%;
-      z-index: 9999;
-  }
-  .cycle-caption p{
-    margin-bottom: 10px;
-  }
-  .cycle-caption h3 {
-      font-size: 18px;
-      margin-bottom: 3px;
-  }
-  a.scrollup, a.scrollup:active{
-    z-index: 9999;
-  }
-  .service-block-item {
-      margin-bottom: 15px;
-      width: 50%;
-  }
-  .cta-left.col-sm-9 {
-      margin-bottom: 15px;
-      width: 100%;
-  }
-  .cta-right.col-sm-3 {
-      width: 100%;
-  }
-  #footer-widgets .widget.widget_search {
-      float: left;
-      width: 100%;
-  }
-   #colophon .search-form input.search-field {
-
-      width: 89%;
-  }
-
-  #page > a#mobile-trigger {
-      display: block;
-      left: 18px;
-      position: absolute;
-      top: 32px;
-      z-index: 99999;
-  }
-  #masthead > div#site-navigation{
-    display: none;
-  }
-  .fa.fa-th-list {
-      font-size: 32px;
-      font-weight: normal;
-  }
-  .col-sm-8.site-branding {
-      text-align: center;
-      width: 100%;
-  }
-
-  #masthead .sidebar-header-right .widget {
-      display: block;
-      float: none;
-      text-align: center;
-  }
-
-  .cycle-prev, .cycle-next{
-    top:18%;
-  }
-  #masthead .header-layout-1 .sidebar-header-right {
-      float: none;
-      margin: 0 auto;
-      width: 260px;
-  }
-  .mm-opened.mm-background.mm-opening .hfeed.site.container.mm-page.mm-slideout {
-      margin-left: 28px;
-      margin-top: -15px;
-  }
-  #primary,
-  #secondary {
-      width: 100%;
-  }
-  .sidebar-header-right{
-    clear: both;
-  }
-  .col-sm-8.site-branding {
-      padding: 0 60px;
-      text-align: center;
-      width: 100%;
-  }
-  .footer-widget-area {
-    width: 50%;
-  }
-    #masthead .sidebar-header-right .widget.widget_search {
-      clear: both;
-      float: none;
-      margin: 0 auto;
-      overflow: hidden;
-      padding: 0;
-      width: 100%;
-  }
-  #masthead .sidebar-header-right .widget:first-child {
-      float: right;
-      margin-bottom: 16px;
-      margin-left: 0;
-      text-align: center;
-      width: 100%;
-  }
-  #masthead .sidebar-header-right .widget.widget_search input.search-field {
-      float: inherit;
-      width: 95%;
-  }
-  .col-sm-8.site-branding{
-    padding-top:0;
-  }
-  .footer-widget-area.col-sm-3, .footer-widget-area.col-sm-2 {
-      width: 50%;
-  }
-
-  .header-area-right {
-      padding-top:0;
-      text-align: center;
-      width: 100%;
-  }
-  #masthead .widget.wen_corporate_social_widget {
-      clear: inherit;
-      display: inline-block;
-      float: none;
-  }
-  .header-area-right > a {
-      display: inline-block;
-      float: none;
-      margin-left: 5px;
-      padding-top: 2px;
-  }
-  #masthead .search-form {
-      float: right;
-      margin-left: 20px;
-      position: absolute;
-      right: 7%;
-      width: 90%;
-  }
-.site-header {
-    padding: 10px 0 45px;
-}
-  .row.header-layout-2 .header-area-right {
-      padding: 15px;
-      position: inherit;
-      right: inherit;
-      top: 0;
-      width: 100%;
-      clear: both;
-  }
-  .row.header-layout-2 .col-sm-12.site-branding {
-      float: left;
-      margin: 0 auto 15px;
-      max-width: inherit;
-      padding: 10px 60px 0;
-      text-align: center;
-      width: 100%;
-  }
-  .col-sm-8.site-branding {
-      padding-top: 10px;
-  }
-  .header-layout-2 .site-description {
-      margin-bottom: 0;
-      padding-left: 0;
-  }
-
-  .site-description {
-      padding-left: 0;
-  }
-  #main-slider h3 {
-      font-size: 16px;
-      margin-bottom: 5px;
-  }
-  #main-slider p {
-      color: #ffffff;
-      font-size: 12px;
-  }
-  .cycle-caption {
-      bottom: inherit;
-      left: 6%;
-      padding: 7px 13px;
-      position: absolute;
-      width: 82%;
-      z-index: 9999;
-  }
-  p{
-    font-size: 14px;
-  }
-  .wen_corporate_welcome_widget {
-      font-size: 14px;
-  }
-  .service-block-item-excerpt {
-      font-size: 14px;
-  }
-
-  h2.widget-title span:before {
-      background: none repeat scroll 0 0 #252525;
-      content: "";
-      height: 1px;
-      left: -74px;
-      position: absolute;
-      top: 17px;
-      width: 70px;
-  }
-    h2.widget-title span:before {
-        left: -74px;
-        width: 70px;
+    #site-navigation {
+        display: none;
     }
-    h2.widget-title span:after {
+    .header-layout-1{
+        display: none !important;
+    }
+    .site-branding {
+        overflow: hidden;
+        padding-left: 10px;
+        padding-top: 5px;
+        width: auto;
+    }
 
-      right: -74px;
-      width: 70px;
-  }
-  .footer-widget-area ul li {
-      font-size: 14px;
-  }
-   #main .widget {
-      margin-bottom: 25px;
-  }
-  .wen_corporate_cta_widget {
-      padding: 20px 35px;
-  }
+    .site-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0;
+
+    }
+    .header-layout-1{
+        display: none !important;
+    }
+    #header_phone {
+        border-bottom: 3px double #ddd;
+        display: block !important;
+        height: 55px;
+        line-height: 55px;
+    }
+    .cycle-prev:before,.cycle-next:before{
+        font-size: 25px;
+    }
+    .cycle-prev, .cycle-next {
+        top: 14%;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .wen_corporate_service_widget .service-block-item {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #footer-widgets .footer-widget-area {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .cycle-slideshow {
+        padding-bottom: 12px;
+    }
+    .cycle-next {
+        right: 18px;
+    }
+    .cta-left {
+        font-size: 14px;
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .cta-left:before {
+        content: "";
+        display: block;
+        font-family: FontAwesome;
+        font-size: 21px;
+        height: 25px;
+        left: 5px;
+        position: absolute;
+        width: 15px;
+    }
+    .wen_corporate_service_widget .service-block-item {
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    .site-description {
+        font-size: 12px;
+        font-style: italic;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    .wen_corporate_welcome_widget .widget-title{
+        font-size: 17px;
+    }
+
+    .col-sm-8.site-branding {
+        padding-top: 15px;
+    }
+    #main-slider .cycle-caption {
+        background-color:rgba(0, 0, 0,0.5);
+        bottom: 25px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: inherit;
+        width: 100%;
+    }
+    #main-slider .cycle-caption p{
+        display: none;
+    }
+    #main-slider img {
+        display: block;
+        width: 100%;
+    }
+    #main-slider .cycle-pager {
+        bottom: 0;
+        top: inherit;
+        z-index: 9999;
+    }
+    #main-slider .pager-box {
+        height: 10px;
+        margin: 0 7px;
+        width: 31px;
+    }
+    .wen_corporate_recent_posts_block_widget .owl-theme .owl-controls {
+        margin: 0 auto;
+        top: -20px;
+    }
+    .wen_corporate_cta_widget {
+        padding: 10px 20px;
+    }
 
 
-  #masthead .widget.wen_corporate_social_widget{
-    width: auto;
-  }
-  #masthead .widget.wen_corporate_social_widget {
-      text-align: center;
-  }
-  #masthead .header-layout-2 .search-form input.search-field, #masthead .header-layout-1 .search-form input.search-field {
-    width: 85.8%;
-  }
-  #masthead .search-form {
-      left: 5%;
-      margin: 0;
-      top: 40px;
-      width: 90%;
-  }
-  #masthead .header-layout-2 .search-form {
-      right: inherit;
-      top: 65px;
-      width: 90%;
-  }
- #main-slider .cycle-caption {
-    bottom:40px;
-    text-align: center;
-    top: inherit;
-}
-  #main-slider .cycle-pager {
-      bottom:15px;
-  }
-  h2.widget-title span:before,
-  h2.widget-title span:after{
-    display:  none;
-  }
-  .cta-description{
-    font-size: 17px;
-  }
-  #header-search-form {
-    position: absolute;
-    top: 0;
-    width: 80%;
-    left: 10%;
-}
-
+    .cta-description {
+        font-family: open sans;
+        font-size: 18px;
+    }
+    #footer-navigation ul li a,
+    .copyright,
+    #powered-by,
+    #powered-by > a{
+        font-size: 12px;
+    }
+    .col-sm-8.site-branding {
+        margin-bottom: 0;
+    }
+    .site-header {
+        padding: 10px 0 20px;
+    }
+    #masthead .header-layout-2 .search-form {
+        top: 40px;
+        width: 90%;
+    }
+    .row.header-layout-2 .header-area-right {
+        padding: 0 15px;
+    }
 }
 /* Small Andriod Mobile Portrait Size ( 600 devices and browsers) */
+
 @media only screen and (max-width:600px){
+    #site-navigation {
+        display: none;
+    }
+    .header-layout-1{
+        display: none !important;
+    }
+    .site-branding {
+        overflow: hidden;
+        padding-left: 10px;
+        padding-top: 5px;
+        width: auto;
+    }
 
-  .row.header-layout-2 .sidebar-header-right,
-  #masthead .header-layout-1 .sidebar-header-right{
-    width: 100%;
-  }
-  .header-layout-2 .sidebar-header-right .widget.widget_search,
-  .header-layout-1 .sidebar-header-right .widget.widget_search {
-      width: 100%;
-  }
+    .site-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0;
 
-  .entry-content img {
-      display: block;
-      float: none;
-      margin: 0 auto 15px;
-      text-align: center;
-  }
-    #header-search-form {
-      left: 0;
-      width: 100%;
-  }
-  #main-slider .cycle-caption {
-      bottom:50px;
+    }
+    .header-layout-1{
+        display: none !important;
+    }
+    #header_phone {
+        border-bottom: 3px double #ddd;
+        display: block !important;
+        height: 55px;
+        line-height: 55px;
+    }
+    .cycle-prev:before,.cycle-next:before{
+        font-size: 25px;
+    }
+    .cycle-prev, .cycle-next {
+        top: 14%;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .wen_corporate_service_widget .service-block-item {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #footer-widgets .footer-widget-area {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .cycle-slideshow {
+        padding-bottom: 12px;
+    }
+    .cycle-next {
+        right: 18px;
+    }
+    .cta-left {
+        font-size: 14px;
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .cta-left:before {
+        content: "";
+        display: block;
+        font-family: FontAwesome;
+        font-size: 21px;
+        height: 25px;
+        left: 5px;
+        position: absolute;
+        width: 15px;
+    }
+    .wen_corporate_service_widget .service-block-item {
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    .site-description {
+        font-size: 12px;
+        font-style: italic;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    .wen_corporate_welcome_widget .widget-title{
+        font-size: 17px;
+    }
+
+    .col-sm-8.site-branding {
+        padding-top: 15px;
+    }
+    #main-slider .cycle-caption {
+        background-color:rgba(0, 0, 0,0.5);
+        bottom: 25px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: inherit;
+        width: 100%;
+    }
+    #main-slider .cycle-caption p{
+        display: none;
+    }
+    #main-slider img {
+        display: block;
+        width: 100%;
+    }
+    #main-slider .cycle-pager {
+        bottom: 0;
+        top: inherit;
+        z-index: 9999;
+    }
+    #main-slider .pager-box {
+        height: 10px;
+        margin: 0 7px;
+        width: 31px;
+    }
+    .wen_corporate_recent_posts_block_widget .owl-theme .owl-controls {
+        margin: 0 auto;
+        top: -20px;
+    }
+    .wen_corporate_cta_widget {
+        padding: 10px 20px;
+    }
 
 
-  }
-  }
+    .cta-description {
+        font-family: open sans;
+        font-size: 18px;
+    }
+    #footer-navigation ul li a,
+    .copyright,
+    #powered-by,
+    #powered-by > a{
+        font-size: 12px;
+    }
+    .col-sm-8.site-branding {
+        margin-bottom: 0;
+    }
+    .site-header {
+        padding: 10px 0 20px;
+    }
+    #masthead .header-layout-2 .search-form {
+        top: 40px;
+        width: 90%;
+    }
+    .row.header-layout-2 .header-area-right {
+        padding: 0 15px;
+    }
+}
+
 /* Small Andriod Mobile Portrait Size ( 320 devices and browsers) */
 @media only screen and (max-width:479px){
+    #site-navigation {
+        display: none;
+    }
+    .header-layout-1{
+        display: none !important;
+    }
+    .site-branding {
+        overflow: hidden;
+        padding-left: 10px;
+        padding-top: 5px;
+        width: auto;
+    }
 
+    .site-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0;
 
+    }
+    .header-layout-1{
+        display: none !important;
+    }
+    #header_phone {
+        border-bottom: 3px double #ddd;
+        display: block !important;
+        height: 55px;
+        line-height: 55px;
+    }
   .cycle-prev:before,.cycle-next:before{
     font-size: 25px;
   }
@@ -526,11 +545,7 @@
   h2 {
       font-size: 24px;
   }
-  .site-title {
-      margin-bottom: 0;
-      font-size: 20px;
 
-  }
   .site-description {
       font-size: 12px;
       font-style: italic;
