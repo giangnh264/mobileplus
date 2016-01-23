@@ -28,8 +28,8 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl."/web/
                     </p>
                 </div>
 
-                <aside id="wen-corporate-service-3" class="widget wen_corporate_service_widget"><h2
-                        class="widget-title"><span>Dịch vụ của chúng tôi</span></h2>
+                <aside id="wen-corporate-service-3" class="widget wen_corporate_service_widget">
+                    <h2 class="widget-title"><span>Dịch vụ của chúng tôi</span></h2>
                     <div class="service-block-list row">
 
                         <div class="service-block-item col-sm-4">
@@ -69,6 +69,10 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl."/web/
 
                             </div>
                             <!-- .service-block-inner -->
+                            <div class="show_more">
+                                <i class="show_more_icon"></i>
+                                <span>Xem thêm</span>
+                            </div>
                         </div>
                         <!-- .service-block-item -->
 

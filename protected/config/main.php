@@ -153,9 +153,9 @@ return CMap::mergeArray(
                 'limit_content'=>'Quý khách đã nghe/xem hết 5 nội dung miễn phí trong lần truy cập này. Để được miễn phí nghe xem các bài hát, video, miễn cước dât (3G/GPRS) của MobiFone vui lòng đăng nhập.',
             ),
             'htmlMetadata'=>array(
-                'title'=>'Amusic.vn',
-                'description'=>'Amusic - Cổng âm nhạc Đặc biệt của MobiFone. Cung cấp các bài hát, Video ca nhạc đặc sắc chất lượng cao, đặc biệt là các nội dung ĐỘC QUYỀN.',
-                'keywords'=>'Amusic - Cổng âm nhạc Đặc biệt của MobiFone. Cung cấp các bài hát, Video ca nhạc đặc sắc chất lượng cao, đặc biệt là các nội dung ĐỘC QUYỀN.',
+                'title'=>'Công ty khởi nguồn',
+                'description'=>'Công ty khởi nguồn - Song hành cùng thành công',
+                'keywords'=>'Công ty khởi nguồn - Song hành cùng thành công',
             ),
             'alert_content_limited'=>'Xin lỗi Quý khách! {content} bị hạ tạm thời. Mong Quý khách vui lòng quay lại sau. Trân trọng cảm ơn!',
             'alert_content_active'=>'Xin lỗi quý khách. Nội dung chưa đến ngày phát hành. Quý khách vui lòng quay lại sau. Trân trọng cảm ơn!',

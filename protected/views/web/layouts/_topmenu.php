@@ -14,7 +14,7 @@
                         <a href="#"><img src="/web/images/logo_wap.png" class="logo_waka_phone"></a>
                         <div class="site-branding">
                             <h1 class="site-title">
-                                <a rel="home" href="http://mobileplus.vn/">
+                                <a rel="home" href="<?php echo Yii::app()->createUrl('index')?>">
                                     Công ty Khởi Nguồn
                                 </a>
                             </h1>
@@ -29,15 +29,14 @@
                     </div>
                 </div>
             </div>
-            <!--<div id="ab_menu_for_mobile" class="ab_menu_for_mobile" style="display: none">
-                <div class="active" style="width: 50%; float: left">SÁCH</div>
-                <div onclick="showAlert('Tính năng đang được cập nhật. Mời Quý khách tiếp tục sử dụng dịch vụ<div style=\'text-align: center; padding-top:10px;\'><button class=\'btn_custom\' data-dismiss=\'modal\'>OK</button></div>');" style="width: 50%; float: left">AUDIOBOOK</div>
-            </div>-->
         </div>
         <div class="row header-layout-1">
-            <img class="logo-main" src="<?php echo Yii::app()->request->baseUrl ?>/web/images/logo.jpg">
+            <div class="col-sm-1">
+                <img class="logo-main" src="<?php echo Yii::app()->request->baseUrl ?>/web/images/logo.jpg">
+            </div>
 
-            <div class="col-sm-6 site-branding">
+
+            <div class="col-sm-8 site-branding">
                 <h1 class="site-title">
                     <a href="http://mobileplus.vn/" rel="home">
                         Công ty Khởi Nguồn
@@ -47,8 +46,14 @@
                 <h2 class="site-description">Song hành tới thành công</h2>
             </div>
             <!-- .site-branding -->
-            <div class="col-sm-4 header-area-right">
-                <a href="#" id="btn-search-icon"><i class="fa fa-search"></i></a>
+            <div class="col-sm-3 header-area-right">
+                <a href="#" id="btn-change-lang-icon">
+                    <i class="ico_lang_web"></i>
+                    <span>English</span>
+                </a>
+                <a href="#" id="btn-search-icon">
+                    <i class="ico_search"></i>
+                </a>
 
                 <div id="header-search-form">
                     <form role="search" method="get" class="search-form" action="http://mobileplus.vn/">
@@ -71,13 +76,13 @@
                 <nav class="main-navigation">
                     <ul id="menu-home-1" class="menu">
                         <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7">
-                            <a href="http://mobileplus.vn/">Trang chủ</a></li>
+                            <a href="<?php echo Yii::app()->createUrl('index')?>">Trang chủ</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a
-                                href="http://mobileplus.vn/sample-page/">Sản phẩm</a></li>
+                                href="<?php echo Yii::app()->createUrl('/product')?>">Sản phẩm</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a
-                                href="http://mobileplus.vn/about/">Giới thiệu</a></li>
+                                href="<?php echo Yii::app()->createUrl('about')?>">Giới thiệu</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
-                                href="http://mobileplus.vn/contact-us/">Liên hệ</a></li>
+                                href="<?php echo Yii::app()->createUrl('contact')?>">Liên hệ</a></li>
                     </ul>
                 </nav>
                 <!-- .main-navigation -->

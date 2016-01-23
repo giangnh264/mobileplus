@@ -1318,40 +1318,6 @@ aside#search {
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
 }
-.col-sm-1 {
-    width: 8.33333%;
-}
-.col-sm-2 {
-    width: 16.6667%;
-}
-.col-sm-3 {
-    width: 25%;
-}
-.col-sm-4 {
-    width: 33.3333%;
-}
-.col-sm-6 {
-    width: 50%;
-}
-.col-sm-7 {
-    width: 58.3333%;
-}
-.col-sm-8 {
-    width: 66.6667%;
-}
-.col-sm-9 {
-    width: 75%;
-}
-.col-sm-10 {
-    width: 83.3333%;
-}
-.col-sm-11 {
-    width: 91.6667%;
-}
-.col-sm-12 {
-    width: 100%;
-}
-
 
 /*--------------------------------------
 13.3 Featured Slider
@@ -1495,7 +1461,7 @@ aside#search {
 
 
 
-h2.widget-title {
+/*h2.widget-title {
     border-bottom: inherit;
     color: rgb(37, 37, 37);
     display:block;
@@ -1503,6 +1469,15 @@ h2.widget-title {
     position: relative;
     text-transform: uppercase;
     text-align: center;
+}*/
+h2.widget-title {
+    border-bottom: inherit;
+    color: rgb(37, 37, 37);
+    display: block;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
 }
 h2.widget-title span {
     display:inline-block;
