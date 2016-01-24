@@ -2,7 +2,9 @@
 
 class ProductController extends Controller
 {
-	
+
+    public $coverWidth = 570;
+    public $coverHeight = 340;
     public function init()
 	{
             parent::init();
@@ -52,11 +54,48 @@ class ProductController extends Controller
 
 		if(isset($_POST['ProductModel']))
 		{
-			$model->attributes=$_POST['ProductModel'];
-			if($model->save())
+            var_dump($_FILES);
+            $model->attributes=$_POST['ProductModel'];
+			if($model->save()){
+                $number = (int) $_POST ["number"];
+                for($i=1 ; $i <= $number; $i++){
+                    echo "<pre>";
+                    var_dump($_FILES["clip_thumbnail_2"]);
+                    echo "<pre>";
+
+                    /*if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
+                        $coverPath = $this->uploadFile($_FILES["clip_thumbnail_$i"], $model, $i);
+                        $product_img = new ProductImgModel();
+                        $product_img->product_id = $model->id;
+                        $product_img->img_url = $coverPath;
+                        $product_img->created_time = date('Y-m-d H:i:s');
+                        $product_img->status = 1;
+                        $product_img->sorder = 0;
+                        $res = $product_img->save();
+                        if(!$coverPath){
+                            $model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
+                        }
+                    }*/
+                }
+                exit;
+            }
+               /* if ($_FILES['clip_thumbnail']['size'] > 0) {
+                    $coverPath = $this->uploadFile($_FILES['clip_thumbnail'], $model);
+                    $product_img = new ProductImgModel();
+                    $product_img->product_id = $model->id;
+                    $product_img->img_url = $coverPath;
+                    $product_img->created_time = date('Y-m-d H:i:s');
+                    $product_img->status = 1;
+                    $product_img->sorder = 0;
+                    $res = $product_img->save();
+                    if(!$coverPath){
+                        $model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
+//                    goto cIteratorExit;
+                    }
+                }*/
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+//        cIteratorExit;
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -194,4 +233,38 @@ class ProductController extends Controller
 		$this->renderPartial ( "_loadmore", compact ( "id") );
 		Yii::app ()->end ();
 	}
+
+    /**
+     * upload file
+     */
+    protected function uploadFile($file, $model, $i) {
+        $coverPath = "";
+        $fileSystem = new Filesystem();
+        if (isset($file['error']) && $file['error'] == 0) {
+            $ext = explode('.', $file['name']);
+            $extFile = $ext[count($ext) - 1];
+            $id = $model->id;
+            $srcFileName = $id . time() . "." . $extFile;
+            $tmpPath = Yii::app()->getRuntimePath();
+
+            $fileDesPath = $tmpPath . DIRECTORY_SEPARATOR . $srcFileName;
+            try {
+                if (move_uploaded_file($file['tmp_name'], $fileDesPath)) {
+                    list($width, $height) = getimagesize($fileDesPath);
+                    if($width < $this->coverWidth || $height < $this->coverHeight){
+                        return false;
+                    }
+                    $imgCrop = new ImageCrop($fileDesPath, 0, 0, $width, $height);
+                    $coverPath = $model->getCoverUrl($model->id, $i);
+                    Utils::makeDir(dirname($coverPath));
+                    $imgCrop->resizeCrop($coverPath, $this->coverWidth, $this->coverHeight, 100);
+
+                    unlink($fileDesPath);
+                }
+            } catch (Exception $e) {
+                echo $e->getMessage();
+            }
+        }
+        return $coverPath;
+    }
 }

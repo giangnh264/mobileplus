@@ -4,6 +4,7 @@
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'product-model-form',
 		'enableAjaxValidation'=>false,
+		'htmlOptions'=>array('enctype'=>'multipart/form-data')
 	)); ?>
 	
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -17,11 +18,13 @@
 					<div style="height: 200px; position: relative;">
 						<img class="thumb-slider" id="thumb-change-<?php echo $id?>" src="">
 						<label class="thumb-slider-change-text" for="clip-thumbnail">Upload ảnh</label>
-						<input class="hidden" type="file" name="clip_thumbnail" id="clip-thumbnail" value="image" onchange="onFileSelected(event, <?php echo $id?>);"/>
+						<input class="hidden" type="file" name="clip_thumbnail_<?php echo $id?>" id="clip-thumbnail" value="image" onchange="onFileSelected(event, <?php echo $id?>);"/>
 					</div>
 				</div>
 			</div>
-			<input type="hidden" value="<?php echo $id?>" id="id_load_more">
+			<div class="row">
+				<input type="hidden" value="<?php echo $id?>" id="id_load_more" name="number">
+			</div>
 			<a onclick="addmore();">Upload thêm ảnh</a>
 			<div class="row">
 			<?php echo $form->labelEx($model,'name'); ?>
@@ -69,6 +72,7 @@
 			echo CHtml::dropDownList("ProductModel[android]", $model->android, $data ) ?>
 			<?php echo $form->error($model,'android'); ?>
 		</div>
+
 		<div class="row">
 			<?php echo $form->labelEx($model,'status'); ?>
 			<?php
@@ -78,6 +82,9 @@
 			);
 			echo CHtml::dropDownList("ProductModel[status]", $model->status, $data ) ?>
 			<?php echo $form->error($model,'status'); ?>
+			<div class="row">
+				<input type="hidden" value="1"/>
+			</div>
 		</div>
 			<div class="row buttons">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

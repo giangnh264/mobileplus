@@ -33,44 +33,16 @@ return array(
     'params' => array (
     		'local_mode'=>1,
 			'base_url'=>'http://amusic.lc/',
-            'price'=>array(
-                            'songListen'=>'1000',
-                            'songDownload'=>'2000',
-                            'videoListen'=>'2000',
-                            'videoDownload'=>'3000',
-                            'rtDownload'=>'2000',
-                            'albumListen' => '4000',
-                            'songGiftListen'=>'600'
-                        ),
-            'smsClient'=>array(
-				'smsWsdl'=>'http://192.168.89.194:8084/api/soap',
-			   // 'smsWsdl'=>'http://192.168.89.94:8084/api/soap',
-                            'username'=>'amusic',
-                            'password'=>'amusic_2015@!',
-                            'serviceName'=>'AMUSIC',
-			    'serviceNumber'=>'9166',
-                        ),  
-			'charging_proxy'=>array(
-                        'url'=>'http://192.168.89.194:9999/ws/chargingRequest?wsdl',
-                        'username'=>'vega',
-                        'password'=>'vega.123'
-                    ), 
-    		'crbt'=>array(
-    				'url'		=>'http://113.187.31.231:8080/spservice/',
-    				'sid'		=>'589002',
-    				'seq'		=>'5890022015112133194300000000',
-    				'sidpwd'	=>'38628bf16f30158a0dfdc34902e1febf',
-    				'modulecode'=>'589002',
-            ), 					
  			'storage'=>array(
                            'staticDir' => _APP_PATH_,
                             'staticUrl' => 'http://static.amusic.v',
                             'baseStorage'=>'/u01/storage/amusic/',
+                            'newsEventDir' => 'D:/Project/images/slider/',
+                            'newsEventUrl' => 'http://koigiang.com/slider/',
 
+                            'ProductDir' => 'D:/Project/images/product/',
+                            'ProductUrl' => 'http://koigiang.com/product/',
 
-
-                            'newsEventDir' => 'D:/Project/images/img/',
-                            'newsEventUrl' => 'http://koigiang.com/img/',
                             'bannerDir'=>'/u01/storage/amusic/banner',
                             'bannerUrl'=>'http://static.amusic.vn/amusic/banner/' ,
 							
