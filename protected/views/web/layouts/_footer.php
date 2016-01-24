@@ -34,15 +34,5 @@
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<?php
-$cs = Yii::app()->getClientScript();
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/wp-embed.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/skip-link-focus-fix.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/custom.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/carousel.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/jquery.cycle2.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/jquery.mmenu.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl . "/web/js/jquery.placeholder.min.js");
-?>
+    }(document, 'script', 'facebook-jssdk'));
+</script>

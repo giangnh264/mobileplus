@@ -26,12 +26,11 @@ $cs->registerCssFile(Yii::app()->request->baseUrl."/web/css/main.css?v=".time())
 $cs->registerCssFile(Yii::app()->request->baseUrl."/web/css/jquery-ui.min.css?v=".time());
 
 
-//$cs->registerCoreScript('jquery');
-//$cs->registerCoreScript('jquery.ui');
+$cs->registerCoreScript('jquery');
+$cs->registerCoreScript('jquery.ui');
 
-$cs->registerScriptFile(Yii::app()->request->baseUrl."/web/js/jjquery-ui.min.js");
-$cs->registerScriptFile(Yii::app()->request->baseUrl."/web/js/jquery.min.js");
 $cs->registerScriptFile(Yii::app()->request->baseUrl."/web/js/_slidebar.js");
+$cs->registerScriptFile(Yii::app()->request->baseUrl."/web/js/common.js");
 
 ?>
 </head>

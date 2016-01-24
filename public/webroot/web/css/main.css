@@ -48,6 +48,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 135px;
+    cursor: pointer;
 }
 .product_promotion li.selected{
     background-color: #008BEF;
@@ -59,7 +60,7 @@
     border-radius: 2px;
     height: 36px;
     overflow: hidden;
-    width: 162px;
+    width: 160px;
     float: right;
 }
 
@@ -388,4 +389,13 @@ form.contact_sm button {
     overflow: hidden;
     position: relative;
     width: 1170px;
+}
+form.contact_sm a {
+    background-color: #008bef;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 11px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
 }

@@ -12,7 +12,7 @@
             <input class="w305" type="text" placeholder="Email">
             <textarea placeholder="Nội dung liên hệ"></textarea>
             <input type="submit" value="Gửi liên hệ">
-            <button type="button">Kích hoạt dự án</button>
+            <a class="has-ajax-pop" rel="/contact/project">Kích hoạt dự án</a>
         </form>
     </div>
 

@@ -1,7 +1,7 @@
 <div class="product_header">
     <ul class="product_promotion">
-        <li class="selected">Web</li>
-        <li>Mobile App</li>
+        <li class="selected product_web">Web</li>
+        <li class="product_mobile">Mobile App</li>
     </ul>
     <div class="styled-select">
         <select class="product_select">

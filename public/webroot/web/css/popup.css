@@ -1,0 +1,367 @@
+.ui-widget-content{
+    padding: 5px!important;
+}
+.ui-widget-overlay {
+    background: #000 url("images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% !important;
+    opacity: 0.5 !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl{
+    border: 0!important;
+    border-radius: 0!important;
+}
+#dialog{
+    background: #FFF!important;
+    height: auto!important;
+}
+.ui-widget-header.ui-dialog-titlebar{
+    background: #FFF !important;
+}
+.ui-dialog .ui-dialog-title {
+    border-bottom: 3px double #ddd;
+    color: #000;
+    float: right !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-left: 0 !important;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 99%;
+}
+.ui-dialog {
+    z-index: 1999!important;
+}
+.box-white{
+    padding: 0 20px;
+    position: relative;
+    font-family: Tahoma;
+}
+#popup-loading{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+#dialog div.row{
+    overflow: hidden;
+    margin: 10px 0;
+}
+#dialog div.row label {
+    color: #7c7c7c;
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+#dialog div.row a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #6f6f6f;
+}
+#dialog div.row a:hover{
+    color: #00a1e4;
+}
+.rememberMe span{
+    font-size: 11px;
+    color: #1c1c1c;
+}
+.popup-lbl{
+    font: normal bold 13px Tahoma;
+    color: #000;
+    float: left;
+}
+.open-login-title{
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+}
+a.open-login{
+    width: 34px;
+    height: 33px;
+    display: block;
+    float: left;
+    background-image: url(../images/open-login.png);
+    margin-right: 5px;
+}
+.login-facebook{
+    background-position: 0 0;
+}
+.login-google{
+    background-position: -40px 0;
+}
+.login-vinaphone{
+    background-position: -80px 0;
+}
+.account-box .spacer{
+    background: url(../images/popup-space.png) repeat-x center center;
+}
+.account-box .spacer span{
+    height: 18px;
+    width: 40px;
+    background: #FFF;
+    display: block;
+    text-transform: uppercase;
+}
+.input-text {
+    float: right;
+    width: 50% !important;
+    margin-right: 15% !important;
+    color: #777;
+    font-size: 15px !important;
+    height: 35px!important;
+}
+.ui-dialog .button-sub {
+    background: #2162b1 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px !important;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    width: 80px !important;
+}
+.close-popup{
+    background: #d8d8d8 none repeat scroll 0 0;
+    border: 0 none;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px !important;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    width: 80px !important;
+    margin-left: 10px;
+}
+.ui-dialog .button-cancel{
+    background: #626262;
+    color: #FFFFFF;
+}
+.link-spacer{
+    font-size: 12px;
+}
+
+.list-song-profile {
+    padding: 10px 0 20px;
+    text-align: center;
+}
+.download-song-pr {
+    border-radius: 3px;
+    color: #fff !important;
+    margin-right: 10px;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.popup-playlist .row input,
+.popup-playlist .row label{
+    float: left;
+}
+.popup-playlist .row label{
+    padding-top: 0!important;
+    width: auto!important;
+}
+#playlist_name{
+    border: 1px solid #dadada;
+    background: #FFF;
+    padding: 5px 10px;
+}
+
+/* RBT POPUP */
+.popup-box{
+    padding: 10px;
+}
+.rbt-heading{
+    border-bottom: 2px solid #00a1e4;
+}
+
+.ui-dialog .btn-group{
+    padding: 10px 0;
+    overflow: hidden;
+    padding: 10px 0 10px 100px!important;
+}
+.ui-dialog .btn-group .button-sub{
+    padding: 5px 8px;
+    width: 63px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin: 0 5px;
+}
+.ui-dialog .btn-group .btn-icon{
+    background-image: url(../images/pupup-btn.png);
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+.rbt-download .btn-icon{
+    background-position: 0 0;
+}
+.rbt-gift .btn-icon{
+    background-position: -19px 0;
+}
+.popup-box .row{
+    border-bottom: 2px dotted #E7E7E7;
+    padding-bottom: 10px;
+}
+
+
+.popup-box .row .rbt-info{
+    position: relative;
+    width: 500px;
+}
+.popup-box .row .rbt-info div{
+    float: left;
+    position: absolute;
+}
+.popup-box .row .rbt-action{
+    float: right;
+}
+.popup-box .row .rbt-action a{
+    float: left;
+    margin: 0 5px;
+}
+/*.rbt-name{
+	left: 0;
+	width: 300px;
+	font-weight: bold;
+	color: #1c1c1c;
+	height: 18px;
+	overflow: hidden;
+}
+.rbt-price{
+	right: 0;
+}
+.rbt-artist{
+	right: 60px;
+	width: 120px;
+	height: 17px;
+	overflow: hidden;
+
+}
+.rbt-price{
+	font-weight: bold;
+	color: #006699;
+}*/
+/* POPUP GIFTSONG */
+.giftsong div.row label{
+    width: 145px;
+    font-size: 12px;
+}
+.area-text{
+    width: 210px;
+    float: right;
+    border: 1px solid #dadada;
+    background: #FFF;
+}
+.select-box{
+    float: left;
+    margin-left: 15px;
+    border: 1px solid #dadada;
+
+}
+.ui-timepicker-div .ui-corner-all,
+.ui-timepicker-div .ui-corner-bottom,
+.ui-timepicker-div  .ui-corner-left,
+.ui-timepicker-div  .ui-corner-bl,
+.ui-datepicker{
+    border: 1px solid #AAAAAA!important;
+    padding: 0!important;
+}
+#popup-message{
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+    padding: 2px;
+}
+.msg-success{
+    background: #E6EFC2;
+    border: 1px solid #C6D880;
+    color: #4E6100;
+}
+.msg-error{
+    background: #FBE3E4;
+    border: 1px solid #FBC2C4;
+    color: #860006;
+}
+
+#rbt-download .row{
+    border: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.ui-dialog .button-sub-promotion {
+    background: #2162b1 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px !important;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    width: 48% !important;
+}
+#rbt-list{
+    overflow: hidden;
+}
+.packages_des{
+    float: left;
+    width: 78%;
+}
+.btn_register {
+    margin: 0 !important;
+}
+.selectbox {
+    float: right!important;
+    margin-left: 50px;
+    width: 50% !important;
+    margin-right: 15%!important;
+    color: #777;
+    font-size: 15px !important;
+    height: 35px!important;
+}
+.project_des{
+    color: #484848;
+    float: right;
+    font-size: 15px;
+    height: 150px;
+    margin-right: 15%;
+    width: 50%;
+}
+.row.submit > input {
+    background-color: #008bef;
+    border-radius: 3px;
+    float: right;
+    font-size: 16px;
+    margin-right: 30%;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #484848;
+    font-size: 14px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #484848;
+    opacity:  1;
+    font-size: 14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #484848;
+    opacity:  1;
+    font-size: 14px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #484848;
+    font-size: 14px;
+}
+.ui-widget-header .ui-icon {
+    background-image: url("../images/close.png") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block !important;
+    height: 21px !important;
+    position: absolute;
+    top: -5px;
+    width: 20px !important;
+}

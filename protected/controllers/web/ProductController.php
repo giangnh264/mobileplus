@@ -20,4 +20,11 @@ class ProductController extends Controller
         $this->render('view');
     }
 
+    public function actionLoadmobile(){
+        $this->renderPartial ( "_mobile" );
+    }
+    public function actionWeb(){
+        $this->renderPartial ( "_web" );
+    }
+
 }
