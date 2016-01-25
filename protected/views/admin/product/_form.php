@@ -8,22 +8,23 @@
 	)); ?>
 	
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
-	
+		<?php $j = $number;?>
 		<?php echo $form->errorSummary($model); ?>
-			<?php $id = 1?>
-			<div class="thumbnail">
-				<input type="hidden" value="<?php echo $id?>" id="thumb_hidden_id">
+			<?php for($i = 0; $i < 10; $i ++):?>
+			<div class="thumbnail <?php echo ($i > $j)? 'hidden':'' ?>" id="thumbnail_number_<?php echo $i;?>">
+				<input type="hidden" value="<?php echo $i?>" id="thumb_hidden_id">
 				<div class="row">
 					<label class="control-label">Ảnh</label>
 					<div style="height: 200px; position: relative;">
-						<img class="thumb-slider" id="thumb-change-<?php echo $id?>" src="">
-						<label class="thumb-slider-change-text" for="clip-thumbnail">Upload ảnh</label>
-						<input class="hidden" type="file" name="clip_thumbnail_<?php echo $id?>" id="clip-thumbnail" value="image" onchange="onFileSelected(event, <?php echo $id?>);"/>
+						<img class="thumb-slider" id="thumb-change-<?php echo $i?>" src="<?php echo ProductModel::model()->getCoverUrl($model->id, $i)?>">
+						<label class="thumb-slider-change-text" for="clip_thumbnail_<?php echo $i?>">Upload ảnh</label>
+						<input class="hidden" type="file" name="clip_thumbnail_<?php echo $i?>" id="clip_thumbnail_<?php echo $i?>" value="image" onchange="onFileSelected(event, <?php echo $i?>);"/>
 					</div>
 				</div>
 			</div>
+		<?php endfor;?>
 			<div class="row">
-				<input type="hidden" value="<?php echo $id?>" id="id_load_more" name="number">
+				<input type="hidden" value="<?php echo $j + 1?>" id="id_load_more" name="number">
 			</div>
 			<a onclick="addmore();">Upload thêm ảnh</a>
 			<div class="row">
@@ -96,8 +97,8 @@
 </div>
 <script type="text/javascript">
 
-	function onFileSelected(event){
-		var id = parseInt($('#thumb_hidden_id').val());
+	function onFileSelected(event, id){
+//		var id = parseInt($('#thumb_hidden_id').val());
 		var selectedFile = event.target.files[0];
 		var reader = new FileReader();
 		reader.onload = function (event) {
@@ -107,18 +108,8 @@
 	}
 	function addmore(){
 		var id = parseInt($('#id_load_more').val());
-		var url = '/admin.php?r=product/Loadmore';
-		$.ajax({
-			type: 'post',
-			url: url,
-			data: {'id':id},
-			success: function (data) {
-				var div = $(data);
-				div.insertAfter($('.thumbnail div:last'));
-				$('#id_load_more').val(id + 1)
-				$('#thumb_hidden_id').val(id + 1)
-			}
-		});
+		$('#thumbnail_number_' + id).removeClass('hidden');
+		$('#id_load_more').val(id+ 1);
 	}
 
 </script>

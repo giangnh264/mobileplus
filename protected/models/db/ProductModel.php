@@ -11,10 +11,10 @@ class ProductModel extends BaseProductModel
 		return parent::model($className);
 	}
 
-	public function getCoverPath($id=null)
+	public function getCoverPath($id=null, $i)
 	{
 		if(!isset($id)) $id = $this->id;
-		$savePath = Common::storageSolutionEncode($id).DS.$id.".jpg";
+		$savePath = Common::storageSolutionEncode($id).DS.$id."_". $i.".jpg";
 		$path = Yii::app()->params['storage']['ProductDir'].DS.$savePath;
 		return $path;
 	}

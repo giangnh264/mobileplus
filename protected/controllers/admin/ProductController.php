@@ -54,16 +54,11 @@ class ProductController extends Controller
 
 		if(isset($_POST['ProductModel']))
 		{
-            var_dump($_FILES);
             $model->attributes=$_POST['ProductModel'];
 			if($model->save()){
                 $number = (int) $_POST ["number"];
-                for($i=1 ; $i <= $number; $i++){
-                    echo "<pre>";
-                    var_dump($_FILES["clip_thumbnail_2"]);
-                    echo "<pre>";
-
-                    /*if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
+                for($i=0 ; $i < $number; $i++){
+                   if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
                         $coverPath = $this->uploadFile($_FILES["clip_thumbnail_$i"], $model, $i);
                         $product_img = new ProductImgModel();
                         $product_img->product_id = $model->id;
@@ -75,29 +70,16 @@ class ProductController extends Controller
                         if(!$coverPath){
                             $model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
                         }
-                    }*/
-                }
-                exit;
-            }
-               /* if ($_FILES['clip_thumbnail']['size'] > 0) {
-                    $coverPath = $this->uploadFile($_FILES['clip_thumbnail'], $model);
-                    $product_img = new ProductImgModel();
-                    $product_img->product_id = $model->id;
-                    $product_img->img_url = $coverPath;
-                    $product_img->created_time = date('Y-m-d H:i:s');
-                    $product_img->status = 1;
-                    $product_img->sorder = 0;
-                    $res = $product_img->save();
-                    if(!$coverPath){
-                        $model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
-//                    goto cIteratorExit;
                     }
-                }*/
+                }
+            }
 				$this->redirect(array('view','id'=>$model->id));
 		}
+		$number = 0;
 //        cIteratorExit;
 		$this->render('create',array(
 			'model'=>$model,
+			'number'=>$number
 		));
 	}
 
@@ -119,9 +101,10 @@ class ProductController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+		$number = ProductImgModel::model()->countByAttributes(array('product_id'=>$id));
 		$this->render('update',array(
 			'model'=>$model,
+			'number'=>$number
 		));
 	}
 
@@ -255,16 +238,16 @@ class ProductController extends Controller
                         return false;
                     }
                     $imgCrop = new ImageCrop($fileDesPath, 0, 0, $width, $height);
-                    $coverPath = $model->getCoverUrl($model->id, $i);
+                    $coverPath = $model->getCoverPath($model->id, $i);
                     Utils::makeDir(dirname($coverPath));
                     $imgCrop->resizeCrop($coverPath, $this->coverWidth, $this->coverHeight, 100);
-
+					$url = $model->getCoverUrl($model->id, $i);
                     unlink($fileDesPath);
                 }
             } catch (Exception $e) {
                 echo $e->getMessage();
             }
         }
-        return $coverPath;
+        return $url;
     }
 }
