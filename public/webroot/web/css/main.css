@@ -399,3 +399,8 @@ form.contact_sm a {
     text-transform: uppercase;
     cursor: pointer;
 }
+.about_content {
+    color: #333333;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}

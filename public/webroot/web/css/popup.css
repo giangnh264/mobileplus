@@ -110,17 +110,7 @@ a.open-login{
     font-size: 15px !important;
     height: 35px!important;
 }
-.ui-dialog .button-sub {
-    background: #2162b1 none repeat scroll 0 0;
-    border: 0 none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px !important;
-    height: 30px;
-    line-height: 29px;
-    text-align: center;
-    width: 80px !important;
-}
+
 .close-popup{
     background: #d8d8d8 none repeat scroll 0 0;
     border: 0 none;
@@ -334,8 +324,11 @@ a.open-login{
     background-color: #008bef;
     border-radius: 3px;
     float: right;
-    font-size: 16px;
+    font-size: 16px !important;
+    height: 40px !important;
     margin-right: 30%;
+    padding: 0 !important;
+    width: 100px !important;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #484848;

@@ -43,7 +43,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Tên dự án'),"")?>
-            <?php echo CHtml::passwordField("project_name","",array("class"=>"input-text"),  array( 'class'=>'selectbox'))?>
+            <?php echo CHtml::textField("project_name","",array("class"=>"input-text"),  array( 'class'=>'selectbox'))?>
         </div>
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Khoảng giá'),"")?>
@@ -71,6 +71,11 @@ $form = $this->beginWidget ( 'CActiveForm', array (
         <div class="row submit">
             <?php
             echo CHtml::ajaxSubmitButton(Yii::t('web','Bắt đầu'),CHtml::normalizeUrl(array('contact/project','render'=>false)),
+                array(
+                    'success'=>'js: function(data) {
+                        $("#dialog").dialog("close");
+					}'
+                ),
                 array('id'=>'close-dialog','live' =>false,'class'=>'button-sub'));
 
             ?>

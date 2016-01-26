@@ -1,6 +1,6 @@
 <?php
 
-return CMap::mergeArray(require(dirname(__FILE__) . "/main.php"),CMap::mergeArray( array(
+return CMap::mergeArray(require(dirname(__FILE__) . "/main.php"), array(
 			"id"				=> "Amusic",
 			"name"				=> "Amusic",
 			"controllerPath"	=> _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "controllers" . DIRECTORY_SEPARATOR . "web",
@@ -163,6 +163,6 @@ return CMap::mergeArray(require(dirname(__FILE__) . "/main.php"),CMap::mergeArra
             	),
 				'limit_chart_home_number'=>5,
 			),
-		))
+		)
 );
 ?>

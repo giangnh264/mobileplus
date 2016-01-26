@@ -70,18 +70,18 @@
         <div class="" style="display:none;">
             <!-- #mob-menu -->
         </div>
-
+        <?php $controller = Yii::app()->controller->id;?>
         <div id="site-navigation">
             <div class="main-container">
                 <nav class="main-navigation">
                     <ul id="menu-home-1" class="menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7 <?php echo strtoupper($controller) == 'INDEX' ? 'current_page_item' : ''?>">
                             <a href="<?php echo Yii::app()->createUrl('index')?>">Trang chủ</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 <?php echo strtoupper($controller) == 'PRODUCT' ? 'current_page_item' : ''?>"><a
                                 href="<?php echo Yii::app()->createUrl('/product')?>">Sản phẩm</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16 <?php echo strtoupper($controller) == 'ABOUT' ? 'current_page_item' : ''?>"><a
                                 href="<?php echo Yii::app()->createUrl('about')?>">Giới thiệu</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 <?php echo strtoupper($controller) == 'CONTACT' ? 'current_page_item' : ''?>"><a
                                 href="<?php echo Yii::app()->createUrl('contact')?>">Liên hệ</a></li>
                     </ul>
                 </nav>

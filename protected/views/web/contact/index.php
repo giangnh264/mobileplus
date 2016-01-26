@@ -7,7 +7,7 @@
         <p><span class="contact_title">Mobile: </span><span>+84 91815988</span></p>
         <p><span class="contact_title">Email: </span><span>congtykhoinguon@gmail.com</span></p>
         <p style="font-style:italic ">Mọi yêu cầu liên hệ hoặc đóng góp, quý khách hàng và đối tác vui lòng liên hệ với chúng tôi theo form bên dưới</p>
-        <form class="contact_sm">
+        <form class="contact_sm" method="post" action="/contact/index">
             <input class="w305" type="text" placeholder="Họ tên đầy đủ" style="margin-right: 29px;">
             <input class="w305" type="text" placeholder="Email">
             <textarea placeholder="Nội dung liên hệ"></textarea>
