@@ -55,6 +55,7 @@ class ProductController extends Controller
 		if(isset($_POST['ProductModel']))
 		{
             $model->attributes=$_POST['ProductModel'];
+			$model->created_time = date('Y-m-d H:i:s');
 			if($model->save()){
                 $number = (int) $_POST ["number"];
                 for($i=0 ; $i < $number; $i++){
@@ -75,7 +76,7 @@ class ProductController extends Controller
             }
 				$this->redirect(array('view','id'=>$model->id));
 		}
-		$number = 0;
+		$number = 1;
 //        cIteratorExit;
 		$this->render('create',array(
 			'model'=>$model,

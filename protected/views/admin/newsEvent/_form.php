@@ -1,50 +1,28 @@
 <div class="content-body">
 	<div class="form">
-	<?php if(isset($_SESSION['channel']) && $_SESSION['channel'] == 'web'):?>
-            <div class="row">
-                <?php echo CHtml::label(Yii::t('admin', 'Image'), "") ?>
-                <div class="avatar-display upload-avatar">
-                    <?php
-                    if (isset($_POST['source_image_path']) && $_POST['source_image_path'] != 0) {
-                        $url = Yii::app()->request->baseUrl . "/data/tmp/" . $_POST['source_image_path'];
-                    } else {
-                    	$url = "";
-                    	if(!$model->isNewRecord){
-                    		$url = $model->getAvatarUrl($model->id,"s1");
-                    	}
-                    }
 
-                    echo CHtml::image($url, "Avatar", array("id" => "img-display", "width" => 300));
-                    echo '<span>Upload ảnh 860x312</span>';
-                    $this->widget('ext.xupload.XUploadWidget', array(
-                        'url' => $this->createUrl("NewsEvent/upload", array("parent_id" => 'tmp')),
-                        'model' => $this->uploadModel,
-                        'attribute' => 'file',
-                        'options' => array(
-                            'onComplete' => 'js:function (event, files, index, xhr, handler, callBack) {
-                                if(handler.response.error){
-                                    alert(handler.response.msg);
-                                    $("#files").html("<tr><td><label></label></td><td><div class=\'wrr\'>' . Yii::t('admin', 'Lỗi upload') . ' :"+handler.response.msg+"</div></td></tr>");
-                                }else{
-                                    $("#img-display").attr("src","' . Yii::app()->request->baseUrl . "/data/tmp/" . '"+handler.response.name);
-                                    $("#source_image_path").val(handler.response.name);
-                                }
-                            }'
-                        )
-                    ));
-                    ?>
-                </div>
-            </div>
-   <?php endif;?>
 	<?php
     $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'admin-news-event-model-form',
 		'enableAjaxValidation'=>false,
-	)); ?>
+        'htmlOptions'=>array('enctype'=>'multipart/form-data')
+
+    )); ?>
 
 
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
-
+        <div class="row">
+            <div class="thumbnail"">
+                <div class="row">
+                    <label class="control-label">Ảnh</label>
+                    <div style="height: 400px; position: relative;">
+                        <img class="thumb-slider_new_event" id="thumb-change-slider" src="<?php echo ProductModel::model()->getCoverUrl($model->id)?>">
+                        <label class="thumb-slider-change-text" for="clip_thumbnail_slider">Upload ảnh</label>
+                        <input class="hidden" type="file" name="clip_thumbnail_slider" id="clip_thumbnail_slider" value="image" onchange="onFileSelected(event);"/>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<?php echo $form->errorSummary($model); ?>
         <?php
             $fileTmp = 0;
@@ -64,13 +42,7 @@
 			<?php echo $form->labelEx($model,'type'); ?>
 			<?php
 				$data = array(
-							'news'=>'news',
-							'song'=>'song',
-							'video'=>'video',
-							'album'=>'album',
-							'playlist'=>'playlist',
-							'register'=>'register',
-							'custom'=>'custom'
+							'product'=>'product',
 						);
 				echo CHtml::dropDownList("AdminNewsEventModel[type]", $model->type, $data)
 			?>
@@ -122,3 +94,16 @@
 
 	</div><!-- form -->
 </div>
+
+<script type="text/javascript">
+
+    function onFileSelected(event){
+        var selectedFile = event.target.files[0];
+        var reader = new FileReader();
+        reader.onload = function (event) {
+            $('#thumb-change-slider').attr('src', event.target.result);
+        };
+        reader.readAsDataURL(selectedFile);
+    }
+
+</script>

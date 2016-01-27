@@ -6,6 +6,7 @@ return CMap::mergeArray(
     require(dirname(__FILE__) . '/local.php'),
     array(
         'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
+//        'runtimePath' => dirname(_APP_PATH_) . DIRECTORY_SEPARATOR .'public_html'. DIRECTORY_SEPARATOR . "runtime",
         'runtimePath' => dirname(_APP_PATH_) . DIRECTORY_SEPARATOR .'mobileplus'. DIRECTORY_SEPARATOR . "runtime",
         'sourceLanguage' => 'code',
         'language' => 'vi_vn',
@@ -42,6 +43,11 @@ return CMap::mergeArray(
             'cacheTime' => 600,
             // this is used to support multi lanuages
             'languages' => array('en_us' => 'English', 'vi_vn' => 'Tiếng Việt'),
+            'htmlMetadata'=>array(
+                'title'=>'Công ty Khởi Nguồn - Song hành cùng thành công',
+                'description'=>'Công ty Khởi Nguồn - Song hành cùng thành công',
+                'keywords'=>'Công ty Khởi Nguồn - Song hành cùng thành công',
+            ),
             'defaultLanguage' => 'vi_vn',
         ),
     )

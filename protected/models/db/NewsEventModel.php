@@ -160,4 +160,19 @@ class NewsEventModel extends BaseNewsEventModel
     	$path = AvatarHelper::getAvatar("newsEvent", $id, $size);
     	return $path."?v=".time();;
     }
+
+	public function getCoverPath($id=null)
+	{
+		if(!isset($id)) $id = $this->id;
+		$savePath = Common::storageSolutionEncode($id).DS.$id.".jpg";
+		$path = Yii::app()->params['storage']['newsEventDir'].DS.$savePath;
+		return $path;
+	}
+
+	public function getCoverUrl($id=null)
+	{
+		if(!isset($id)) $id = $this->id;
+		$src = Common::storageSolutionEncode($id) . $id . ".jpg";
+		return Yii::app()->params['storage']["newsEventUrl"] . $src;
+	}
 }

@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(	
-	array('label'=> Yii::t("admin","Thêm mới"), 'url'=>array('create'), 'visible'=>UserAccess::checkAccess('ProductModelCreate')),
+	array('label'=> Yii::t("admin","Thêm mới"), 'url'=>array('create'), 'visible'=>true),
 );
 $this->pageLabel = Yii::t("admin","Danh sách sản phẩm");
 

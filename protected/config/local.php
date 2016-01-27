@@ -11,7 +11,6 @@ return array(
 			),
 		),
 		'db' => array(
-			//'connectionString' => 'mysql:host=192.168.89.71;dbname=amusic',
 			'connectionString' => 'mysql:host=localhost;dbname=mobileplus',
 			'emulatePrepare' => true,
 			'username' => 'root',

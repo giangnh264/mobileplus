@@ -10,7 +10,7 @@
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
 		<?php $j = $number;?>
 		<?php echo $form->errorSummary($model); ?>
-			<?php for($i = 0; $i < 10; $i ++):?>
+			<?php for($i = 1; $i <= 10; $i ++):?>
 			<div class="thumbnail <?php echo ($i > $j)? 'hidden':'' ?>" id="thumbnail_number_<?php echo $i;?>">
 				<input type="hidden" value="<?php echo $i?>" id="thumb_hidden_id">
 				<div class="row">

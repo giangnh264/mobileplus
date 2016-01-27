@@ -5,6 +5,8 @@ class NewsEventController extends Controller
 
 	public $channel = "wap";
 	public $uploadModel;
+	public $coverWidth = 1150;
+	public $coverHeight = 500;
     public function init()
 	{
 		parent::init();
@@ -20,7 +22,7 @@ class NewsEventController extends Controller
 				'upload'=>array(
 						'class'=>'ext.xupload.actions.XUploadAction',
 						'subfolderVar' => 'parent_id',
-						'path' => _APP_PATH_.DS."public".DS."admin".DS."data",
+						'path' => _APP_PATH_.DS."admin".DS."data",
 						'alowType'=>'image/jpeg,image/png,image/gif,image/x-png,image/pjpeg'
 				),
 		);
@@ -82,27 +84,21 @@ class NewsEventController extends Controller
                 $channel = implode(',',$_POST['channels']);
                 $model->channel = $channel;
             }
-            $fileAvatar = _APP_PATH_.DS."public".DS."admin".DS."data".DS."tmp".DS.$_POST['source_image_path'];
-            if(!file_exists($fileAvatar)){
-            	$model->addError("file", "Chưa upload ảnh");
-            }else{
-                //check allow widthxheight
-                $imgSize = getimagesize($fileAvatar);
-                $maxW = '860';
-                $maxH = '312';
-                $realW = $imgSize[0];
-                $realH = $imgSize[1];
-                /*if ($realW > $maxW || $realH > $maxH) {
-                    $error =1;
-                    $model->addError("file", "Kích thước ảnh không chính xác");
-                }*/
-                if($error==0) {
-                    if ($model->save()) {
-                        $this->createImage($model, $fileAvatar);
-                        $this->redirect(array('view', 'id' => $model->id));
-                    }
-                }
-            }
+			if ($_FILES["clip_thumbnail_slider"]['size'] > 0) {
+				$model->save();
+				$coverPath = $this->uploadFile($_FILES["clip_thumbnail_slider"], $model);
+				if(!$coverPath){
+					$model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
+				}else{
+					$model->status = 1;
+					$model->img_url = $coverPath;
+					$model->save();
+					$this->redirect(array('view','id'=>$model->id));
+				}
+			}else {
+				$model->addError("file", "Chưa upload ảnh");
+			}
+
 
 		}
 		$this->uploadModel =  new XUploadForm();
@@ -133,7 +129,7 @@ class NewsEventController extends Controller
             $error=0;
             //check allow widthxheight
 //            $fileAvatar = _APP_PATH_.DS."data".DS."tmp".DS.$_POST['source_image_path'];
-			$fileAvatar = _APP_PATH_.DS."public".DS."admin".DS."data".DS."tmp".DS.$_POST['source_image_path'];
+			$fileAvatar = _APP_PATH_.DS."admin".DS."data".DS."tmp".DS.$_POST['source_image_path'];
 
 			if(!file_exists($fileAvatar)){
                 $error = 1;
@@ -254,5 +250,39 @@ class NewsEventController extends Controller
 			$imgCrop->resizeFix($s2Path, 100, 100);
 			$fileSystem->remove($image_path);
 		}
+	}
+
+	/**
+	 * upload file
+	 */
+	protected function uploadFile($file, $model) {
+		$coverPath = "";
+		$fileSystem = new Filesystem();
+		if (isset($file['error']) && $file['error'] == 0) {
+			$ext = explode('.', $file['name']);
+			$extFile = $ext[count($ext) - 1];
+			$id = $model->id;
+			$srcFileName = $id . time() . "." . $extFile;
+			$tmpPath = Yii::app()->getRuntimePath();
+
+			$fileDesPath = $tmpPath . DIRECTORY_SEPARATOR . $srcFileName;
+			try {
+				if (move_uploaded_file($file['tmp_name'], $fileDesPath)) {
+					list($width, $height) = getimagesize($fileDesPath);
+					if($width < $this->coverWidth || $height < $this->coverHeight){
+						return false;
+					}
+					$imgCrop = new ImageCrop($fileDesPath, 0, 0, $width, $height);
+					$coverPath = $model->getCoverPath($model->id);
+					Utils::makeDir(dirname($coverPath));
+					$imgCrop->resizeCrop($coverPath, $this->coverWidth, $this->coverHeight, 100);
+					$url = $model->getCoverUrl($model->id);
+					//unlink($fileDesPath);
+				}
+			} catch (Exception $e) {
+				echo $e->getMessage();
+			}
+		}
+		return $url;
 	}
 }

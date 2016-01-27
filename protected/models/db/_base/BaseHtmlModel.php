@@ -8,11 +8,9 @@
  * @property string $title
  * @property string $url_key
  * @property string $content
- * @property string $type
  * @property string $updated_time
  * @property string $updated_by
  * @property string $channel
- * @property integer $pos
  */
 class BaseHtmlModel extends MainActiveRecord
 {
@@ -42,14 +40,13 @@ class BaseHtmlModel extends MainActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, url_key, content', 'required'),
-			array('pos', 'numerical', 'integerOnly'=>true),
 			array('title, url_key', 'length', 'max'=>255),
-			array('type, updated_by', 'length', 'max'=>10),
+			array('updated_by', 'length', 'max'=>10),
 			array('channel', 'length', 'max'=>45),
 			array('updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, url_key, content, type, updated_time, updated_by, channel, pos', 'safe', 'on'=>'search'),
+			array('id, title, url_key, content, updated_time, updated_by, channel', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,11 +84,9 @@ class BaseHtmlModel extends MainActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('url_key',$this->url_key,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('type',$this->type,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
 		$criteria->compare('updated_by',$this->updated_by,true);
 		$criteria->compare('channel',$this->channel,true);
-		$criteria->compare('pos',$this->pos);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
