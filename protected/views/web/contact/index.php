@@ -6,11 +6,21 @@
         <p><span class="contact_title">Điện thoại: </span><span>(043) 2442676</span></p>
         <p><span class="contact_title">Mobile: </span><span>+84 91815988</span></p>
         <p><span class="contact_title">Email: </span><span>congtykhoinguon@gmail.com</span></p>
-        <p style="font-style:italic ">Mọi yêu cầu liên hệ hoặc đóng góp, quý khách hàng và đối tác vui lòng liên hệ với chúng tôi theo form bên dưới</p>
+        <p style="font-style:italic">Mọi yêu cầu liên hệ hoặc đóng góp, quý khách hàng và đối tác vui lòng liên hệ với chúng tôi theo form bên dưới</p>
+        <div class="errorSummary">
+            <ul>
+                <?php if($error):?>
+                <li class="contact_error"><?php echo $messages;?></li>
+                <?php elseif($success):?>
+                <li class="contact_done"><?php echo $messages;?></li>
+                <?php endif;?>
+            </ul>
+        </div>
+
         <form class="contact_sm" method="post" action="/contact/index">
-            <input class="w305" type="text" placeholder="Họ tên đầy đủ" style="margin-right: 29px;">
-            <input class="w305" type="text" placeholder="Email">
-            <textarea placeholder="Nội dung liên hệ"></textarea>
+            <input class="w305 <?php echo ($error_type == 'name'? 'border_error' :'');?>" type="text" name="name" placeholder="Họ tên đầy đủ" style="margin-right: 29px;" value="<?php echo $name;?>" />
+            <input class="w305 <?php echo ($error_type == 'email'? 'border_error' :'');?>" type="text" name="email" placeholder="Email" value="<?php echo $email;?>" />
+            <textarea class="<?php echo ($error_type == 'description'? 'border_error' :'');?>" placeholder="Nội dung liên hệ" name="description" value="<?php echo $description;?>" ></textarea>
             <input type="submit" value="Gửi liên hệ">
             <a class="has-ajax-pop" rel="/contact/project">Kích hoạt dự án</a>
         </form>

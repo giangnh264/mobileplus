@@ -404,3 +404,22 @@ form.contact_sm a {
     margin-bottom: 10px;
     margin-top: 20px;
 }
+.errorSummary {
+    left: 38px;
+    margin-bottom: 15px;
+}
+.errorSummary ul li.contact_error {
+    color: #F00;
+    background: url(/img/dg.png) no-repeat left center;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.errorSummary ul li.contact_done {
+    color: #F00;
+    background: url(/img/done.png) no-repeat left center;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.border_error{
+    border: 1px solid red !important;
+}

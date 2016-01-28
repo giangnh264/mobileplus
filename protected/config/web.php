@@ -6,8 +6,7 @@ return CMap::mergeArray(require(dirname(__FILE__) . "/main.php"), array(
 			"controllerPath"	=> _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "controllers" . DIRECTORY_SEPARATOR . "web",
 			"viewPath"			=> _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "views" . DIRECTORY_SEPARATOR . "web",
 			//'runtimePath'		=> _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "runtime",
-//			'theme' 			=> 'default',
-			'theme' 			=> 'tet2016',
+			'theme' 			=> 'default',
 			'defaultController' => 'index',
 
             "components" => array(
@@ -108,40 +107,7 @@ return CMap::mergeArray(require(dirname(__FILE__) . "/main.php"), array(
             	// cache limit time
 				"cache_limit"	=> 1800, //30 minutes
                 // limit items on page
-                'constLimit'=>array(
-        			"profile.number.of.playlists"=>4,
-		            	"profile.number.of.activities"=>10,
-		                "profile.number.of.transactions"=>10,
-		            	"inbox.number.of.events"=>10,
-		            	"profile.max.friend.result"=>100,
-		            	"profile.number.of.fans"=>8,
-		            	"profile.number.of.idos"=>8,
-		            	"transaction.number.of.activities"=>10,
-                		"numberSongsPerPage" => 30,
-                		"numberAlbumsPerPage" => 8,
-						"numberVideosPerPage" => 8,
-						"numberVideosPlaylistPerPage" => 16,
-						"numberArtistsPerPage" => 10,
-						"numberNewsPerPage"=>6,
-						"numberSongsInArtistPage" => 10,
-						"numberVideosInArtistPage" => 24,
-						"numberAlbumsInArtistPage" => 24,
-						"numberNewsInArtistPage" => 40,
-                		"search.number.of.items" => 10,
-                		"search.number.of.songs" => 20,
-                		"search.number.of.videos" => 20,
-                		"search.number.of.artists" => 20,
-                		"search.number.of.albums" => 20,
-                		"search.number.of.playlists" => 20,
-                		"search.number.of.ringtones" => 20,
-                		"search.number.of.rbts" => 20,
-						"search.number.of.videoplaylists" => 20,
-                		"web.number.of.videos"	=> 12,
-                		"offsetPaging"		=> 10,
-                		"limitPaging"		=> 10,
-                		"pager.max.button.count" => 5,
-                		"items_list_topcontent" => 12,
-        		),
+
             	// Login config
             	'login'=>array(
             			'limit_block'=>5, // So lan login fail bi block

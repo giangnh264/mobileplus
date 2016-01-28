@@ -1,6 +1,6 @@
 <?php
 //session_start();
-include_once '../../cons.php';
+include_once 'cons.php';
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors','On');
 

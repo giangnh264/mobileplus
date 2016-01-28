@@ -19,6 +19,8 @@
 						<img class="thumb-slider" id="thumb-change-<?php echo $i?>" src="<?php echo ProductModel::model()->getCoverUrl($model->id, $i)?>">
 						<label class="thumb-slider-change-text" for="clip_thumbnail_<?php echo $i?>">Upload ảnh</label>
 						<input class="hidden" type="file" name="clip_thumbnail_<?php echo $i?>" id="clip_thumbnail_<?php echo $i?>" value="image" onchange="onFileSelected(event, <?php echo $i?>);"/>
+						<a class="remove_img"><img src="/admin/images/remove.png"></a>
+
 					</div>
 				</div>
 			</div>
@@ -111,5 +113,9 @@
 		$('#thumbnail_number_' + id).removeClass('hidden');
 		$('#id_load_more').val(id+ 1);
 	}
+	$('.remove_img').on('click', function){
+
+	}
+
 
 </script>
