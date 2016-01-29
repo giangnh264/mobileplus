@@ -15,12 +15,11 @@
 				<input type="hidden" value="<?php echo $i?>" id="thumb_hidden_id">
 				<div class="row">
 					<label class="control-label">Ảnh</label>
-					<div style="height: 200px; position: relative;">
+					<div style="position: relative; width: 360px; height: 210px;">
 						<img class="thumb-slider" id="thumb-change-<?php echo $i?>" src="<?php echo ProductModel::model()->getCoverUrl($model->id, $i)?>">
+						<a class="pro_remove_img" onclick="remove_img(<?php echo $i?>);"><img src="/img/remove.png"></a>
 						<label class="thumb-slider-change-text" for="clip_thumbnail_<?php echo $i?>">Upload ảnh</label>
 						<input class="hidden" type="file" name="clip_thumbnail_<?php echo $i?>" id="clip_thumbnail_<?php echo $i?>" value="image" onchange="onFileSelected(event, <?php echo $i?>);"/>
-						<a class="remove_img"><img src="/admin/images/remove.png"></a>
-
 					</div>
 				</div>
 			</div>
@@ -113,9 +112,22 @@
 		$('#thumbnail_number_' + id).removeClass('hidden');
 		$('#id_load_more').val(id+ 1);
 	}
-	$('.remove_img').on('click', function){
+	function remove_img(id){
+		var url = "<?php echo Yii::app()->createUrl('product/deleteImg');?>";
+		var product_id = "<?php echo $model->id;?>"
+		$.ajax({
+			type: 'post',
+			url: url,
+			data: {'content_id': product_id, 'img_id':id, },
+			success: function (data) {
+				if(data.error == 0){
+					$('#thumbnail_number_' + id).addClass('hidden');
+				}else if(data.error == 1){
+					alert(data.message);
+				}
+			}
+		});
 
 	}
-
 
 </script>

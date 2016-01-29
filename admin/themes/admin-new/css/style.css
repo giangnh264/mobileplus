@@ -3347,3 +3347,6 @@ fieldset{
 	height: 300px;
 	width: 500px;
 }
+.pro_remove_img{
+	position: absolute; right: 10px; top: 70px;
+}

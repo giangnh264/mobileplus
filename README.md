@@ -1,2 +1,0 @@
-# mobileplus
-mobileplus.vn

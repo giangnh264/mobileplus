@@ -57,20 +57,17 @@ class ProductController extends Controller
             $model->attributes=$_POST['ProductModel'];
 			$model->created_time = date('Y-m-d H:i:s');
 			if($model->save()){
-                $number = (int) $_POST ["number"];
-                for($i=0 ; $i < $number; $i++){
+                for($i=0 ; $i < 10; $i++){
                    if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
                         $coverPath = $this->uploadFile($_FILES["clip_thumbnail_$i"], $model, $i);
                         $product_img = new ProductImgModel();
                         $product_img->product_id = $model->id;
+					   	$product_img->img_id = $i;
                         $product_img->img_url = $coverPath;
                         $product_img->created_time = date('Y-m-d H:i:s');
                         $product_img->status = 1;
                         $product_img->sorder = 0;
                         $res = $product_img->save();
-                        if(!$coverPath){
-                            $model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
-                        }
                     }
                 }
             }
@@ -99,7 +96,22 @@ class ProductController extends Controller
 		if(isset($_POST['ProductModel']))
 		{
 			$model->attributes=$_POST['ProductModel'];
-			if($model->save())
+			if($model->save()){
+				//remove all product img
+				for($i=0 ; $i < 10; $i++){
+					if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
+						$coverPath = $this->uploadFile($_FILES["clip_thumbnail_$i"], $model, $i);
+						$product_img = new ProductImgModel();
+						$product_img->product_id = $model->id;
+						$product_img->img_id = $i;
+						$product_img->img_url = $coverPath;
+						$product_img->created_time = date('Y-m-d H:i:s');
+						$product_img->status = 1;
+						$product_img->sorder = 0;
+						$res = $product_img->save();
+					}
+				}
+			}
 				$this->redirect(array('view','id'=>$model->id));
 		}
 		$number = ProductImgModel::model()->countByAttributes(array('product_id'=>$id));
@@ -251,4 +263,34 @@ class ProductController extends Controller
         }
         return $url;
     }
+
+	public function actionDeleteImg(){
+		$product_id = Yii::app()->request->getParam('product_id');
+		$img_id =  Yii::app()->request->getParam('img_id');
+		$product_img = ProductImgModel::model()->findAll('`product_id` = :product_id AND img_id = :img_id', array(':product_id'=>$product_id, ':img_id'=>$img_id));
+		if(!empty($product_img)){
+			$delete = $product_img->deleteAll();
+			if($delete){
+				$data = array(
+					'message'=>'Thành công',
+					'code'=>0,
+				);
+			}else{
+				$data = array(
+					'message'=>'Không thành công',
+					'code'=>1,
+				);
+			}
+		}else{
+			$data = array(
+				'message'=>'Không tồn tại',
+				'code'=>2,
+			);
+		}
+
+		header("Content-type: application/json");
+		echo json_encode($data);
+		Yii::app ()->end ();
+	}
+
 }

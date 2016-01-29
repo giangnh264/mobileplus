@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'product_img':
  * @property integer $id
  * @property integer $product_id
+ * @property integer $img_id
  * @property string $img_url
  * @property string $created_time
  * @property string $updated_time
@@ -39,11 +40,11 @@ class BaseProductImgModel extends MainActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('product_id, status, sorder', 'numerical', 'integerOnly'=>true),
+			array('product_id, img_id, status, sorder', 'numerical', 'integerOnly'=>true),
 			array('img_url, created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, product_id, img_url, created_time, updated_time, status, sorder', 'safe', 'on'=>'search'),
+			array('id, product_id, img_id, img_url, created_time, updated_time, status, sorder', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,6 +80,7 @@ class BaseProductImgModel extends MainActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('img_id',$this->img_id);
 		$criteria->compare('img_url',$this->img_url,true);
 		$criteria->compare('created_time',$this->created_time,true);
 		$criteria->compare('updated_time',$this->updated_time,true);

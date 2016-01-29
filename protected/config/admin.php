@@ -25,10 +25,10 @@ return CMap::mergeArray(
         ),
         // application components
         'components' => array(
-            'request' => array(
+            /*'request' => array(
                 'class' => 'application.components.admin.HttpRequest',
                 'enableCsrfValidation' => true,
-            ),
+            ),*/
            /* 'session'=>array(
                 'cookieParams' => array(
                     'httponly'=>true,

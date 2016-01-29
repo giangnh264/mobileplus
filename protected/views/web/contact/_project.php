@@ -20,6 +20,9 @@ $this->beginWidget ( 'zii.widgets.jui.CJuiDialog', array (
 
 $cs = Yii::app ()->getClientScript ();
 $cs->registerCssFile ( Yii::app ()->request->baseUrl . "/web/css/popup.css" );
+$cs->registerCssFile(Yii::app()->request->baseUrl."/web/css/rangeslider.css?v=".time());
+$cs->registerScriptFile(Yii::app()->request->baseUrl."/web/js/rangeslider.min.js");
+
 
 $form = $this->beginWidget ( 'CActiveForm', array (
     'action' => "",
@@ -44,6 +47,11 @@ $form = $this->beginWidget ( 'CActiveForm', array (
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Tên dự án'),"")?>
             <?php echo CHtml::textField("project_name","",array("class"=>"input-text"),  array( 'class'=>'selectbox'))?>
+        </div>
+        <div class="row">
+            <?php echo CHtml::label(Yii::t('web','Tên dự án'),"")?>
+            <input type="range" class="selector">
+            <span id="value" style="color: red"/></span>
         </div>
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Khoảng giá'),"")?>
@@ -83,9 +91,26 @@ $form = $this->beginWidget ( 'CActiveForm', array (
     </div>
     <!-- form -->
 </div>
+<script type="text/javascript">
+
+</script>
 <?php
 $this->endWidget ();
 
 $this->endWidget ( 'zii.widgets.jui.CJuiDialog' );
 
 ?>
+<?php
+Yii::app()->clientScript->registerScript('search', '
+  var $value = $("#value");
+    $( ".selector" ).slider({
+        min: 1,
+        max: 24,
+        value: 1,
+        slide: function(event, ui) {
+            $value.text(ui.value);
+        }
+    });
+');
+?>
+

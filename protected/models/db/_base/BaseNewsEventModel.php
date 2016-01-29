@@ -14,8 +14,6 @@
  * @property string $content
  * @property string $created_time
  * @property string $updated_time
- * @property string $img_url
- * @property integer $status
  */
 class BaseNewsEventModel extends MainActiveRecord
 {
@@ -45,14 +43,14 @@ class BaseNewsEventModel extends MainActiveRecord
 		// will receive user inputs.
 		return array(
 			array('created_time', 'required'),
-			array('object_id, sorder, status', 'numerical', 'integerOnly'=>true),
-			array('name, custom_link, channel, img_url', 'length', 'max'=>255),
-			array('type', 'length', 'max'=>50),
+			array('object_id, sorder', 'numerical', 'integerOnly'=>true),
+			array('name, custom_link, channel', 'length', 'max'=>255),
+			array('type', 'length', 'max'=>10),
 			array('content', 'length', 'max'=>500),
 			array('updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, type, object_id, sorder, custom_link, channel, content, created_time, updated_time, img_url, status', 'safe', 'on'=>'search'),
+			array('id, name, type, object_id, sorder, custom_link, channel, content, created_time, updated_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -96,8 +94,6 @@ class BaseNewsEventModel extends MainActiveRecord
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('created_time',$this->created_time,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
-		$criteria->compare('img_url',$this->img_url,true);
-		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

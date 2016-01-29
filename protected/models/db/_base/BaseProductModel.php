@@ -42,9 +42,10 @@ class BaseProductModel extends MainActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('name, description, url_key', 'required'),
 			array('wp, ios, android, status', 'numerical', 'integerOnly'=>true),
 			array('name, url_key', 'length', 'max'=>255),
-			array('description, created_time, updated_time', 'safe'),
+			array('created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, description, url_key, wp, ios, android, created_time, updated_time, status', 'safe', 'on'=>'search'),

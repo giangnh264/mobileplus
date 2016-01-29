@@ -39,10 +39,19 @@ class Slidebar extends CWidget {
         $id = Yii::app()->request->getParam('id');
 
         $path = Yii::getPathOfAlias('application.views.admin.layouts');
+        /*if (isset($this->getController()->cpId) && $this->getController()->cpId == 0) {
+            $data = include($path . DIRECTORY_SEPARATOR . 'menu.php');
+        } else if(isset($this->getController()->cpId)) {
+            $data = include($path . DIRECTORY_SEPARATOR . 'menu_cp.php');
+        }else{
+        	return array();
+        }*/
 
         if (isset(Yii::app()->user->cp_id) && Yii::app()->user->cp_id == 0) {
             $data = include($path . DIRECTORY_SEPARATOR . 'menu.php');
-        } else{
+        } else if(isset(Yii::app()->user->cp_id)) {
+            $data = include($path . DIRECTORY_SEPARATOR . 'menu_cp.php');
+        }else{
         	return array();
         }
 
