@@ -25,7 +25,7 @@ $(document).ready(function() {
                  //overlay_hide();
              }
          });
-     })
+     });
 
         $('.product_web').on('click',function(){
             var url = '/product/web';
@@ -46,6 +46,14 @@ $(document).ready(function() {
                     //overlay_hide();
                 }
             });
+        });
+        $('#btn-search-icon').on('click', function(){
+            if($("#search-form").hasClass('hidden')){
+                $("#search-form").removeClass('hidden');
+            }else{
+                $("#search-form").addClass('hidden');
+            }
+
         })
     }
 

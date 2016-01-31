@@ -20,11 +20,11 @@
            Chính sách bảo mật
         </a>
     </div>
-    <ul>
+    <ul id="toppage" style="overflow:hidden;">
         <li>
-            <img src="../web/images/top.png">
+            <img style="cursor: pointer" src="../web/images/top.png">
         </li>
-        <li>TOP</li>
+        <li >TOP</li>
     </ul>
 </footer>
 <div id="fb-root"></div>
@@ -35,4 +35,14 @@
         js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+    $('#toppage').on('click', function(){
+        $('html').animate({scrollTop:0}, 'slow');//IE, FF
+        $('body').animate({scrollTop:0}, 'slow');//chrome, don't know if Safari works
+        $('.popupPeriod').fadeIn(1000, function(){
+            setTimeout(function(){$('.popupPeriod').fadeOut(2000);}, 3000);
+        });
+    })
+
 </script>

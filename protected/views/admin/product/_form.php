@@ -8,14 +8,13 @@
 	)); ?>
 	
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
-		<?php $j = $number;?>
 		<?php echo $form->errorSummary($model); ?>
 			<?php for($i = 1; $i <= 10; $i ++):?>
-			<div class="thumbnail <?php echo ($i > $j)? 'hidden':'' ?>" id="thumbnail_number_<?php echo $i;?>">
+			<div class="thumbnail <?php echo (!in_array($i, $list_number_by_product))? 'hidden':'' ?>" id="thumbnail_number_<?php echo $i;?>">
 				<input type="hidden" value="<?php echo $i?>" id="thumb_hidden_id">
 				<div class="row">
 					<label class="control-label">Ảnh</label>
-					<div style="position: relative; width: 360px; height: 210px;">
+					<div style="position: relative; width: 360px; height: 210px;left: 125px;">
 						<img class="thumb-slider" id="thumb-change-<?php echo $i?>" src="<?php echo ProductModel::model()->getCoverUrl($model->id, $i)?>">
 						<a class="pro_remove_img" onclick="remove_img(<?php echo $i?>);"><img src="/img/remove.png"></a>
 						<label class="thumb-slider-change-text" for="clip_thumbnail_<?php echo $i?>">Upload ảnh</label>
@@ -43,7 +42,17 @@
 			<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 			<?php echo $form->error($model,'description'); ?>
 		</div>
-	
+		<div class="row">
+			<?php echo $form->labelEx($model,'channel'); ?>
+			<?php
+			$data = array(
+				1=>Yii::t('admin','Web'),
+				2=>Yii::t('admin','App'),
+				3=>Yii::t('admin','Tất cả'),
+			);
+			echo CHtml::dropDownList("ProductModel[wp]", $model->android, $data ) ?>
+			<?php echo $form->error($model,'wp'); ?>
+		</div>
 		<div class="row">
 			<?php echo $form->labelEx($model,'wp'); ?>
 			<?php
@@ -118,11 +127,11 @@
 		$.ajax({
 			type: 'post',
 			url: url,
-			data: {'content_id': product_id, 'img_id':id, },
+			data: {'product_id': product_id, 'img_id':id, },
 			success: function (data) {
-				if(data.error == 0){
+				if(data.code == 0){
 					$('#thumbnail_number_' + id).addClass('hidden');
-				}else if(data.error == 1){
+				}else if(data.code == 1){
 					alert(data.message);
 				}
 			}

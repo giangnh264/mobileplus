@@ -12,4 +12,4 @@ $this->pageLabel = "Create Product";
 ?>
 
 
-<?php echo $this->renderPartial('_form', array('model'=>$model,'number'=>$number)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model,'list_number_by_product'=>$list_number_by_product)); ?>

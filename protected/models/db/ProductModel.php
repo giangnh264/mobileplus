@@ -26,4 +26,31 @@ class ProductModel extends BaseProductModel
 		return Yii::app()->params['storage']["ProductUrl"] . $src;
 	}
 
+	public function getProductByChannel($channel, $limit = 12, $offset = 0){
+		if(strtoupper($channel) == 'WEB'){
+			$other_channel = 'app';
+		}
+		$criteria = new CDbCriteria;
+		$criteria->condition = 'channel <> :channel AND  status = 1';
+		$criteria->params = array(':channel'=>$other_channel);
+		$criteria->order = "id DESC";
+		$criteria->limit = $limit;
+		$criteria->offset = $offset;
+		$results = self::model()->findAll($criteria);
+		return $results;
+	}
+
+	public function countProductByChannel($channel){
+		if(strtoupper($channel) == 'WEB'){
+			$other_channel = 'app';
+		}
+		$criteria = new CDbCriteria;
+		$criteria->condition = 'channel <> :channel AND  status = 1';
+		$criteria->params = array(':channel'=>$other_channel);
+		$results = self::model()->count($criteria);
+		return $results;
+	}
+
+
+
 }

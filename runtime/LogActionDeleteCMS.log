@@ -1,3 +1,11 @@
 2016-01-29 15:03:22 - INFO  --> Log Delete | UserId: 3|IP:127.0.0.1| URI:/admin/index.php?r=product/deleteImg 
 2016-01-29 15:08:07 - INFO  --> Log Delete | UserId: 3|IP:127.0.0.1| URI:/admin/index.php?r=product/deleteImg 
 2016-01-29 15:13:41 - INFO  --> Log Delete | UserId: 3|IP:127.0.0.1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:42:50 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:44:02 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:44:59 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:45:45 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:46:07 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:46:27 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:47:52 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 
+2016-01-29 20:47:57 - INFO  --> Log Delete | UserId: 3|IP:::1| URI:/admin/index.php?r=product/deleteImg 

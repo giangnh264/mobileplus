@@ -1,15 +1,14 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: TUYETBOM
- * Date: 1/15/2016
- * Time: 10:20 PM
- */
 class ProductController extends Controller
 {
     public function actionIndex(){
-        $this->render('index');
+        $pagesize = 12;
+        $count =  ProductModel::model()->countProductByChannel('web');
+        $page = new CPagination($count);
+        $page->pageSize = $pagesize;
+        $product_web = ProductModel::model()->getProductByChannel('web', $page->getLimit(), $page->getOffset());
+        $this->render('index', compact( 'product_web', 'page'));
     }
 
     public function actionMobile(){

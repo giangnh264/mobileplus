@@ -8,6 +8,7 @@
  * @property string $name
  * @property string $description
  * @property string $url_key
+ * @property integer $channel
  * @property integer $wp
  * @property integer $ios
  * @property integer $android
@@ -43,12 +44,12 @@ class BaseProductModel extends MainActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name, description, url_key', 'required'),
-			array('wp, ios, android, status', 'numerical', 'integerOnly'=>true),
+			array('channel, wp, ios, android, status', 'numerical', 'integerOnly'=>true),
 			array('name, url_key', 'length', 'max'=>255),
 			array('created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, description, url_key, wp, ios, android, created_time, updated_time, status', 'safe', 'on'=>'search'),
+			array('id, name, description, url_key, channel, wp, ios, android, created_time, updated_time, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,6 +87,7 @@ class BaseProductModel extends MainActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('url_key',$this->url_key,true);
+		$criteria->compare('channel',$this->channel);
 		$criteria->compare('wp',$this->wp);
 		$criteria->compare('ios',$this->ios);
 		$criteria->compare('android',$this->android);

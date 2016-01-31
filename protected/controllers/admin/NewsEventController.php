@@ -85,11 +85,11 @@ class NewsEventController extends Controller
                 $model->channel = $channel;
             }
 			if ($_FILES["clip_thumbnail_slider"]['size'] > 0) {
-				$model->save();
 				$coverPath = $this->uploadFile($_FILES["clip_thumbnail_slider"], $model);
 				if(!$coverPath){
 					$model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
 				}else{
+					$model->save();
 					$model->status = 1;
 					$model->img_url = $coverPath;
 					$model->save();
@@ -264,7 +264,6 @@ class NewsEventController extends Controller
 			$id = $model->id;
 			$srcFileName = $id . time() . "." . $extFile;
 			$tmpPath = Yii::app()->getRuntimePath();
-
 			$fileDesPath = $tmpPath . DIRECTORY_SEPARATOR . $srcFileName;
 			try {
 				if (move_uploaded_file($file['tmp_name'], $fileDesPath)) {
@@ -277,7 +276,7 @@ class NewsEventController extends Controller
 					Utils::makeDir(dirname($coverPath));
 					$imgCrop->resizeCrop($coverPath, $this->coverWidth, $this->coverHeight, 100);
 					$url = $model->getCoverUrl($model->id);
-					//unlink($fileDesPath);
+					unlink($fileDesPath);
 				}
 			} catch (Exception $e) {
 				echo $e->getMessage();

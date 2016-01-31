@@ -32,11 +32,11 @@
         </div>
         <div class="row header-layout-1">
             <div class="col-sm-1">
-                <img class="logo-main" src="<?php echo Yii::app()->request->baseUrl ?>/web/images/logo.jpg">
+                <img class="logo-main" src="<?php echo Yii::app()->request->baseUrl ?>/web/images/logo.png">
             </div>
 
 
-            <div class="col-sm-8 site-branding">
+            <div class="col-sm-4 site-branding">
                 <h1 class="site-title">
                     <a href="http://mobileplus.vn/" rel="home">
                         Công ty Khởi Nguồn
@@ -45,8 +45,14 @@
 
                 <h2 class="site-description">Song hành tới thành công</h2>
             </div>
+            <div class="col-sm-5 search_area">
+                <form id="search-form" class="pd-input hidden" action="<?php echo Yii::app()->createUrl('/search')?>" method="get">
+                    <input type="text" placeholder="Từ khóa tìm kiếm" name="q" id="content-search" class="input-search autocomplete ui-autocomplete-input" value="" autocomplete="off">
+                    <input type="submit" id="btnSearch" class="btn-search" value="Tìm kiếm">
+                </form>
+            </div>
             <!-- .site-branding -->
-            <div class="col-sm-3 header-area-right">
+            <div class="col-sm-2 header-area-right" style="float:right;">
                 <a href="#" id="btn-change-lang-icon">
                     <i class="ico_lang_web"></i>
                     <span>English</span>
@@ -88,7 +94,5 @@
                 <!-- .main-navigation -->
             </div>
         </div>
-
-
     </header>
     <!-- #masthead -->

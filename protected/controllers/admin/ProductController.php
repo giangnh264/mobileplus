@@ -73,11 +73,12 @@ class ProductController extends Controller
             }
 				$this->redirect(array('view','id'=>$model->id));
 		}
-		$number = 1;
+		$list_number_by_product = array(1);
 //        cIteratorExit;
 		$this->render('create',array(
 			'model'=>$model,
-			'number'=>$number
+			'list_number_by_product'=>$list_number_by_product
+
 		));
 	}
 
@@ -114,10 +115,10 @@ class ProductController extends Controller
 			}
 				$this->redirect(array('view','id'=>$model->id));
 		}
-		$number = ProductImgModel::model()->countByAttributes(array('product_id'=>$id));
+		$list_number_by_product = ProductImgModel::model()->getImgByProductId($model->id);
 		$this->render('update',array(
 			'model'=>$model,
-			'number'=>$number
+			'list_number_by_product'=>$list_number_by_product
 		));
 	}
 
@@ -267,10 +268,12 @@ class ProductController extends Controller
 	public function actionDeleteImg(){
 		$product_id = Yii::app()->request->getParam('product_id');
 		$img_id =  Yii::app()->request->getParam('img_id');
-		$product_img = ProductImgModel::model()->findAll('`product_id` = :product_id AND img_id = :img_id', array(':product_id'=>$product_id, ':img_id'=>$img_id));
+		$product_img = ProductImgModel::model()->find('`product_id` = :product_id AND img_id = :img_id', array(':product_id'=>$product_id, ':img_id'=>$img_id));
 		if(!empty($product_img)){
-			$delete = $product_img->deleteAll();
+			$delete = $product_img->delete();
 			if($delete){
+				$coverPath = ProductModel::model()->getCoverPath($product_id, $img_id);
+				unlink($coverPath);
 				$data = array(
 					'message'=>'Thành công',
 					'code'=>0,

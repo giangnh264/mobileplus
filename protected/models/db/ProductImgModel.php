@@ -10,4 +10,25 @@ class ProductImgModel extends BaseProductImgModel
 	{
 		return parent::model($className);
 	}
+
+	public function getImgByProductId($product_id){
+		$cr = new CdbCriteria();
+		$cr->condition = 'product_id = :PRODUCT';
+		$cr->params = array(':PRODUCT'=>$product_id);
+		$data = self::model()->findAll($cr);
+		$res = array();
+		foreach ($data as $item){
+			$res[]= $item->img_id;
+		}
+		return $res;
+	}
+	public function getOneImgByProductId($product_id){
+		$cr = new CdbCriteria();
+		$cr->condition = 'product_id = :PRODUCT';
+		$cr->params = array(':PRODUCT'=>$product_id);
+		$cr->limit = 1;
+		$data = self::model()->findAll($cr);
+		return $data;
+	}
+
 }

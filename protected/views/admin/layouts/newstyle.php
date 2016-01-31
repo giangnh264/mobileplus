@@ -67,8 +67,8 @@
             <div id="header-outer">
                 <!-- logo -->
                 <div id="logo">
-                    <a href="<?php echo Yii::app()->request->baseUrl ?>/" title="chacha-admin">
-                        <img src="../images/logo-amusic.png" alt="logo"/>
+                    <a href="<?php echo Yii::app()->request->baseUrl ?>/" title="mobiplus admin">
+                        <img src="http://mobileplus.vn/web/images/logo.png" alt="logo"/>
                     </a>
                 </div>
                 <!-- end logo -->

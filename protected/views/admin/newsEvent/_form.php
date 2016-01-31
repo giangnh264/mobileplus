@@ -8,15 +8,13 @@
         'htmlOptions'=>array('enctype'=>'multipart/form-data')
 
     )); ?>
-
-
 		<p class="note">Fields with <span class="required">*</span> are required.</p>
         <div class="row">
             <div class="thumbnail"">
                 <div class="row">
                     <label class="control-label">Ảnh</label>
                     <div style="height: 400px; position: relative;">
-                        <img class="thumb-slider_new_event" id="thumb-change-slider" src="<?php echo ProductModel::model()->getCoverUrl($model->id)?>">
+                        <img class="thumb-slider_new_event" id="thumb-change-slider" src="<?php echo NewsEventModel::model()->getCoverUrl($model->id)?>">
                         <label class="thumb-slider-change-text" for="clip_thumbnail_slider">Upload ảnh</label>
                         <input class="hidden" type="file" name="clip_thumbnail_slider" id="clip_thumbnail_slider" value="image" onchange="onFileSelected(event);"/>
                     </div>

@@ -49,18 +49,13 @@
         <div style="position:absolute;display:block;background:url('<?php echo $this->basePath?>/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
     </div>
     <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1170px; height: 520px; overflow: hidden;">
+        <?php foreach ($slider as $item):?>
         <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="<?php echo $this->basePath?>/img/02.jpg" />
+            <a href="<?php echo $item->custom_link;?>">
+                <img data-u="image" src="<?php echo $item->img_url;?>" />
+            </a>
         </div>
-        <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="<?php echo $this->basePath?>/img/04.jpg" />
-        </div>
-        <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="<?php echo $this->basePath?>/img/05.jpg" />
-        </div>
-        <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="<?php echo $this->basePath?>/img/09.jpg" />
-        </div>
+        <?php endforeach;?>
     </div>
     <!-- Bullet Navigator -->
     <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">

@@ -175,4 +175,13 @@ class NewsEventModel extends BaseNewsEventModel
 		$src = Common::storageSolutionEncode($id) . $id . ".jpg";
 		return Yii::app()->params['storage']["newsEventUrl"] . $src;
 	}
+
+	public function getSlider(){
+		$criteria = new CDbCriteria;
+		$criteria->condition = 'status = 1';
+		$criteria->order = "sorder ASC, id DESC";
+		$criteria->limit = 10;
+		$results = self::model()->findAll($criteria);
+		return $results;
+	}
 }

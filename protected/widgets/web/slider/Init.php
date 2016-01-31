@@ -2,9 +2,6 @@
 class Init extends  CWidget
 {
 	public $basePath;
-	public $newsEvent = array();
-	public $channel = 'web';
-	public $type = '';
 
 	public function init() {
 		$this->publishAssets();
@@ -25,6 +22,7 @@ class Init extends  CWidget
 	}
 	public function run()
 	{
-		$this->render("init");
+		$slider = NewsEventModel::model()->getSlider();
+		$this->render("init", compact('slider'));
 	}
 }

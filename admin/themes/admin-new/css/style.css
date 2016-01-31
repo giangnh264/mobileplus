@@ -3314,7 +3314,8 @@ fieldset{
 	margin: 5px;
 }
 #logo img {
-	padding: 12px 20px;
+	padding: 5px 0 5px 50px;
+	width: 50px;
 }
 .thumb-slider {
 	border: 1px solid #1ab394;

@@ -96,7 +96,6 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl."/web/
                     </div>
                     <!-- .service-block-list -->
                 </aside>
-                <hr class="wen-corporate-divider">
             </div>
 
         </main>
