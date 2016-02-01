@@ -20,7 +20,7 @@
                     <div class="wrr-item">
                         <div class="wrr-item-main">
                             <div class="thumb thumb-hover">
-                                <a title="Hòa Âm Của Giai Điệu" href="<?php echo Yii::app()->createUrl('product/view')?>">
+                                <a title="<?php echo $product->name;?>" href="<?php echo Yii::app()->createUrl('product/view', array('id'=>$product->id))?>">
                                     <?php
                                     $product_img = ProductImgModel::model()->getOneImgByProductId($product->id);
                                     ?>
