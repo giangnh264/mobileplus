@@ -46,11 +46,11 @@
 			<?php echo $form->labelEx($model,'channel'); ?>
 			<?php
 			$data = array(
-				1=>Yii::t('admin','Web'),
-				2=>Yii::t('admin','App'),
-				3=>Yii::t('admin','Tất cả'),
+				'web'=>Yii::t('admin','Web'),
+				'app'=>Yii::t('admin','App'),
+				'all'=>Yii::t('admin','Tất cả'),
 			);
-			echo CHtml::dropDownList("ProductModel[wp]", $model->android, $data ) ?>
+			echo CHtml::dropDownList("ProductModel[channel]", $model->channel, $data ) ?>
 			<?php echo $form->error($model,'wp'); ?>
 		</div>
 		<div class="row">
@@ -60,7 +60,7 @@
 				1=>Yii::t('admin','Đang hỗ trợ'),
 				0=>Yii::t('admin','Không hỗ trợ'),
 			);
-			echo CHtml::dropDownList("ProductModel[wp]", $model->android, $data ) ?>
+			echo CHtml::dropDownList("ProductModel[wp]", $model->wp, $data ) ?>
 			<?php echo $form->error($model,'wp'); ?>
 		</div>
 		<div class="row">
@@ -70,7 +70,7 @@
 				1=>Yii::t('admin','Đang hỗ trợ'),
 				0=>Yii::t('admin','Không hỗ trợ'),
 			);
-			echo CHtml::dropDownList("ProductModel[ios]", $model->android, $data ) ?>
+			echo CHtml::dropDownList("ProductModel[ios]", $model->ios, $data ) ?>
 			<?php echo $form->error($model,'ios'); ?>
 		</div>
 		<div class="row">

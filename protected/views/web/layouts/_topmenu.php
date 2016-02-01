@@ -46,9 +46,9 @@
                 <h2 class="site-description">Song hành tới thành công</h2>
             </div>
             <div class="col-sm-5 search_area">
-                <form id="search-form" class="pd-input hidden" action="<?php echo Yii::app()->createUrl('/search')?>" method="get">
+                <form id="search-form" class="pd-input" action="<?php echo Yii::app()->createUrl('/product/search')?>" method="get">
                     <input type="text" placeholder="Từ khóa tìm kiếm" name="q" id="content-search" class="input-search autocomplete ui-autocomplete-input" value="" autocomplete="off">
-                    <input type="submit" id="btnSearch" class="btn-search" value="Tìm kiếm">
+                    <input type="submit" id="btnSearch" class="btn-search" value="">
                 </form>
             </div>
             <!-- .site-branding -->
@@ -57,17 +57,6 @@
                     <i class="ico_lang_web"></i>
                     <span>English</span>
                 </a>
-                <a href="#" id="btn-search-icon">
-                    <i class="ico_search"></i>
-                </a>
-
-                <div id="header-search-form">
-                    <form role="search" method="get" class="search-form" action="http://mobileplus.vn/">
-                        <span class="screen-reader-text">Search for:</span>
-                        <input class="search-field" placeholder="Search..." name="s" title="Search for:" type="search">
-                        <input class="search-submit" value="" type="submit">
-                    </form>
-                </div>
                 <!-- #header-search-form -->
                 <div class="widget wen_corporate_social_widget"></div>
             </div>
