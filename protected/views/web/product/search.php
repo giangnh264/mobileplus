@@ -1,4 +1,4 @@
-<p>Kết quả tìm kiếm cho từ khóa <b><?php echo $keyword;?></b></p>
+<p>tìm thấy <b><?php echo $count;?></b> sản phẩm với từ khóa <b><?php echo $keyword;?></b></p>
 <div class="product_header">
     <input id="link_channel_web" type="hidden" value="<?php echo Yii::app()->createAbsoluteUrl('/product/search', array('q'=>$keyword,'channel'=>'web', 'order'=>$order));?>">
     <input id="link_channel_app" type="hidden" value="<?php echo Yii::app()->createAbsoluteUrl('/product/search', array('q'=>$keyword,'channel'=>'app', 'order'=>$order));?>">
