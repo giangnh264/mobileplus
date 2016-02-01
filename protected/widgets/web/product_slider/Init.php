@@ -2,10 +2,7 @@
 class Init extends  CWidget
 {
 	public $basePath;
-	public $newsEvent = array();
-	public $channel = 'web';
-	public $type = '';
-
+	public $slider;
 	public function init() {
 		$this->publishAssets();
 		parent::init();
@@ -20,7 +17,6 @@ class Init extends  CWidget
 		if (is_dir($assets)) {
 			Yii::app()->clientScript->registerCssFile($this->basePath . '/css/slide.css');
 			Yii::app()->clientScript->registerScriptFile($this->basePath . '/js/jssor.slider.mini.js', CClientScript::POS_END);
-//			Yii::app()->clientScript->registerScriptFile($this->basePath . '/js/jquery-1.9.1.min.js', CClientScript::POS_END);
 		}
 	}
 	public function run()

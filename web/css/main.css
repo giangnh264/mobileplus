@@ -182,6 +182,7 @@ footer li {
     float: left;
     padding-bottom: 10px;
     width: 570px;
+    height: 300px;
 }
 .product_slide {
     float: left;
@@ -212,7 +213,7 @@ footer li {
 .pr_mobile_view > img {
     margin-right: 15px;
 }
-.pr_mobile_view > span {
+.pr_mobile_view > span a {
     color: #008bef;
     font-weight: lighter;
 }

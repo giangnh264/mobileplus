@@ -31,4 +31,16 @@ class ProductImgModel extends BaseProductImgModel
 		return $data;
 	}
 
+	public function getSliderByProductId($product_id){
+		$cr = new CdbCriteria();
+		$cr->condition = 'product_id = :PRODUCT';
+		$cr->params = array(':PRODUCT'=>$product_id);
+		$data = self::model()->findAll($cr);
+		$res = array();
+		foreach ($data as $item){
+			$res[]= $item->img_url;
+		}
+		return $res;
+	}
+
 }

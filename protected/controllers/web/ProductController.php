@@ -24,7 +24,9 @@ class ProductController extends Controller
         //san pham tuong tu
         $limit = 8;
         $product_relate = ProductModel::model()->getProductRelate($id, $product->channel, $limit);
-        $this->render('view', compact('product'));
+        //get list slider product
+        $slider = ProductImgModel::model()->getSliderByProductId($id);
+        $this->render('view', compact('product', 'product_relate', 'slider'));
     }
 
     public function actionLoadmobile(){
@@ -36,7 +38,10 @@ class ProductController extends Controller
 
     public function actionSearch(){
         $keyword = Yii::app()->request->getParam('q');
-        $keyword = CHtml::encode($keyword);
+        if($keyword == ''){
+            $this->redirect(Yii::app()->homeUrl);
+        }
+        $keyword = Common::RemoveXSS($keyword);
         $order = Yii::app()->request->getParam('order', 1);
         $channel = strtolower(Yii::app()->request->getParam('channel','web'));
         $pagesize = 12;

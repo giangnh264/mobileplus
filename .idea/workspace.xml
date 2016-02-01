@@ -2,21 +2,155 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec6a1fb9-731e-45dc-a994-eb1bc7c209cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/web/SearchController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/web/product/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1/1_1.jpg" afterPath="$PROJECT_DIR$/images/product/1/1_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/2/2_3.jpg" afterPath="$PROJECT_DIR$/images/product/2/2_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/2/2_4.jpg" afterPath="$PROJECT_DIR$/images/product/2/2_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php" afterPath="$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/web/Controller.php" afterPath="$PROJECT_DIR$/protected/components/web/Controller.php" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\controllers\web\SearchController.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\AlbumByArtist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\AlbumByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\AlbumHotMoiList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\AlbumList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\AlbumSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\SongList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\albumByArtist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\albumByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\bxh.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\hotMoiList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\list_search.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\slidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\songlist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\album\views\songlist_flash.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\app\appWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\app\views\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\ArtistInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\ArtistList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\RelatedArtists.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\SongList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\views\artistInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\views\relatedArtists.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\artist\views\songlist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\AlbumChartWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\ListGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\SongChartWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\VideoChartWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\views\album.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\views\song.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\chart\views\video.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\collection\HomeCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\collection\ListAllCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\collection\views\home.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\collection\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\Banner.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\CPagination.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\FBComments.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\FBLike.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\FBShare.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\FavouriteUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\NotifyMessageWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\SocialShares.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\VBreadcrumbs.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\VLinkPager.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\FBLike.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\FBShare.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\banner.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\favouriteUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\fbComments.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\common\views\socialShare.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\ListGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\ListGenreAll.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\ListGenreByParent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\views\listGenreAll.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\genre\views\listGenreByParent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\herocopes\HerocopesOther.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\herocopes\HerocopesWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\herocopes\views\herocopesOther.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\herocopes\views\herocopesWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\ListHome.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\NewsBox.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\NewsList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\NewsListWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\RelatedArtists.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\RelatedNews.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\home.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\newsList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\newsListWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\newsbox.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\relatedArtists.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\news\views\relatedNews.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\playlist\PlaylistsList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\playlist\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\playlist\views\myplaylist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\AlbumSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\SongListWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\VideoSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\views\album_slidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\views\list_widget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\promotion\views\video_slidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\radio\radioWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\radio\views\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\SongByPlaylist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\SongList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\SongListWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\SongSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\views\listByPlaylist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\views\list_widget.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\song\views\slidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\Init.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\jquery-1.3.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\jquery.galleryview-1.1.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\jquery.timers-1.1.2.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\next.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\next_default.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\panel-nav-next.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\panel-nav-prev.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\pointer.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\prev.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\js\themes\light\prev_default.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\slide.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\assets\slideshow.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContentSlideshow\views\init.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\ListContent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\ListRelated.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\TopContent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\views\related.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\topContent\views\topContent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\user\UserInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\user\UserSubmenu.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\user\views\submenu.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\user\views\userInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoByArtist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoList.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoListForTop.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoSlideBarByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\VideoSlideShow.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\bxh.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\listForTopContent.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\slidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\slidebarByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\slideshow.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\videoByArtist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\video\views\videoByGenre.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videocollection\Video.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videocollection\views\video.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\ListAllPlaylist.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\ListBox.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\ListSlideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\views\box.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\views\list.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Project\mobileplus\mobileplus\protected\widgets\web\videoplaylist\views\slidebar.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php" afterPath="$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/web/ProductController.php" afterPath="$PROJECT_DIR$/protected/controllers/web/ProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/db/ProductModel.php" afterPath="$PROJECT_DIR$/protected/models/db/ProductModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/admin/product/_form.php" afterPath="$PROJECT_DIR$/protected/views/admin/product/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" afterPath="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/common.js" afterPath="$PROJECT_DIR$/web/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/db/ProductImgModel.php" afterPath="$PROJECT_DIR$/protected/models/db/ProductImgModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php" afterPath="$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/web/product/view.php" afterPath="$PROJECT_DIR$/protected/views/web/product/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobileplus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,31 +172,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6666665">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.653846">
+              <caret line="47" column="152" selection-start-line="47" selection-start-column="152" selection-end-line="47" selection-end-column="152" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41707718">
-              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+            <state vertical-scroll-proportion="-11.925926">
+              <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
+      <file leaf-file-name="ProductImgModel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/models/db/ProductImgModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.615385">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1372547">
-              <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.18632479">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -71,8 +232,8 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/web/product/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615">
-              <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -81,6 +242,16 @@
                 <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.0">
+              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,7 +286,6 @@
         <option value="$PROJECT_DIR$/protected/widgets/web/slider/views/init.php" />
         <option value="$PROJECT_DIR$/protected/views/admin/newsEvent/_form.php" />
         <option value="$PROJECT_DIR$/touch/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/models/db/ProductImgModel.php" />
         <option value="$PROJECT_DIR$/protected/views/web/product/index.php" />
         <option value="$PROJECT_DIR$/protected/components/web/Controller.php" />
         <option value="$PROJECT_DIR$/protected/views/admin/product/_form.php" />
@@ -125,11 +295,13 @@
         <option value="$PROJECT_DIR$/protected/controllers/web/SearchController.php" />
         <option value="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" />
         <option value="$PROJECT_DIR$/protected/views/web/product/search.php" />
-        <option value="$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php" />
-        <option value="$PROJECT_DIR$/protected/views/web/product/view.php" />
         <option value="$PROJECT_DIR$/protected/models/db/ProductModel.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/web/ProductController.php" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/models/db/ProductImgModel.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/web/ProductController.php" />
+        <option value="$PROJECT_DIR$/protected/views/web/product/view.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php" />
       </list>
     </option>
   </component>
@@ -301,6 +473,98 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobileplus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -365,7 +629,7 @@
     <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2673193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2673193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -423,34 +687,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/HtmlController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8469751">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/rangeslider.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/rangeslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_user_bar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -577,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/web/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/admin/newsEvent/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5272727">
@@ -624,14 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4356005">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductImgModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,13 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53662694">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/product/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -725,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/web/SearchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19444445">
-          <caret line="7" column="72" selection-start-line="5" selection-start-column="7" selection-end-line="7" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.528302">
@@ -749,29 +955,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1372547">
+          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/common/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34754097">
+          <caret line="421" column="27" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.0">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.925926">
+          <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7846154">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state vertical-scroll-proportion="-7.6666665">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22295082">
-          <caret line="50" column="138" selection-start-line="50" selection-start-column="138" selection-end-line="50" selection-end-column="138" />
+        <state vertical-scroll-proportion="-13.653846">
+          <caret line="47" column="152" selection-start-line="47" selection-start-column="152" selection-end-line="47" selection-end-column="152" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/web/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13934426">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/product/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615">
-          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -783,26 +1041,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductImgModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1372547">
-          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.615385">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41707718">
-          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.18632479">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 <div id="content" class="site-content row">
     <div class="product_view">
         <div class="product_slide">
-            <?php $this->widget('application.widgets.web.product_slider.Init',array()); ?>
+            <?php $this->widget('application.widgets.web.product_slider.Init',array('slider'=>$slider)); ?>
         </div>
         <div class="product_detail">
             <h2><?php echo $product->name;?></h2>
@@ -13,7 +13,7 @@
             <img src="../web/images/os/ios_view.png" alt="IOS">
             <img src="../web/images/os/wp_view.png" alt="WINDOWS PHONE">
             <img src="../web/images/os/android_view.png" alt="ANDROID">
-            <span>http://mobileplus.vn/</span>
+            <span><a href="http://mobileplus.vn">http://mobileplus.vn</a></span>
         </div>
     </div>
     <div class="pr_same">
