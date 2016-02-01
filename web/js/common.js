@@ -47,14 +47,6 @@ $(document).ready(function() {
                 }
             });
         });
-        $('#btn-search-icon').on('click', function(){
-            if($("#search-form").hasClass('hidden')){
-                $("#search-form").removeClass('hidden');
-            }else{
-                $("#search-form").addClass('hidden');
-            }
-
-        })
     }
 
     );

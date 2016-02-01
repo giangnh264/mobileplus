@@ -16,7 +16,15 @@ class ProductController extends Controller
     }
 
     public function actionView(){
-        $this->render('view');
+        $id = (int) Yii::app()->request->getParam('id');
+        $product = ProductModel::model()->findbyPk($id);
+        if(empty($product)){
+            $this->forward("/index/error", true);
+        }
+        //san pham tuong tu
+        $limit = 8;
+        $product_relate = ProductModel::model()->getProductRelate($id, $product->channel, $limit);
+        $this->render('view', compact('product'));
     }
 
     public function actionLoadmobile(){
@@ -24,6 +32,19 @@ class ProductController extends Controller
     }
     public function actionWeb(){
         $this->renderPartial ( "_web" );
+    }
+
+    public function actionSearch(){
+        $keyword = Yii::app()->request->getParam('q');
+        $keyword = CHtml::encode($keyword);
+        $order = Yii::app()->request->getParam('order', 1);
+        $channel = strtolower(Yii::app()->request->getParam('channel','web'));
+        $pagesize = 12;
+        $count =  ProductModel::model()->countsearchProduct($channel, $keyword);
+        $page = new CPagination($count);
+        $page->pageSize = $pagesize;
+        $product_web = ProductModel::model()->searchProduct($channel, $keyword, $order, $page->getLimit(), $page->getOffset());
+        $this->render('search', compact( 'product_web', 'page', 'keyword'));
     }
 
 }

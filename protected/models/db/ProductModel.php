@@ -51,6 +51,46 @@ class ProductModel extends BaseProductModel
 		return $results;
 	}
 
+	public function searchProduct($channel, $keyword,$order, $limit = 12, $offset = 0){
+		if(strtolower($channel) == 'web'){
+			$other_channel = 'app';
+		}
+		$criteria = new CDbCriteria();
+		$criteria->condition = 'channel = :channel';
+		$criteria->params = array(':channel'=>$other_channel);
+		$criteria->addSearchCondition('name', $keyword);
+		$criteria->limit = $limit;
+		$criteria->offset = $offset;
+		$criteria->order = 'id desc';
+		$product = ProductModel::model()->findAll($criteria);
+		return $product;
+
+	}
+
+	public function countsearchProduct($channel, $keyword){
+		if(strtolower($channel) == 'web'){
+			$other_channel = 'app';
+		}
+		$criteria = new CDbCriteria();
+		$criteria->condition = 'channel = :channel';
+		$criteria->params = array(':channel'=>$other_channel);
+		$criteria->addSearchCondition('name', $keyword);
+		$count = ProductModel::model()->count($criteria);
+		return $count;
+
+	}
+	public function getProductRelate($product_id, $channel,  $limit){
+		if(strtolower($channel) == 'web'){
+			$other_channel = 'app';
+		}
+		$criteria = new CDbCriteria();
+		$criteria->condition = 'channel = :channel and id <> :id';
+		$criteria->params = array(':channel'=>$other_channel, 'id'=>$product_id);
+		$criteria->limit = $limit;
+		$product = ProductModel::model()->findAll($criteria);
+		return $product;
+	}
+
 
 
 }

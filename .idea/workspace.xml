@@ -2,218 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec6a1fb9-731e-45dc-a994-eb1bc7c209cf" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\admin.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\allow.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\create.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\delete.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\eraser.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\help.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\manageAuth.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\update.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\users.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\usersAssign.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3d225d07\wizard.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\autocomplete\indicator.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\autocomplete\jquery.autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.ajaxqueue.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.ba-bbq.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.ba-bbq.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.bgiframe.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.history.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.maskedinput.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.maskedinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.multifile.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.rating.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.treeview.async.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.treeview.edit.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.treeview.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.yii.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.yiiactiveform.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jquery.yiitab.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\css\base\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\js\jquery-ui-i18n.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\jui\js\jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\punycode.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\punycode.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\rating\delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\rating\jquery.rating.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\rating\star.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\file.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\folder-closed.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-black-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-black.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-default-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-default.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-famfamfam.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-gray-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-gray.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-red-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\images\treeview-red.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\treeview\jquery.treeview.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\3ebc7fa8\yiitab\jquery.yiitab.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\detailview\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\delete.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\jquery.yiigridview.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\update.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\gridview\view.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\listview\down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\listview\jquery.yiilistview.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\listview\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\listview\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\5782f013\listview\up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\8c33112a\error.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\8c33112a\noError.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\8c33112a\process-working.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\8c33112a\srbac.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\images\arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\images\arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\images\header.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\images\header_over.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\images\plus_white.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\menu.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\menu_blue.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\a85138e3\menu_white.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\c0967a14\pager.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\css\ie.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\css\main.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\css\print.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\css\screen.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_close.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_loading.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_nav_left.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_nav_right.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_e.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_n.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_ne.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_nw.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_s.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_se.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_sw.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_shadow_w.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_title_left.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_title_main.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_title_over.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancy_title_right.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancybox-x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancybox-y.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\fancybox.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\jquery.fancybox-1.3.1.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\fancybox\jquery.fancybox-1.3.1.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\main.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\admin\assets\ebbdd7dd\js\tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\autocomplete\indicator.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\autocomplete\jquery.autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.ajaxqueue.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.ba-bbq.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.ba-bbq.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.bgiframe.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.history.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.maskedinput.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.maskedinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.multifile.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.rating.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.treeview.async.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.treeview.edit.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.treeview.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.yii.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.yiiactiveform.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jquery.yiitab.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\css\base\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\js\jquery-ui-i18n.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\jui\js\jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\punycode.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\punycode.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\rating\delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\rating\jquery.rating.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\rating\star.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\file.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\folder-closed.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-black-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-black.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-default-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-default.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-famfamfam.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-gray-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-gray.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-red-line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\images\treeview-red.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\treeview\jquery.treeview.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\3ebc7fa8\yiitab\jquery.yiitab.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\c0967a14\pager.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\css\slide.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\a12.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\a21.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\b03.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\b05.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\b21.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\images\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\a12.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\b05.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\js\jquery-1.9.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\js\jssor.slider.mini.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\assets\cc8b0031\js\slider.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\runtime\LogActionDeleteCMS.log" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\runtime\application.log" afterPath="" />
-      <change type="DELETED" beforePath="D:\Project\GITHUB\mobileplus\runtime\gii-1.1.16\ChaChaModelCode.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/web/SearchController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/web/product/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1/1_1.jpg" afterPath="$PROJECT_DIR$/images/product/1/1_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/2/2_3.jpg" afterPath="$PROJECT_DIR$/images/product/2/2_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/2/2_4.jpg" afterPath="$PROJECT_DIR$/images/product/2/2_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php" afterPath="$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/web/Controller.php" afterPath="$PROJECT_DIR$/protected/components/web/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/web/ProductController.php" afterPath="$PROJECT_DIR$/protected/controllers/web/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/db/ProductModel.php" afterPath="$PROJECT_DIR$/protected/models/db/ProductModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/admin/product/_form.php" afterPath="$PROJECT_DIR$/protected/views/admin/product/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" afterPath="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/common.js" afterPath="$PROJECT_DIR$/web/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/web/product/view.php" afterPath="$PROJECT_DIR$/protected/views/web/product/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobileplus.iws" />
@@ -236,71 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/web/product/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9615384">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/web/product/_web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="34.884617">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_mobile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/web/product/_mobile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="450" column="30" selection-start-line="450" selection-start-column="30" selection-end-line="450" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.41707718">
+              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Formatter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/common/Formatter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34587553">
-              <caret line="119" column="48" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1968162">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state vertical-scroll-proportion="-15.615385">
+              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -309,19 +61,26 @@
       <file leaf-file-name="ProductModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.603773">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.1372547">
+              <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductImgModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/db/ProductImgModel.php">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/web/product/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.878049">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding />
+            <state vertical-scroll-proportion="-10.384615">
+              <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -343,7 +102,6 @@
         <option value="$PROJECT_DIR$/protected/views/web/contact/_project.php" />
         <option value="$PROJECT_DIR$/protected/views/web/contact/index.php" />
         <option value="$PROJECT_DIR$/protected/config/admin.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/admin/ProductController.php" />
         <option value="$PROJECT_DIR$/protected/views/admin/product/create.php" />
         <option value="$PROJECT_DIR$/protected/views/admin/product/update.php" />
         <option value="$PROJECT_DIR$/protected/config/local.php" />
@@ -351,20 +109,27 @@
         <option value="$PROJECT_DIR$/protected/views/admin/layouts/newstyle.php" />
         <option value="$PROJECT_DIR$/protected/views/web/layouts/_footer.php" />
         <option value="$PROJECT_DIR$/protected/views/web/index/index.php" />
-        <option value="$PROJECT_DIR$/web/js/common.js" />
-        <option value="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" />
-        <option value="$PROJECT_DIR$/protected/views/admin/product/_form.php" />
         <option value="$PROJECT_DIR$/protected/controllers/admin/NewsEventController.php" />
         <option value="$PROJECT_DIR$/protected/models/db/NewsEventModel.php" />
         <option value="$PROJECT_DIR$/protected/widgets/web/slider/Init.php" />
         <option value="$PROJECT_DIR$/protected/widgets/web/slider/views/init.php" />
         <option value="$PROJECT_DIR$/protected/views/admin/newsEvent/_form.php" />
         <option value="$PROJECT_DIR$/touch/css/main.css" />
-        <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/models/db/ProductModel.php" />
         <option value="$PROJECT_DIR$/protected/models/db/ProductImgModel.php" />
         <option value="$PROJECT_DIR$/protected/views/web/product/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/web/Controller.php" />
+        <option value="$PROJECT_DIR$/protected/views/admin/product/_form.php" />
+        <option value="$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/admin/ProductController.php" />
+        <option value="$PROJECT_DIR$/web/js/common.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/web/SearchController.php" />
+        <option value="$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php" />
+        <option value="$PROJECT_DIR$/protected/views/web/product/search.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php" />
+        <option value="$PROJECT_DIR$/protected/views/web/product/view.php" />
+        <option value="$PROJECT_DIR$/protected/models/db/ProductModel.php" />
         <option value="$PROJECT_DIR$/protected/controllers/web/ProductController.php" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
       </list>
     </option>
   </component>
@@ -382,8 +147,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -408,8 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -496,7 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="widgets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -504,7 +267,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
+              <option name="myItemId" value="product_slider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,74 +285,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="widgets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
+              <option name="myItemId" value="product_slider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileplus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,6 +314,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project\mobileplus\mobileplus\protected\views\web\product" />
       <recent name="E:\Project\mobileplus\mobileplus\web\css" />
       <recent name="E:\Project\mobileplus\mobileplus\web\js" />
       <recent name="E:\Project\mobileplus\mobileplus\protected\config" />
@@ -646,10 +362,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2596401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2673193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -681,7 +397,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2596401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2673193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -707,58 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/admin/product/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/themes/admin-new/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3348" column="1" selection-start-line="3348" selection-start-column="1" selection-end-line="3348" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/web_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66548043">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
@@ -850,13 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/web/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024602026">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.654546">
@@ -899,41 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-113.11539">
-          <caret line="277" column="44" selection-start-line="277" selection-start-column="44" selection-end-line="277" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4879154">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68758714">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15407854">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/admin/product/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6387283">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,14 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.461538">
           <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.0188675">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
           <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5272727">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20481928">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,13 +602,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.346153">
           <caret line="184" column="24" selection-start-line="179" selection-start-column="8" selection-end-line="184" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/common/Formatter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34587553">
+        <state vertical-scroll-proportion="0.0">
           <caret line="119" column="48" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="48" />
           <folding />
         </state>
@@ -1004,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8521739">
           <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,36 +624,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4356005">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_dev_123312.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34442836">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/db/ProductImgModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.878049">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.8333333">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/page_next.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/product/_web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="34.884617">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,46 +646,163 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
+    <entry file="file://$PROJECT_DIR$/index_dev_123312.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.603773">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.2777778">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/web/AboutController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="450" column="30" selection-start-line="450" selection-start-column="30" selection-end-line="450" selection-end-column="30" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/product/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.433962">
+          <caret line="52" column="58" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/db/_base/BaseProductModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/admin/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53662694">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/web/product/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9615384">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/web/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055555556">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/web/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/web/SearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19444445">
+          <caret line="7" column="72" selection-start-line="5" selection-start-column="7" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/web/layouts/_topmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.528302">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/web/product/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="61" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/Init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7846154">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/web/product_slider/views/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22295082">
+          <caret line="50" column="138" selection-start-line="50" selection-start-column="138" selection-end-line="50" selection-end-column="138" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/web/product/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.384615">
+          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#ul#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/db/ProductModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1372547">
+          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/web/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1968162">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state vertical-scroll-proportion="-15.615385">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41707718">
+          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
           <folding />
         </state>
       </provider>

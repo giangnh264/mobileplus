@@ -38,10 +38,4 @@ class Controller extends CController {
     	parent::render($view, $data, $return);
     }
 
-    private function updateCache() {
-    	if(Yii::app()->request->getParam('resetcache', 0) === 1)
-    		Yii::app()->setComponent('cache', new CDummyCache());
-    }
-
-
 }
