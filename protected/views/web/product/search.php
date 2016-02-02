@@ -1,13 +1,15 @@
-<p>Kết quả tìm kiếm cho từ khóa <b><?php echo $keyword;?></b></p>
+<p>tìm thấy <b><?php echo $count;?></b> sản phẩm với từ khóa <b><?php echo $keyword;?></b></p>
 <div class="product_header">
+    <input id="link_channel_web" type="hidden" value="<?php echo Yii::app()->createAbsoluteUrl('/product/search', array('q'=>$keyword,'channel'=>'web', 'order'=>$order));?>">
+    <input id="link_channel_app" type="hidden" value="<?php echo Yii::app()->createAbsoluteUrl('/product/search', array('q'=>$keyword,'channel'=>'app', 'order'=>$order));?>">
     <ul class="product_promotion">
-        <li class="selected product_web">Web</li>
-        <li class="product_mobile">Mobile App</li>
+        <li class="product_web <?php echo ($channel == 'web'? 'selected' : '') ;?>">Web</li>
+        <li class="product_mobile <?php echo ($channel == 'app'? 'selected' : '') ;?>">Mobile App</li>
     </ul>
     <div class="styled-select">
-        <select class="product_select">
-            <option selected="selected">Mới nhất</option>
-            <option>Xem nhiều nhất</option>
+        <select class="product_select" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'1'))?>" selected="<?php echo ($order == 1) ?'selected' : '';?>">Mới nhất</option>
+            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'0'))?>" selected="<?php echo ($order == 0) ?'selected' : '';?>">Xem nhiều nhất</option>
         </select>
     </div>
 </div>
@@ -18,7 +20,7 @@
                     <div class="wrr-item">
                         <div class="wrr-item-main">
                             <div class="thumb thumb-hover">
-                                <a title="Hòa Âm Của Giai Điệu" href="<?php echo Yii::app()->createUrl('product/view')?>">
+                                <a title="<?php echo $product->name;?>" href="<?php echo Yii::app()->createUrl('product/view', array('id'=>$product->id))?>">
                                     <?php
                                     $product_img = ProductImgModel::model()->getOneImgByProductId($product->id);
                                     ?>

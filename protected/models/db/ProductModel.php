@@ -26,27 +26,26 @@ class ProductModel extends BaseProductModel
 		return Yii::app()->params['storage']["ProductUrl"] . $src;
 	}
 
-	public function getProductByChannel($channel, $limit = 12, $offset = 0){
-		if(strtoupper($channel) == 'WEB'){
-			$other_channel = 'app';
-		}
+	public function getProductByChannel($channel, $limit = 12, $offset = 0, $order){
+
 		$criteria = new CDbCriteria;
 		$criteria->condition = 'channel <> :channel AND  status = 1';
-		$criteria->params = array(':channel'=>$other_channel);
-		$criteria->order = "id DESC";
+		$criteria->params = array(':channel'=>$channel);
 		$criteria->limit = $limit;
 		$criteria->offset = $offset;
+		$criteria->order = "id DESC";
+		if($order == 0){
+			$criteria->order = "id DESC";
+		}
+
 		$results = self::model()->findAll($criteria);
 		return $results;
 	}
 
 	public function countProductByChannel($channel){
-		if(strtoupper($channel) == 'WEB'){
-			$other_channel = 'app';
-		}
 		$criteria = new CDbCriteria;
 		$criteria->condition = 'channel <> :channel AND  status = 1';
-		$criteria->params = array(':channel'=>$other_channel);
+		$criteria->params = array(':channel'=>$channel);
 		$results = self::model()->count($criteria);
 		return $results;
 	}
@@ -54,9 +53,11 @@ class ProductModel extends BaseProductModel
 	public function searchProduct($channel, $keyword,$order, $limit = 12, $offset = 0){
 		if(strtolower($channel) == 'web'){
 			$other_channel = 'app';
+		}else{
+			$other_channel = 'web';
 		}
 		$criteria = new CDbCriteria();
-		$criteria->condition = 'channel = :channel';
+		$criteria->condition = 'channel <> :channel';
 		$criteria->params = array(':channel'=>$other_channel);
 		$criteria->addSearchCondition('name', $keyword);
 		$criteria->limit = $limit;

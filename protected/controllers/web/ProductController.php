@@ -3,12 +3,19 @@
 class ProductController extends Controller
 {
     public function actionIndex(){
+        $channel  = Yii::app()->request->getParam('channel', 'web');
+        if(strtolower($channel) == 'web'){
+            $other_channel = 'app';
+        }else{
+            $other_channel = 'web';
+        }
+        $order = Yii::app()->request->getParam('order', 1);
         $pagesize = 12;
-        $count =  ProductModel::model()->countProductByChannel('web');
+        $count =  ProductModel::model()->countProductByChannel($other_channel);
         $page = new CPagination($count);
         $page->pageSize = $pagesize;
-        $product_web = ProductModel::model()->getProductByChannel('web', $page->getLimit(), $page->getOffset());
-        $this->render('index', compact( 'product_web', 'page'));
+        $product_web = ProductModel::model()->getProductByChannel($other_channel, $page->getLimit(), $page->getOffset(), $order);
+        $this->render('index', compact( 'product_web', 'page', 'channel', 'other_channel', 'order'));
     }
 
     public function actionMobile(){
@@ -49,7 +56,8 @@ class ProductController extends Controller
         $page = new CPagination($count);
         $page->pageSize = $pagesize;
         $product_web = ProductModel::model()->searchProduct($channel, $keyword, $order, $page->getLimit(), $page->getOffset());
-        $this->render('search', compact( 'product_web', 'page', 'keyword'));
+        $this->render('search', compact( 'product_web', 'page', 'keyword','order', 'channel', 'count'));
+
     }
 
 }
