@@ -71,9 +71,11 @@ class ProductModel extends BaseProductModel
 	public function countsearchProduct($channel, $keyword){
 		if(strtolower($channel) == 'web'){
 			$other_channel = 'app';
+		}else{
+			$other_channel = 'web';
 		}
 		$criteria = new CDbCriteria();
-		$criteria->condition = 'channel = :channel';
+		$criteria->condition = 'channel <> :channel';
 		$criteria->params = array(':channel'=>$other_channel);
 		$criteria->addSearchCondition('name', $keyword);
 		$count = ProductModel::model()->count($criteria);
@@ -83,9 +85,11 @@ class ProductModel extends BaseProductModel
 	public function getProductRelate($product_id, $channel,  $limit){
 		if(strtolower($channel) == 'web'){
 			$other_channel = 'app';
+		}else{
+			$other_channel = 'web';
 		}
 		$criteria = new CDbCriteria();
-		$criteria->condition = 'channel = :channel and id <> :id';
+		$criteria->condition = 'channel <> :channel and id <> :id';
 		$criteria->params = array(':channel'=>$other_channel, 'id'=>$product_id);
 		$criteria->limit = $limit;
 		$product = ProductModel::model()->findAll($criteria);

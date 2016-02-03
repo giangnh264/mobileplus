@@ -570,3 +570,6 @@ a:hover span.menu-icon {
     margin: 5px 0 5px 120px;
     padding: 5px;
 }
+.icon-top{
+    background: url(../images/delete.png) no-repeat;
+}

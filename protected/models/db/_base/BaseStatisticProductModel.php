@@ -1,27 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "product".
+ * This is the model class for table "statistic_product".
  *
- * The followings are the available columns in table 'product':
+ * The followings are the available columns in table 'statistic_product':
  * @property integer $id
- * @property string $name
- * @property string $description
- * @property string $url_key
- * @property string $channel
- * @property integer $wp
- * @property integer $ios
- * @property integer $android
- * @property string $created_time
- * @property string $updated_time
- * @property integer $status
- * @property integer $sorder
+ * @property integer $product_id
+ * @property integer $view_count
  */
-class BaseProductModel extends MainActiveRecord
+class BaseStatisticProductModel extends MainActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
-	 * @return Product the static model class
+	 * @return StatisticProduct the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -33,7 +24,7 @@ class BaseProductModel extends MainActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'product';
+		return 'statistic_product';
 	}
 
 	/**
@@ -44,14 +35,10 @@ class BaseProductModel extends MainActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, description, url_key', 'required'),
-			array('wp, ios, android, status, sorder', 'numerical', 'integerOnly'=>true),
-			array('name, url_key', 'length', 'max'=>255),
-			array('channel', 'length', 'max'=>20),
-			array('created_time, updated_time', 'safe'),
+			array('product_id, view_count', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, description, url_key, channel, wp, ios, android, created_time, updated_time, status, sorder', 'safe', 'on'=>'search'),
+			array('id, product_id, view_count', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,17 +73,8 @@ class BaseProductModel extends MainActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('description',$this->description,true);
-		$criteria->compare('url_key',$this->url_key,true);
-		$criteria->compare('channel',$this->channel,true);
-		$criteria->compare('wp',$this->wp);
-		$criteria->compare('ios',$this->ios);
-		$criteria->compare('android',$this->android);
-		$criteria->compare('created_time',$this->created_time,true);
-		$criteria->compare('updated_time',$this->updated_time,true);
-		$criteria->compare('status',$this->status);
-		$criteria->compare('sorder',$this->sorder);
+		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('view_count',$this->view_count);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

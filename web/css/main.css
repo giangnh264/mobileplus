@@ -42,13 +42,14 @@
 .product_promotion > li {
     border: 1px solid #d8d8d8;
     color: #000;
+    cursor: pointer;
     display: block;
     float: left;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 6px 0;
     text-align: center;
     text-transform: uppercase;
-    width: 135px;
-    cursor: pointer;
+    width: 95px;
 }
 .product_promotion li.selected{
     background-color: #008BEF;
@@ -195,7 +196,7 @@ footer li {
 }
 .product_detail > h2 {
     margin-bottom: 7px;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .product_detail > p {
     color: #000;
@@ -483,4 +484,81 @@ form.contact_sm a {
 }
 .product_detail > h2 {
     color: #000;
+}
+
+#overlay-bg {
+    background: #000 none repeat scroll 0 0;
+    display: none;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.icon_wap_search {
+    background-image: url("/web/images/wap_search.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    margin: 4px;
+    position: absolute;
+    width: 30px;
+}
+.menu-list input {
+    height: 37px;
+    margin: 0 !important;
+    padding-left: 37px!important;
+    font-size: 14px;
+}
+.menu-list p {
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+.product_showmore {
+    background-image: url("/web/images/wap_show_more.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.product_hidemore{
+    background-image: url("/web/images/wap_hide_more.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+aside.menu-list {
+    background: #1c2e41 none repeat scroll 0 0;
+    width: 275px;
+    z-index: 99999;
+}
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.menu-list ul li {
+    border-bottom: 2px solid #41556a;
+    line-height: 25px;
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 10px;
+}
+.menu-list ul li.active{
+    border-left: 4px solid #eb741f;
+}
+.menu-list ul li span.text {
+    color: #fff;
+    text-transform: uppercase;
 }
