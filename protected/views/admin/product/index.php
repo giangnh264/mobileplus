@@ -115,6 +115,43 @@ $this->widget('zii.widgets.grid.CGridView', array(
 			),
 		),
 		array(
+			'class' => 'CButtonColumn',
+			'template' => '{top}{up}{down}{bottom}',
+			'buttons' => array(
+				'top' => array(
+					'label' => 'Top',
+					'imageUrl' => Yii::app()->request->baseUrl . '/css/img/top.png',
+					'url' => 'Yii::app()->createUrl("product/sorder", array("id"=>$data->id,"type"=>"top"))',
+				),
+				'up' => array(
+					'label' => 'Up',
+					'imageUrl' => Yii::app()->request->baseUrl . '/css/img/up.png',
+					'url' => 'Yii::app()->createUrl("product/sorder", array("id"=>$data->id,"type"=>"up"))',
+				),
+				'down' => array(
+					'label' => 'Down',
+					'imageUrl' => Yii::app()->request->baseUrl . '/css/img/down.png',
+					'url' => 'Yii::app()->createUrl("product/sorder", array("id"=>$data->id,"type"=>"down"))',
+				),
+				'bottom' => array(
+					'label' => 'Bottom',
+					'imageUrl' => Yii::app()->request->baseUrl . '/css/img/bottom.png',
+					'url' => 'Yii::app()->createUrl("product/sorder", array("id"=>$data->id,"type"=>"bottom"))',
+				),
+			),
+			'header' => CHtml::dropDownList('pageSize', $pageSize, array(10 => 10, 30 => 30, 50 => 50, 100 => 100), array(
+				'onchange' => "$.fn.yiiGridView.update('admin-song-model-grid',{ data:{pageSize: $(this).val() }})",
+			)),
+		),
+
+	/*	array(
+			'header' => Yii::t('admin', 'Sắp xếp') . CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/css/img/save_icon.png"), "", array("class" => "reorder", "rel" => $this->createUrl('product/reorder'))),
+			'value' => 'CHtml::textField("sorder[$data->id]", $data->sorder,array("size"=>1))',
+			'type' => 'raw',
+			'htmlOptions' => array(),
+			'headerHtmlOptions' => array('width' => '62px', 'style' => 'text-align:left'),
+		),*/
+		array(
 			'class'=>'CButtonColumn',
             'header'=>CHtml::dropDownList('pageSize',$pageSize,array(10=>10,30=>30,50=>50,100=>100),array(
 				  'onchange'=>"$.fn.yiiGridView.update('product-model-grid',{ data:{pageSize: $(this).val() }})",

@@ -3,7 +3,7 @@
 
 /* Smaller than standard 1200 (devices and browsers) */
 @media only screen and (max-width:1199px){
-  .header-area-right {
+    .header-area-right {
       width: 50%;
   }
   .col-sm-8.site-branding {
@@ -16,6 +16,13 @@
 
 /* Smaller than standard 991 (devices and browsers) */
 @media only screen and (max-width:1023px){
+    header {
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 997;
+    }
     .site-title {
         font-size:15px;
         font-weight: bold;
@@ -159,6 +166,7 @@
 .main-navigation .menu > ul li.page_item_has_children > a {
     padding-right: 35px;
 }
+
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width:767px){
@@ -315,6 +323,17 @@
 /* Small Andriod Mobile Portrait Size ( 600 devices and browsers) */
 
 @media only screen and (max-width:600px){
+
+    header {
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 997;
+    }
+    .home{
+        padding: 0 5px;
+    }
     #site-navigation {
         display: none;
     }
@@ -464,10 +483,14 @@
     .row.header-layout-2 .header-area-right {
         padding: 0 15px;
     }
+
 }
 
 /* Small Andriod Mobile Portrait Size ( 320 devices and browsers) */
-@media only screen and (max-width:479px){
+/*@media only screen and (max-width:479px){
+    .home{
+        padding: 0 5px;
+    }
     #site-navigation {
         display: none;
     }
@@ -617,7 +640,7 @@
   .row.header-layout-2 .header-area-right {
       padding: 0 15px;
   }
-}
+}*/
 
 
 /* Small Andriod Mobile Portrait Size ( 320 devices and browsers) */

@@ -56,8 +56,9 @@ class ProductController extends Controller
         if (isset($_POST['ProductModel'])) {
             $model->attributes = $_POST['ProductModel'];
             $model->created_time = date('Y-m-d H:i:s');
+            $transaction = Yii::app()->db->beginTransaction();
             try {
-                if ($model->save()) {
+                if ($model->save(false)) {
                     for ($i = 1; $i <= 10; $i++) {
                         if ($_FILES["clip_thumbnail_$i"]['size'] > 0) {
                             $coverPath = $this->uploadFile($_FILES["clip_thumbnail_$i"], $model, $i);
@@ -72,18 +73,23 @@ class ProductController extends Controller
                                 $res = $product_img->save();
                                 if (!$res) {
                                     $model->addError('cover', 'Không tạo được sản phẩm');
+                                    $transaction->rollback();
                                     goto cIteratorExit;
                                 }
                             }else {
                                 $model->addError('cover', 'Kích thước ảnh tối thiểu ' . $this->coverWidth . "x" . $this->coverHeight);
+                                $transaction->rollback();
                                 goto cIteratorExit;
                             }
 
                         }
                     }
+                    $transaction->commit();
+                    $this->redirect(array('view', 'id' => $model->id));
+                } else {
+                    $transaction->rollback();
                 }
 
-                $this->redirect(array('view', 'id' => $model->id));
 
             } catch (Exception $e) {
                 $model->addError("exception", $e->getMessage());
@@ -129,15 +135,17 @@ class ProductController extends Controller
                             $product_img->created_time = date('Y-m-d H:i:s');
                             $product_img->status = 1;
                             $product_img->sorder = 0;
-                            $res = $product_img->save();
+                            $product_img->save(false);
                         } else {
                             $model->addError('cover', 'Kích thước ảnh tối thiểu ' . $this->coverWidth . "x" . $this->coverHeight);
+                            $transaction->commit();
                             goto cIteratorExit;
                         }
 
                     }
                 }
-                if ($model->save()) {
+                if ($model->save(false)) {
+                    $transaction->commit();
                     $this->redirect(array('view', 'id' => $model->id));
                 }
             } catch (Exception $e) {
@@ -328,6 +336,18 @@ class ProductController extends Controller
         header("Content-type: application/json");
         echo json_encode($data);
         Yii::app()->end();
+    }
+
+    public function actionSorder()
+    {
+        $id = Yii::app()->request->getParam('id');
+        $type = Yii::app()->request->getParam('type');
+        $type = trim(strtolower($type));
+        $product = ProductModel::model()->findbyPk($id);
+        switch($type){
+            case 'top':
+        }
+        $this->redirect(array('index'));
     }
 
 }
