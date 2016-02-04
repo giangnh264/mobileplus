@@ -329,16 +329,6 @@ textarea {
     vertical-align: top; /* Improves readability and alignment in all browsers */
     width: 100%;
 }
-input[type="text"], input[type="password"], textarea, input[type="email"],select {
-    border:1px solid #ddd;
-    border-radius: 0 0 0 0;
-    color: #414042;
-    line-height: 20px;
-    margin: 0 0 20px;
-    padding: 5px;
-    width: 100%;
-}
-
 ::-moz-placeholder {
 
     color:#8f8989;
