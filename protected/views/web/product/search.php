@@ -16,7 +16,7 @@
 <div class="product_content">
         <div class="wrr_items_list_resp">
             <?php foreach($product_web as $product):?>
-                <div class="items fll col-25 col-sm-3">
+                <div class="items fll col-25">
                     <div class="wrr-item">
                         <div class="wrr-item-main">
                             <div class="thumb thumb-hover">

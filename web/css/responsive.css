@@ -166,6 +166,12 @@
 .main-navigation .menu > ul li.page_item_has_children > a {
     padding-right: 35px;
 }
+    .wrr_items_list_resp .items{
+        width: 25%;
+    }
+    form.contact_sm a {
+        display: none;
+    }
 
 }
 /* All Mobile Sizes (devices and browser) */
@@ -318,6 +324,12 @@
     }
     .row.header-layout-2 .header-area-right {
         padding: 0 15px;
+    }
+    .wrr_items_list_resp .items{
+        width: 50%;
+    }
+    form.contact_sm a {
+        display: none;
     }
 }
 /* Small Andriod Mobile Portrait Size ( 600 devices and browsers) */
@@ -483,11 +495,17 @@
     .row.header-layout-2 .header-area-right {
         padding: 0 15px;
     }
+    .wrr_items_list_resp .items{
+        width: 50%;
+    }
+    form.contact_sm a {
+        display: none;
+    }
 
 }
 
-/* Small Andriod Mobile Portrait Size ( 320 devices and browsers) */
-/*@media only screen and (max-width:479px){
+ /*Small Andriod Mobile Portrait Size ( 320 devices and browsers)*/
+@media only screen and (max-width:479px){
     .home{
         padding: 0 5px;
     }
@@ -640,7 +658,13 @@
   .row.header-layout-2 .header-area-right {
       padding: 0 15px;
   }
-}*/
+    .wrr_items_list_resp .items{
+        width: 100%;
+    }
+    form.contact_sm a {
+        display: block;
+    }
+}
 
 
 /* Small Andriod Mobile Portrait Size ( 320 devices and browsers) */

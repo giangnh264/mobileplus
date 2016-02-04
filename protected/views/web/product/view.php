@@ -28,7 +28,7 @@
             <div class="product_content page_1" id="video_playlist_contain" style="left: 0px;">
                 <ul class="list_video_playlist video_playlist_page" style="width: 1170px;float:left">
                     <div class="wrr_items_list_resp">
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -113,7 +113,7 @@
                 </ul>
                 <ul class="list_video_playlist video_playlist_page" style="width: 1170px;float:left">
                     <div class="wrr_items_list_resp">
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25 col-sm-3">
+                        <div class="items fll col-25">
                             <div class="wrr-item">
                                 <div class="wrr-item-main">
                                     <div class="thumb thumb-hover">
