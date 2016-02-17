@@ -8,15 +8,15 @@
     </ul>
     <div class="styled-select">
         <select class="product_select" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'1'))?>" selected="<?php echo ($order == 1) ?'selected' : '';?>">Mới nhất</option>
-            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'0'))?>" selected="<?php echo ($order == 0) ?'selected' : '';?>">Xem nhiều nhất</option>
+            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'1'))?>" <?php echo ($order == 1) ?'selected' : '';?>>Mới nhất</option>
+            <option value="<?php echo Yii::app()->createUrl('/product/search', array('q'=>$keyword, 'channel'=>$channel, 'order'=>'0'))?>" <?php echo ($order == 0) ?'selected' : '';?>>Xem nhiều nhất</option>
         </select>
     </div>
 </div>
 <div class="product_content">
         <div class="wrr_items_list_resp">
             <?php foreach($product_web as $product):?>
-                <div class="items fll col-25">
+                <div class="items fll col-25 col-sm-3">
                     <div class="wrr-item">
                         <div class="wrr-item-main">
                             <div class="thumb thumb-hover">

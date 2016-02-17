@@ -9,7 +9,7 @@ class ProductController extends Controller
         }else{
             $other_channel = 'web';
         }
-        $order = Yii::app()->request->getParam('order', 1);
+        $order = (int) Yii::app()->request->getParam('order', 1);
         $pagesize = 12;
         $count =  ProductModel::model()->countProductByChannel($other_channel);
         $page = new CPagination($count);
@@ -29,18 +29,10 @@ class ProductController extends Controller
             $this->forward("/index/error", true);
         }
         //log san pham
-        $statistic = StatisticProductModel::model()->findbyAttributes(array('product_id'=>$id));
-        if(!empty($statistic)){
-            $count = $statistic->view_count;
-            $count = $count + 1;
-            $statistic->view_count = $count;
-            $statistic->save(false);
-        }else{
-            $statistic = new StatisticProductModel();
-            $statistic->product_id = $id;
-            $statistic->view_count = 1;
-            $statistic->save(false);
-        }
+        $count = $product->view_count;
+        $count = $count + 1;
+        $product->view_count = $count;
+        $product->save(false);
         //san pham tuong tu
         $limit = 8;
         $product_relate = ProductModel::model()->getProductRelate($id, $product->channel, $limit);

@@ -26,176 +26,42 @@
         </div>
         <div id="video_playlist_mask" style="height: 224px;">
             <div class="product_content page_1" id="video_playlist_contain" style="left: 0px;">
-                <ul class="list_video_playlist video_playlist_page" style="width: 1170px;float:left">
-                    <div class="wrr_items_list_resp">
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/4.jpg">
-                                        </a>
-                                    </div>
+                <?php
+                $i=0;
+                foreach ($product_relate as $product):
+                    if (fmod($i, 4) == 0){
+                        echo '<ul class="list_video_playlist video_playlist_page" style="width: 1170px;float:left">';
+                        echo '<div class="wrr_items_list_resp">';
+                    }
+                    ?>
+                    <div class="items fll col-25 col-sm-3">
+                        <div class="wrr-item">
+                            <div class="wrr-item-main">
+                                <div class="thumb thumb-hover">
+                                    <a title="<?php echo $product->name?>"  href="<?php echo Yii::app()->createUrl('product/view', array('id'=>$product->id))?>">
+                                        <?php
+                                        $product_img = ProductImgModel::model()->getOneImgByProductId($product->id);
+                                        ?>
+                                        <img width="100%" alt="<?php echo $product->name;?>" src="<?php echo $product_img[0]['img_url'];?>">
+                                    </a>
+                                </div>
 
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
+                                <div class="wrr-item-content">
+                                    <p class="item_main">
+                                        <?php echo Formatter::smartCut($product->name, 20);?>
+                                    </p>
+                                    <p class="item_sub">
+                                        <?php echo Formatter::smartCut($product->description, 60 );?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/3.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/2.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/1.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </div>
-                </ul>
-                <ul class="list_video_playlist video_playlist_page" style="width: 1170px;float:left">
-                    <div class="wrr_items_list_resp">
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/4.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/3.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/2.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items fll col-25">
-                            <div class="wrr-item">
-                                <div class="wrr-item-main">
-                                    <div class="thumb thumb-hover">
-                                        <a title="Hòa Âm Của Giai Điệu" href="http://nhac.vn/hot-list/hoa-am-cua-giai-dieu-tvOlB">
-                                            <img width="100%" alt="Hòa Âm Của Giai Điệu" src="../web/images/product/1.jpg">
-                                        </a>
-                                    </div>
-
-                                    <div class="wrr-item-content">
-                                        <p class="item_main">
-                                            Sed ut perspiciatis project
-                                        </p>
-                                        <p class="item_sub">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </ul>
+                    <?php
+                    if (fmod($i, 4) == 3 || $i==count($product_relate)-1){
+                        echo '</ul>';
+                    }
+                    $i++; endforeach;?>
             </div>
             </div>
 

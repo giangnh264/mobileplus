@@ -35,9 +35,8 @@ class ProductModel extends BaseProductModel
 		$criteria->offset = $offset;
 		$criteria->order = "id DESC";
 		if($order == 0){
-			$criteria->order = "id DESC";
+			$criteria->order = "sorder ASC, view_count DESC";
 		}
-
 		$results = self::model()->findAll($criteria);
 		return $results;
 	}
@@ -50,7 +49,7 @@ class ProductModel extends BaseProductModel
 		return $results;
 	}
 
-	public function searchProduct($channel, $keyword,$order, $limit = 12, $offset = 0){
+	public function searchProduct($channel, $keyword, $order, $limit = 12, $offset = 0){
 		if(strtolower($channel) == 'web'){
 			$other_channel = 'app';
 		}else{
@@ -62,7 +61,10 @@ class ProductModel extends BaseProductModel
 		$criteria->addSearchCondition('name', $keyword);
 		$criteria->limit = $limit;
 		$criteria->offset = $offset;
-		$criteria->order = 'id desc';
+		$criteria->order = "id DESC";
+		if($order == 0){
+			$criteria->order = "sorder ASC, view_count DESC";
+		}
 		$product = ProductModel::model()->findAll($criteria);
 		return $product;
 

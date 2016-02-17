@@ -15,6 +15,7 @@
  * @property string $created_time
  * @property string $updated_time
  * @property integer $status
+ * @property integer $view_count
  * @property integer $sorder
  */
 class BaseProductModel extends MainActiveRecord
@@ -45,13 +46,13 @@ class BaseProductModel extends MainActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name, description, url_key', 'required'),
-			array('wp, ios, android, status, sorder', 'numerical', 'integerOnly'=>true),
+			array('wp, ios, android, status, view_count, sorder', 'numerical', 'integerOnly'=>true),
 			array('name, url_key', 'length', 'max'=>255),
 			array('channel', 'length', 'max'=>20),
 			array('created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, description, url_key, channel, wp, ios, android, created_time, updated_time, status, sorder', 'safe', 'on'=>'search'),
+			array('id, name, description, url_key, channel, wp, ios, android, created_time, updated_time, status, view_count, sorder', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -96,6 +97,7 @@ class BaseProductModel extends MainActiveRecord
 		$criteria->compare('created_time',$this->created_time,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
 		$criteria->compare('status',$this->status);
+		$criteria->compare('view_count',$this->view_count);
 		$criteria->compare('sorder',$this->sorder);
 
 		return new CActiveDataProvider($this, array(

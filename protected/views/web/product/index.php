@@ -7,8 +7,9 @@
     </ul>
     <div class="styled-select">
         <select class="product_select" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="<?php echo Yii::app()->createUrl('/product/index', array('channel'=>$channel, 'order'=>'1'))?>" selected="<?php echo ($order == 1) ?'selected' : '';?>">Mới nhất</option>
-            <option value="<?php echo Yii::app()->createUrl('/product/index', array('channel'=>$channel, 'order'=>'0'))?>" selected="<?php echo ($order == 0) ?'selected' : '';?>">Xem nhiều nhất</option>
+            <option value="<?php echo Yii::app()->createUrl('/product/index', array('channel'=>$channel, 'order'=>'0'))?>" <?php echo ($order == 0) ?'selected' : '';?>>Xem nhiều nhất</option>
+            <option value="<?php echo Yii::app()->createUrl('/product/index', array('channel'=>$channel, 'order'=>'1'))?>" <?php echo ($order == 1) ?'selected' : '';?>>Mới nhất</option>
+
         </select>
     </div>
 </div>
