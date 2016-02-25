@@ -33,12 +33,14 @@ return array(
  			'storage'=>array(
                            'staticDir' => _APP_PATH_,
                             'newsEventUrl' => 'http://mobile.lc/images/slider/',
-//                            'newsEventDir' => 'E:\Project\mobileplus\mobileplus/images/slider/',
                             'newsEventDir' => 'D:\Project\GITHUB\mobileplus\images\slider/',
 
                             'ProductUrl' => 'http://mobile.lc/images/product/',
-//                            'ProductDir' => 'E:\Project\mobileplus\mobileplus/images/product/',
                             'ProductDir' => 'D:\Project\GITHUB\mobileplus\images\product/',
+
+
+							'ServicesUrl' => 'http://mobile.lc/images/services/',
+							'ServicesDir' => 'D:\Project\GITHUB\mobileplus\images\services/',
                     ),
         
             // solr search

@@ -1,29 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "product".
+ * This is the model class for table "services".
  *
- * The followings are the available columns in table 'product':
+ * The followings are the available columns in table 'services':
  * @property integer $id
  * @property string $name
- * @property string $des_link
- * @property string $description
  * @property string $url_key
- * @property string $channel
- * @property integer $wp
- * @property integer $ios
- * @property integer $android
+ * @property string $img_url
+ * @property string $description
  * @property string $created_time
  * @property string $updated_time
  * @property integer $status
- * @property integer $view_count
  * @property integer $sorder
  */
-class BaseProductModel extends MainActiveRecord
+class BaseServicesModel extends MainActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
-	 * @return Product the static model class
+	 * @return Services the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -35,7 +30,7 @@ class BaseProductModel extends MainActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'product';
+		return 'services';
 	}
 
 	/**
@@ -46,14 +41,13 @@ class BaseProductModel extends MainActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, description, url_key', 'required'),
-			array('wp, ios, android, status, view_count, sorder', 'numerical', 'integerOnly'=>true),
+			array('name, url_key, description', 'required'),
+			array('status, sorder', 'numerical', 'integerOnly'=>true),
 			array('name, url_key', 'length', 'max'=>255),
-			array('channel', 'length', 'max'=>20),
-			array('des_link, created_time, updated_time', 'safe'),
+			array('img_url, created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, des_link, description, url_key, channel, wp, ios, android, created_time, updated_time, status, view_count, sorder', 'safe', 'on'=>'search'),
+			array('id, name, url_key, img_url, description, created_time, updated_time, status, sorder', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -89,17 +83,12 @@ class BaseProductModel extends MainActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('des_link',$this->des_link,true);
-		$criteria->compare('description',$this->description,true);
 		$criteria->compare('url_key',$this->url_key,true);
-		$criteria->compare('channel',$this->channel,true);
-		$criteria->compare('wp',$this->wp);
-		$criteria->compare('ios',$this->ios);
-		$criteria->compare('android',$this->android);
+		$criteria->compare('img_url',$this->img_url,true);
+		$criteria->compare('description',$this->description,true);
 		$criteria->compare('created_time',$this->created_time,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
 		$criteria->compare('status',$this->status);
-		$criteria->compare('view_count',$this->view_count);
 		$criteria->compare('sorder',$this->sorder);
 
 		return new CActiveDataProvider($this, array(

@@ -3,7 +3,7 @@
 return CMap::mergeArray(
     require(dirname(__FILE__) . '/main.php'), array(
         'id' => 'front',
-        'name' => 'Amusic-Admin',
+        'name' => 'Mobile plus-Admin',
         'controllerPath' => _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "controllers" . DIRECTORY_SEPARATOR . "admin",
         'viewPath' => _APP_PATH_ . DIRECTORY_SEPARATOR . "protected" . DIRECTORY_SEPARATOR . "views" . DIRECTORY_SEPARATOR . "admin",
         'defaultController' => 'adminUser/profile',

@@ -400,7 +400,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-    color: #8c8b8b;
+    color: #000;
     /*    font-family: "Arial",sans-serif;*/
     font-size: 16px;
     line-height: 1.7;
@@ -604,7 +604,7 @@ caption {
     display: block;
 }
 .main-navigation ul li a {
-    color: #6f6f6f;
+    color: #000;
     display: block;
     font-size: 16px;
     margin-right: 3px;
@@ -2314,15 +2314,11 @@ a.scrollup:hover,
 a.scrollup:active{
     color: #000000;
 }
-.service-block-inner img {
-    border-radius: 100px;
-}
 .service-block-item-excerpt {
     margin-bottom: 20px;
 }
 .service-block-item img {
-    background: none repeat scroll 0 0 #dddddd;
-    padding: 30px;
+    margin-bottom: 30px;
 }
 
 .projects.columns-2 ul.projects li.project {
@@ -2403,4 +2399,9 @@ span.wpcf7-form-control-wrap {
 
 .wapper{
     overflow: hidden;
+}
+
+.service-item-title{
+    text-transform: uppercase;
+    color: #000;
 }

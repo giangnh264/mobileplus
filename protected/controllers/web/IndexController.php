@@ -3,15 +3,15 @@ class IndexController extends Controller
 {
 	public function actionIndex()
 	{
-
-		$this->render("index");
+		$content = HtmlModel::model()->findbyPk(2)->content;
+		$services = ServicesModel::model()->getByHome();
+		$this->render("index", compact('content', 'services'));
 	}
 
 	public function actionError()
 	{
 		$this->layout = 'application.views.web.layouts.main';
-		$error = Yii::app()->errorHandler->error;
-		$this->render('error', array('error'=>$error) );
+		$this->render('error' );
 	}
 
 	public function actionLoadJs()

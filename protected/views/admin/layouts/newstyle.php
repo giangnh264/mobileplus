@@ -176,7 +176,7 @@
             </div>
         </div>
         <div id="footer">
-            <p>Copyright &copy; 2011 <a href="http://vega.com.vn/">Vega Corporation</a> . All Rights Reserved.</p>
+            <p>Copyright &copy; 2015 <a href="http://mobileplus.vn/">MobilePlus</a> . All Rights Reserved.</p>
         </div>
         <div id="jobDialog"></div>
         <div id="loading"></div>

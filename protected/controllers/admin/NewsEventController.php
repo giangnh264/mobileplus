@@ -80,17 +80,13 @@ class NewsEventController extends Controller
 		{
 			$model->attributes=$_POST['AdminNewsEventModel'];
 			$model->created_time = new CDbExpression("NOW()");
-            if(isset($_POST['channels'])){
-                $channel = implode(',',$_POST['channels']);
-                $model->channel = $channel;
-            }
 			if ($_FILES["clip_thumbnail_slider"]['size'] > 0) {
+				$model->status = 1;
+				$model->save();
 				$coverPath = $this->uploadFile($_FILES["clip_thumbnail_slider"], $model);
 				if(!$coverPath){
 					$model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
 				}else{
-					$model->save();
-					$model->status = 1;
 					$model->img_url = $coverPath;
 					$model->save();
 					$this->redirect(array('view','id'=>$model->id));
@@ -122,36 +118,21 @@ class NewsEventController extends Controller
 		if(isset($_POST['AdminNewsEventModel']))
 		{
 			$model->attributes=$_POST['AdminNewsEventModel'];
-            if(isset($_POST['channels'])){
-                $channel = implode(',',$_POST['channels']);
-                $model->channel = $channel;
-            }
-            $error=0;
-            //check allow widthxheight
-//            $fileAvatar = _APP_PATH_.DS."data".DS."tmp".DS.$_POST['source_image_path'];
-			$fileAvatar = _APP_PATH_.DS."admin".DS."data".DS."tmp".DS.$_POST['source_image_path'];
-
-			if(!file_exists($fileAvatar)){
-                $error = 1;
-                $model->addError("file", "Chưa upload ảnh");
-            }else {
-                $imgSize = getimagesize($fileAvatar);
-                $maxW = '860';
-                $maxH = '312';
-                $realW = $imgSize[0];
-                $realH = $imgSize[1];
-               /* if ($realW > $maxW || $realH > $maxH) {
-                    $error = 1;
-                    $model->addError("file", "Kích thước ảnh không chính xác");
-                }*/
-            }
-
-			if($error ==0 && $model->save()){
-				if(isset($_SESSION['channel']) && $_SESSION['channel'] == 'web' && file_exists($fileAvatar)){
-					$this->createImage($model, $fileAvatar);
+			$model->updated_time = new CDbExpression("NOW()");
+			if ($_FILES["clip_thumbnail_slider"]['size'] > 0) {
+				$model->save();
+				$coverPath = $this->uploadFile($_FILES["clip_thumbnail_slider"], $model);
+				if(!$coverPath){
+					$model->addError('cover', 'Cover should more '.$this->coverWidth."x".$this->coverHeight);
+				}else{
+					$model->img_url = $coverPath;
+					$model->save();
+					$this->redirect(array('view','id'=>$model->id));
 				}
-				$this->redirect(array('view','id'=>$model->id));
+			}else {
+				$model->addError("file", "Chưa upload ảnh");
 			}
+
 
 		}
 

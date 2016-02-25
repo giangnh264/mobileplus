@@ -38,7 +38,10 @@
                         <div class="wrr-item">
                             <div class="wrr-item-main">
                                 <div class="thumb thumb-hover">
-                                    <a title="<?php echo $product->name?>"  href="<?php echo Yii::app()->createUrl('product/view', array('id'=>$product->id))?>">
+                                    <?php
+                                    $link = !empty($product->des_link) ? $product->des_link : Yii::app()->createUrl('product/view', array('id'=>$product->id, 'url_key'=>$product->url_key));
+                                    ?>
+                                    <a title="<?php echo $product->name?>"  href="<?php echo$link ?>">
                                         <?php
                                         $product_img = ProductImgModel::model()->getOneImgByProductId($product->id);
                                         ?>

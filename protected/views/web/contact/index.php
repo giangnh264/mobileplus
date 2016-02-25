@@ -4,8 +4,6 @@ $cs->registerCssFile ( Yii::app ()->request->baseUrl . "/web/css/contact_respons
 $cs->registerCssFile ( Yii::app ()->request->baseUrl . "/web/css/contact_style.css" );
 ?>
 <section id="container">
-
-
     <form name="hongkiat" id="hongkiat-form" method="post" action="#">
         <div id="wrapping" class="clearfix">
 
@@ -21,11 +19,20 @@ $cs->registerCssFile ( Yii::app ()->request->baseUrl . "/web/css/contact_style.c
                         <p style="font-style:italic">Mọi yêu cầu liên hệ hoặc đóng góp, quý khách hàng và đối tác vui lòng liên hệ với chúng tôi theo form bên dưới</p>
                     </div>
                 </div>
+                <div class="errorSummary">
+                    <ul>
+                        <?php if($error):?>
+                            <li class="contact_error"><?php echo $messages;?></li>
+                        <?php elseif($success):?>
+                            <li class="contact_done"><?php echo $messages;?></li>
+                        <?php endif;?>
+                    </ul>
+                </div>
                 <input type="text" name="name" id="name" placeholder="Họ tên đầy đủ" autocomplete="off" tabindex="1" class="txtinput">
 
                 <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="2" class="txtinput">
 
-                <textarea name="message" id="message" placeholder="Nội dung liên hệ" tabindex="5" class="txtblock"></textarea>
+                <textarea name="description" id="message" placeholder="Nội dung liên hệ" tabindex="5" class="txtblock"></textarea>
             </section>
 
             <section id="aside" class="clearfix">

@@ -32,7 +32,6 @@ $form = $this->beginWidget ( 'CActiveForm', array (
     )
 ) );
 ?>
-
 <div class="account-box box-white">
     <div class="form">
         <div id="popup-loading" ></div>
@@ -49,9 +48,9 @@ $form = $this->beginWidget ( 'CActiveForm', array (
             <?php echo CHtml::textField("project_name","",array("class"=>"input-text"),  array( 'class'=>'selectbox'))?>
         </div>
         <div class="row">
-            <?php echo CHtml::label(Yii::t('web','Tên dự án'),"")?>
-            <input type="range" class="selector">
-            <span id="value" style="color: red"/></span>
+            <?php echo CHtml::label(Yii::t('web','Thời gian làm việc'),"")?>
+            <input id="price" type="range" min="1" max="12" value="1"   style="float: left; width: 275px; padding-left: 18px; padding-top: 16px;" name="project_time"/>
+            <p id="result" style="float: left; padding-left: 16px; padding-top: 5px;">1 tháng</p>
         </div>
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Khoảng giá'),"")?>
@@ -72,7 +71,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
         </div>
         <div class="row">
             <?php echo CHtml::label(Yii::t('web','Mô tả dự án'),"")?>
-            <?php echo CHtml::textarea('project_des','',array("style"=>"float: right; margin-right: 15%; width: 50%;height: 150px;",'placeholder'=>'Nhập những thông tin mô tả của dự án tại đây')); ?>
+            <?php echo CHtml::textarea('project_des','',array("style"=>"float: right; height: 150px; width: 50%; margin-right: 15%; font-weight: normal ! important; font-size: 16px;",'placeholder'=>'Nhập những thông tin mô tả của dự án tại đây')); ?>
 
         </div>
         <div class="clb"></div>
@@ -91,9 +90,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
     </div>
     <!-- form -->
 </div>
-<script type="text/javascript">
 
-</script>
 <?php
 $this->endWidget ();
 
@@ -102,15 +99,12 @@ $this->endWidget ( 'zii.widgets.jui.CJuiDialog' );
 ?>
 <?php
 Yii::app()->clientScript->registerScript('search', '
-  var $value = $("#value");
-    $( ".selector" ).slider({
-        min: 1,
-        max: 24,
-        value: 1,
-        slide: function(event, ui) {
-            $value.text(ui.value);
-        }
-    });
+
+var p = document.getElementById("price"),
+    res = document.getElementById("result");
+
+p.addEventListener("input", function() {
+    res.innerHTML = p.value + " tháng";
+}, false);
 ');
 ?>
-

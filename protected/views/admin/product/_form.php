@@ -38,6 +38,11 @@
 			<?php echo $form->error($model,'url_key'); ?>
 		</div>
 		<div class="row">
+			<?php echo $form->labelEx($model,'des_link'); ?>
+			<?php echo $form->textField($model,'des_link',array('size'=>60,'maxlength'=>500,'class' => 'txtrcv')); ?>
+			<?php echo $form->error($model,'des_link'); ?>
+		</div>
+		<div class="row">
 			<?php echo $form->labelEx($model,'description'); ?>
 			<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 			<?php echo $form->error($model,'description'); ?>

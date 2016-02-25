@@ -3351,3 +3351,10 @@ fieldset{
 .pro_remove_img{
 	position: absolute; right: 10px; top: 70px;
 }
+.thumb-slider-services{
+	border: 1px solid #1ab394;
+	cursor: pointer;
+	display: block;
+	height: 155px;
+	width: 155px;
+}

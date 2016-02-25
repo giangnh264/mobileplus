@@ -114,7 +114,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 			'linkHtmlOptions'=>array(
 			),
 		),
-		array(
+		/*array(
 			'class' => 'CButtonColumn',
 			'template' => '{top}{up}{down}{bottom}',
 			'buttons' => array(
@@ -142,7 +142,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 			'header' => CHtml::dropDownList('pageSize', $pageSize, array(10 => 10, 30 => 30, 50 => 50, 100 => 100), array(
 				'onchange' => "$.fn.yiiGridView.update('admin-song-model-grid',{ data:{pageSize: $(this).val() }})",
 			)),
-		),
+		),*/
 
 	/*	array(
 			'header' => Yii::t('admin', 'Sắp xếp') . CHtml::link(CHtml::image(Yii::app()->request->baseUrl . "/css/img/save_icon.png"), "", array("class" => "reorder", "rel" => $this->createUrl('product/reorder'))),

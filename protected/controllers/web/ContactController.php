@@ -8,6 +8,7 @@ class ContactController extends Controller{
         $name = "";
         $email = "";
         $description = "";
+        $error = false;
         if (Yii::app ()->getRequest ()->ispostRequest) {
             $name = Yii::app()->request->getParam('name');
             $email = Yii::app()->request->getParam('email');
@@ -33,12 +34,12 @@ class ContactController extends Controller{
                 $contact->project_name = !empty(Yii::app()->session['project_name']) ? Yii::app()->session['project_name'] : '';
                 $contact->project_pirce = !empty(Yii::app()->session['project_price']) ? Yii::app()->session['project_price'] : '';
                 $contact->project_type = !empty(Yii::app()->session['project_type']) ? Yii::app()->session['project_type'] : '';
+                $contact->project_time = !empty(Yii::app()->session['project_time']) ? Yii::app()->session['project_time'] : '';
                 $contact->created_time = date('Y-m-d H:i:s');
                 $contact->save();
                 $success = true;
                 $messages = "Quý khách đã gửi liên hệ thành công, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất!";
             }
-
         }
             $this->render('index', compact('error', 'messages', 'error_type', 'name', 'email', 'description', 'success'));
     }
@@ -50,6 +51,7 @@ class ContactController extends Controller{
             $project_price = Yii::app()->request->getParam('project_price');
             $project_name = Yii::app()->request->getParam('project_name');
             $project_type = Yii::app()->request->getParam('project_type');
+            $project_time = Yii::app()->request->getParam('project_time');
             if($project_des != ''){
                 Yii::app()->session['project_des'] = Yii::app()->request->getParam('project_des');
             }
@@ -61,6 +63,9 @@ class ContactController extends Controller{
             }
             if($project_type != ''){
                 Yii::app()->session['project_type'] = Yii::app()->request->getParam('project_type');
+            }
+            if($project_time != ''){
+                Yii::app()->session['project_time'] = Yii::app()->request->getParam('project_time');
             }
             echo 'success!';
         }

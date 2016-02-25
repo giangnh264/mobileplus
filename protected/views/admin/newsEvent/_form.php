@@ -59,20 +59,7 @@
 			<?php echo $form->error($model,'custom_link'); ?>
 		</div>
 
-        <div class="row" style="display: none;">
-			<?php echo $form->labelEx($model,'channel'); ?>
-			<?php
-			$chanelList = (!$model->isNewRecord)?$model->channel:$_SESSION['channel'];
-			$data = Yii::app()->params['eventChannel'];
-            $arr_option = explode(',',$chanelList);
-            echo '<select id="channels" name="channels[]" multiple="multiple">';
-            foreach($data as $key=>$val){
-                $selected = (in_array($val,$arr_option))? 'selected="selected"':'';
-                echo '<option value="'.$val.'" '.$selected.'>'.$key.'</option>';
-            }
-            echo '</select>';
-            echo $form->error($model,'channel'); ?>
-		</div>
+
         <?php if(isset($_SESSION['channel']) && $_SESSION['channel'] != 'wap'):?>
         <div class="row">
 			<?php echo $form->labelEx($model,'content'); ?>

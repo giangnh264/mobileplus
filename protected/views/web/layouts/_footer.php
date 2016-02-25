@@ -1,17 +1,17 @@
 <footer>
     <div class="social">
-        <a href="#"><img src="../web/images/social/fb.png" class="icon_bf"></a>
-        <a href="#"><img src="../web/images/social/tw.png" class="icon_bf"></a>
-        <a href="#"><img src="../web/images/social/gp.png" class="icon_bf"></a>
-        <a href="#"><img src="../web/images/social/yt.png" class="icon_bf"></a>
+        <a href="#"><img src="http://mobileplus.vn/web/images/social/fb.png" class="icon_bf"></a>
+        <a href="#"><img src="http://mobileplus.vn/web/images/social/tw.png" class="icon_bf"></a>
+        <a href="#"><img src="http://mobileplus.vn/web/images/social/gp.png" class="icon_bf"></a>
+        <a href="#"><img src="http://mobileplus.vn/web/images/social/yt.png" class="icon_bf"></a>
         <div style="padding-top: 5px" class="fb-like" data-href="http://mobileplus.vn/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
 
         </div>
     </div>
     <div class="about">
-        <p>Ha Noi Head Office: R 12A04, 17T8 Building, Hoang Dao Thuy, Ward Trung Hoa, Cau Giay Dist., Ha Noi</p>
+        <p>38/166, Đường Phúc Diễn, Nam Từ Liêm, Hà Nội</p>
         <a>
-            © 2016  Powered By SUSOFT
+            © 2016  Powered By Mobileplus
         </a>|
         <a>
            Về chúng tôi
@@ -22,7 +22,7 @@
     </div>
     <ul id="toppage" style="overflow:hidden;">
         <li>
-            <img style="cursor: pointer" src="../web/images/top.png">
+            <img style="cursor: pointer" src="http://mobileplus.vn/web/images/top.png">
         </li>
         <li >TOP</li>
     </ul>
